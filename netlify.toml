@@ -9,6 +9,6 @@ TZ = "America/New_York"
 publish = "public"
 command = """\
   git config --global core.quotepath false && \
-  hugo build --gc --minify --baseURL "${URL} && \
-  npx pagefind --site public"
+  hugo build --gc --minify --baseURL "${URL}" && \
+  npx pagefind --site public
   """
