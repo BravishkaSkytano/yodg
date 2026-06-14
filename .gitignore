@@ -1,0 +1,32 @@
+# Personal directories
+/_capacities/
+/_obsidian/
+
+# Hugo directories
+/public/
+/resources/
+/hugo_stats.json
+/resources/_gen/
+
+# Local environment files
+.DS_Store
+Thumbs.db
+*.local
+
+# Node/npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+
+# Editor and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# Build artifacts
+/dist/
