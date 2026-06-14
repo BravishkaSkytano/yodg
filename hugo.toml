@@ -13,5 +13,9 @@ theme = 'hugo-theme-console'
   url = "/about/"
 
 [[params.navlinks]]
+  name = "search/"
+  url = "/search/"
+
+[[params.navlinks]]
   name = "posts/"
   url = "/posts/"

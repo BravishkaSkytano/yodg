@@ -1,0 +1,15 @@
+{{ define "main" }}
+<h1>{{ .Page.Title }}</h1>
+
+
+{{ .Content }}
+
+<link href="/pagefind/pagefind-component-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-component-ui.js" type="module"></script>
+
+<pagefind-config preload></pagefind-config>
+<pagefind-input></pagefind-input>
+<pagefind-summary></pagefind-summary>
+<pagefind-results></pagefind-results>
+
+{{ end }}
