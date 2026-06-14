@@ -1,0 +1,78 @@
+{{ define "main" }}
+<div class="row">
+  <div class="col-4">
+    <table>
+      <caption>{{ .Title }}</caption>
+
+      {{ with .Resources.GetMatch .Params.image }}
+      <tr>
+        <td colspan="2"><img src="{{ .RelPermalink }}" alt="{{ $.Title }} cover"></td>
+      </tr>
+      {{ end }}
+
+      {{ with .GetTerms "authors" }}
+      <tr>
+        <th scope="row">Author(s)</th>
+        <td>
+          {{ range $index, $author := . }}{{ if $index }}, {{ end }}<a href="{{ $author.RelPermalink }}">{{
+            $author.LinkTitle }}</a>{{ end }}
+        </td>
+      </tr>
+      {{ else }}
+      {{ with .Params.authors }}
+      <tr>
+        <th scope="row">Author(s)</th>
+        <td>{{ delimit . ", " }}</td>
+      </tr>
+      {{ end }}
+      {{ end }}
+
+      <tr>
+        <th scope="row">ISBN</th>
+        <td>{{ .Params.isbn }}</td>
+      </tr>
+
+      <tr>
+        <th scope="row">Genres</th>
+        <td>
+          {{ with .GetTerms "categories" }}
+          {{ range $index, $category := . }}{{ if $index }}, {{ end }}<a href="{{ $category.RelPermalink }}">{{
+            $category.LinkTitle
+            }}</a>{{ end }}
+          {{ end }}
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">Subgenres & Tropes</th>
+        <td>
+          {{ with .GetTerms "tags" }}
+          {{ range $index, $tag := . }}{{ if $index }}, {{ end }}<a href="{{ $tag.RelPermalink }}">{{ $tag.LinkTitle
+            }}</a>{{ end }}
+          {{ end }}
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">Started</th>
+        <td>{{ with .Params.started }}{{ . | time.Format ":date_medium" }}{{ end }}</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">Finished</th>
+        <td>{{ with .Params.finished }}{{ . | time.Format ":date_medium" }}{{ end }}</td>
+      </tr>
+
+      <tr>
+        <th scope="row">Rating</th>
+        <td>{{ .Params.rating }}</td>
+      </tr>
+
+    </table>
+  </div>
+  <div class="col-8">
+    {{ .Content }}
+  </div>
+</div>
+
+{{ end }}

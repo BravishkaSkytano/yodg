@@ -8,10 +8,11 @@
 
 {{ range sort .Site.Sections }}
 <h1>Latest {{ .Title }}</h1>
+{{ $pages := .RegularPagesRecursive }}
 {{ if eq .Type "gallery" }}
 
 <div class="image-grid">
-  {{ range first 3 (sort .Pages "Date" "desc")}}
+  {{ range first 3 (sort $pages "Date" "desc")}}
   <a href="{{ .Permalink }}" title="{{ .Title }}">
     {{ $image := .Page.Resources.GetMatch .Params.image }}
     {{ with $image }}
@@ -23,7 +24,7 @@
 </div>
 {{ else }}
 <div class="posts-list">
-  {{ range first 3 (sort .Pages "Date" "desc")}}
+  {{ range first 3 (sort $pages "Date" "desc")}}
   <div class="post">
     <p>
     <div class="date">{{ .Date | time.Format ":date_medium" }}</div>

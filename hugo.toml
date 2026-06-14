@@ -3,6 +3,10 @@ locale = 'en-us'
 title = 'yodg'
 theme = 'hugo-theme-console'
 
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  author = 'authors'
 
 [params]
   description = "Hello world!"
@@ -19,3 +23,7 @@ theme = 'hugo-theme-console'
 [[params.navlinks]]
   name = "posts/"
   url = "/posts/"
+
+[[params.navlinks]]
+  name = "media/"
+  url = "/media/"
