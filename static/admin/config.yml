@@ -29,7 +29,7 @@ collections:
       - { label: 'Date', name: 'date', widget: 'datetime', default: "{{now}}" }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Cover Image', name: 'image', widget: 'image' }
-      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Author', name: 'people', widget: 'string' }
       - { label: 'Series', name: 'series', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'richtext' }
       - { label: 'Publisher', name: 'publisher', widget: 'string' }

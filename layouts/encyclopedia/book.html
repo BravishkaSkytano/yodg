@@ -10,16 +10,16 @@
       </tr>
       {{ end }}
 
-      {{ with .GetTerms "authors" }}
+      {{ with .GetTerms "people" }}
       <tr>
         <th scope="row">Author(s)</th>
         <td>
-          {{ range $index, $author := . }}{{ if $index }}, {{ end }}<a href="{{ $author.RelPermalink }}">{{
-            $author.LinkTitle }}</a>{{ end }}
+          {{ range $index, $people := . }}{{ if $index }}, {{ end }}<a href="{{ $people.RelPermalink }}">{{
+            $people.LinkTitle }}</a>{{ end }}
         </td>
       </tr>
       {{ else }}
-      {{ with .Params.authors }}
+      {{ with .Params.people }}
       <tr>
         <th scope="row">Author(s)</th>
         <td>{{ delimit . ", " }}</td>

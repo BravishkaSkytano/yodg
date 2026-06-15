@@ -6,7 +6,7 @@ theme = 'hugo-theme-console'
 [taxonomies]
   category = 'categories'
   tag = 'tags'
-  author = 'authors'
+  person = 'people'
 
 [params]
   description = "Hello world!"
