@@ -10,7 +10,18 @@
 <h1>Latest {{ .Title }}</h1>
 {{ $pages := .RegularPagesRecursive }}
 {{ if eq .Type "gallery" }}
-
+<div class="image-grid">
+  {{ range first 3 (sort .Pages "Date" "desc")}}
+  <a href="{{ .Permalink }}" title="{{ .Title }}">
+    {{ $image := .Page.Resources.GetMatch .Params.image }}
+    {{ with $image }}
+    {{ $thumb := .Resize "400x" }}
+    <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
+    {{end}}
+  </a>
+  {{ end }}
+</div>
+{{ else if eq .Type "media" }}
 <div class="image-grid">
   {{ range first 3 (sort $pages "Date" "desc")}}
   <a href="{{ .Permalink }}" title="{{ .Title }}">

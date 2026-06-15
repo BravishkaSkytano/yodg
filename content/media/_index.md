@@ -1,4 +1,4 @@
 ---
 title: Media
-type: gallery
+type: media
 ---
