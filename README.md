@@ -3,3 +3,20 @@
 # yodg
 
 My digital garden, powered by [Hugo](https://gohugo.io/), [Console theme](https://github.com/mrmierzejewski/hugo-theme-console/), [Netlify](https://netlify.com/), and [DecapCMS](https://decapcms.org/)
+
+## Directories
+
+content/
+├── concepts/
+├── journal/
+├── media/
+│   ├── books/
+│   ├── movies/
+│   └── shows/
+├── organizations/
+├── people/
+├── places/
+├── posts/
+├── projects/
+├── species/
+└── worldbuilding/

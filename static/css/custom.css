@@ -1,6 +1,15 @@
 .image-grid {
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(calc(var(--page-width) / 4), 1fr)
-  );
+  grid-template-columns: repeat(auto-fill,
+      minmax(calc(var(--page-width) / 4), 1fr));
+}
+
+.gallery-image {
+  height: 100vh;
+  width: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+.row table {
+  margin: 0 auto;
 }

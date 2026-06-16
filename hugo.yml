@@ -1,0 +1,30 @@
+baseURL: "https://yodg.netlify.app/"
+locale: "en-us"
+title: "yodg"
+theme: "hugo-theme-console"
+
+taxonomies:
+  category: "categories"
+  tag: "tags"
+  person: "people"
+
+params:
+  description: "Hello world!"
+  animateStyle: "animate-fade-up" # Animation style for content
+
+  navlinks:
+    - name: "about/"
+      url: "/about/"
+    - name: "search/"
+      url: "/search/"
+    - name: "archive/"
+      url: "/archive/"
+    - name: "cats/"
+      url: "/categories/"
+    - name: "tags/"
+      url: "/tags/"
+
+security:
+  allowContent:
+    - "text/markdown"
+    - "text/html"

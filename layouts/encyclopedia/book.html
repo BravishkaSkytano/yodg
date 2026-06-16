@@ -1,9 +1,8 @@
 {{ define "main" }}
+<h1>{{ .Title }}</h1>
 <div class="row">
   <div class="col-4">
     <table>
-      <caption>{{ .Title }}</caption>
-
       {{ with .Resources.GetMatch .Params.image }}
       <tr>
         <td colspan="2"><img src="{{ .RelPermalink }}" alt="{{ $.Title }} cover"></td>
@@ -84,15 +83,6 @@
     </table>
   </div>
   <div class="col-8">
-    {{ with .Params.description }}
-    <div class="terminal-card">
-      <header>Description</header>
-      <div>
-        {{ . | markdownify }}
-      </div>
-    </div>
-    {{ end }}
-    <hr>
     {{ .Content }}
   </div>
 </div>

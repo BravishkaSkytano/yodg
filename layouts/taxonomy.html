@@ -5,7 +5,7 @@
 <ul>
   {{ range .Data.Terms.Alphabetical }}
   <li>
-    <a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a>
+    <a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }} ({{ .Count }})</a>
   </li>
   {{ end }}
 </ul>

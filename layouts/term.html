@@ -1,10 +1,11 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{ .Content }}
-<h2>Related Notes</h2>
 <ul>
   {{ range .Pages }}
-  <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> (in {{ .CurrentSection.LinkTitle }})
+  </li>
   {{ end }}
 </ul>
 {{ end }}

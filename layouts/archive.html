@@ -1,0 +1,28 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+
+<ul>
+  {{ range sort .Site.Sections "Title" }}
+  {{ template "archive-section" . }}
+  {{ end }}
+</ul>
+{{ end }}
+
+{{ define "archive-section" }}
+{{ $pages := sort .RegularPages "Title" }}
+{{ $sections := sort .Sections "Title" }}
+<li>
+  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  {{ if or $pages $sections }}
+  <ul>
+    {{ range $pages }}
+    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+    {{ end }}
+    {{ range $sections }}
+    {{ template "archive-section" . }}
+    {{ end }}
+  </ul>
+  {{ end }}
+</li>
+{{ end }}
