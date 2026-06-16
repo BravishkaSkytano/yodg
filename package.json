@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "tiddlywiki . --output output --render \"[!is[system]]\" \"[encodeuricomponent[]addsuffix[.html]]\" \"text/plain\" \"$:/core/templates/static.tiddler.html\" --render \"$:/core/templates/static.template.html\" \"index.html\" \"text/plain\" --render \"$:/core/templates/static.template.css\" \"static.css\" \"text/plain\""
+  },
+  "devDependencies": {
+    "tiddlywiki": "5.4.0"
+  }
+}
