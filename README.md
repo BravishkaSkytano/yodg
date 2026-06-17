@@ -2,10 +2,9 @@
 
 # yodg
 
-My digital garden, powered by [Hugo](https://gohugo.io/), [Console theme](https://github.com/mrmierzejewski/hugo-theme-console/), [Netlify](https://netlify.com/), and [DecapCMS](https://decapcms.org/)
+My digital garden, powered by [TiddlyWiki](https://tiddlywiki.com), [NodeJS](https://nodejs.org), and [Netlify](https://netlify.com).
 
-## Directories
-
+```
 content/
 ├── concepts/
 ├── journal/
@@ -20,3 +19,4 @@ content/
 ├── projects/
 ├── species/
 └── worldbuilding/
+```

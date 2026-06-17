@@ -1,0 +1,12 @@
+created: 20260617003524690
+modified: 20260617013723059
+tags: TableOfContents
+title: Credits
+type: text/vnd.tiddlywiki
+
+I would like to thank the developers and maintainers of these projects for providing tools and resources for me to get this digital garden up and running:
+
+* [[TiddlyWiki5|https://tiddlywiki.com/]]
+* [[NodeJS|https://nodejs.org]]
+* [[Netlify|https://netlify.com]]
+* [[Anne-Laure Le Cunff from NessLabs|https://nesslabs.com/tag/tiddlywiki]]
