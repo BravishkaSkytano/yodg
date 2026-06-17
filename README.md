@@ -15,7 +15,7 @@ content/
 ├── organizations/
 ├── people/
 ├── places/
-├── posts/
+├── prose/
 ├── projects/
 ├── species/
 └── worldbuilding/
