@@ -1,6 +1,8 @@
 color: Grey
 created: 20260617161828313
-modified: 20260617182613997
+modified: 20260619051712488
 tags: TableOfContents
 title: project
 type: text/vnd.tiddlywiki
+
+<<list-links "[tag[project]]">>
