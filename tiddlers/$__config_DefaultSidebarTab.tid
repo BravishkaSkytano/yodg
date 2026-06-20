@@ -1,6 +1,6 @@
 created: 20260617031504756
-modified: 20260617031509720
+modified: 20260620151412931
 title: $:/config/DefaultSidebarTab
 type: text/vnd.tiddlywiki
 
-TableOfContents
+$:/plugins/ajh/favorites/SideBar

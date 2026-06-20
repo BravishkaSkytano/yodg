@@ -1,0 +1,109 @@
+created: 20260620153553931
+modified: 20260620155333036
+tags: Git NodeJS Windows
+title: Git Backup Scheduler
+type: text/vnd.tiddlywiki
+
+! Windows: Task Scheduler (recommended)
+
+# Open ''Task Scheduler''
+# Click ''Create Basic Task''
+# Name it something like: `TiddlyWiki Backup`
+# Choose a trigger: Daily, Every hour, At logon, etc.
+# Choose ''Start a Program''
+# Program/script: `C:\Program Files\nodejs\npm.cmd`
+# Add arguments: `run backup` (replace `backup` with your script name)
+# Start in: `C:\path\to\your\repo`
+
+Example if your package.json contains:
+
+```json
+{
+  "scripts": {
+    "backup": "git add . && git commit -m \"backup\" && git push origin master"
+  }
+}
+```
+
+Task Scheduler will effectively run:
+
+```bash
+npm run backup
+```
+
+from your repository directory.
+
+! Alternative: Run every X minutes
+
+If you want frequent backups, create a task and then:
+
+# Open task properties
+# Trigger tab
+# Edit trigger
+# Check: `Repeat task every: 30 minutes`
+# Duration: `Indefinitely`
+
+That gives you automatic backups throughout the day.
+
+! Alternative: Use a Node scheduler
+
+You could install something like:
+
+```bash
+npm install node-cron
+```
+
+and keep a Node process running that executes your backup script every hour.
+
+Example:
+
+```js
+const cron = require("node-cron");
+const { exec } = require("child_process");
+
+cron.schedule("0 * * * *", () => {
+  exec("npm run backup");
+});
+```
+
+But honestly, this is usually more complicated than necessary. If your computer is already running Windows, Task Scheduler is more reliable because it works even if your Node process isn't running.
+
+---
+
+! One thing to watch out for
+
+Your backup script should handle the case where there are ''no changes''. Otherwise you'll get errors like:
+
+```bash
+nothing to commit, working tree clean
+```
+
+A safer backup script is:
+
+```bash
+git add .
+git diff --cached --quiet || (
+  git commit -m "Backup %DATE% %TIME%"
+  git push origin master
+)
+```
+
+Or in Node:
+
+```js
+if (hasChanges) {
+  git commit...
+  git push...
+}
+```
+
+That way the scheduler can run every hour without filling logs with harmless Git errors.
+
+For a TiddlyWiki setup, a nice pattern is:
+
+* Auto-save continuously via TiddlyWiki
+* Scheduled Git backup every 1-4 hours
+* GitHub as off-site backup
+* Occasional full ZIP backups of the repository
+
+That gives you three layers of protection: local files, Git history, and remote backup. 🌱📚
