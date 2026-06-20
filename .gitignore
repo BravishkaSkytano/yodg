@@ -18,3 +18,8 @@ pnpm-lock.yaml
 *.swp
 *.swo
 *.tmp
+
+tiddlers/$__plugins_ajh_favorites.json
+tiddlers/$__plugins_mklauber_aliases.json
+tiddlers/$__plugins_ajh_favorites.json.meta
+tiddlers/$__plugins_mklauber_aliases.json.meta
