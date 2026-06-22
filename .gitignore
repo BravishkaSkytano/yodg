@@ -18,3 +18,5 @@ pnpm-lock.yaml
 *.swp
 *.swo
 *.tmp
+
+backup_log.txt

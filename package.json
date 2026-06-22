@@ -1,6 +1,7 @@
 {
   "scripts": {
     "start": "tiddlywiki . --listen",
+    "start:remote": "tiddlywiki . --listen host=100.100.159.67",
     "build": "tiddlywiki . --build",
     "build:static": "tiddlywiki . --output output --render \"[!is[system]]\" \"[encodeuricomponent[]addprefix[static/]addsuffix[.html]]\" \"text/plain\" \"$:/core/templates/static.tiddler.html\" --render \"$:/core/templates/static.template.html\" \"index.html\" \"text/plain\" --render \"$:/core/templates/static.template.css\" \"static/static.css\" \"text/plain\"",
     "backup": "node scripts/backup.js"
