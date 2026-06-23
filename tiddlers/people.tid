@@ -1,0 +1,8 @@
+color: Grey
+created: 20260623012548263
+modified: 20260623013001521
+tags: TableOfContents
+title: people
+type: text/vnd.tiddlywiki
+
+<<list-links "[tag[people]]">>
