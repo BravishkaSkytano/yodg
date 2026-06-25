@@ -16,20 +16,45 @@ const timestamp =
   String(now.getSeconds()).padStart(2, "0");
 
 try {
+  // Stage all changes
   execSync("git add .", { stdio: "inherit" });
 
+  // Skip if nothing changed
+  try {
+    execSync("git diff --cached --quiet");
+    console.log("No changes to back up.");
+    process.exit(0);
+  } catch {
+    // Changes exist, continue
+  }
+
+  // Commit changes
   try {
     execSync(`git commit -m "Backup ${timestamp}"`, {
       stdio: "inherit",
     });
-  } catch {
-    console.log("No changes to back up.");
-    process.exit(0);
+  } catch (err) {
+    console.error("\nFailed to create commit:");
+    console.error(err.message);
+    process.exit(1);
   }
 
-  execSync("git push origin master", { stdio: "inherit" });
+  // Push to GitHub
+  try {
+    execSync("git push origin master", {
+      stdio: "inherit",
+    });
+  } catch (err) {
+    console.error("\nFailed to push to remote repository.");
+    console.error(
+      "Your commit was created locally, but it could not be uploaded.",
+    );
+    console.error(err.message);
+    process.exit(1);
+  }
 
   console.log(`✓ Backup completed at ${timestamp}`);
-} catch {
+} catch (err) {
+  console.error(err.message);
   process.exit(1);
 }
