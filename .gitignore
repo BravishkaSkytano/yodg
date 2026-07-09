@@ -20,3 +20,4 @@ pnpm-lock.yaml
 *.tmp
 
 backup_log.txt
+edit.txt
