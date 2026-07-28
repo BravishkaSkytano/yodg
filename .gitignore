@@ -1,23 +1,11 @@
-/output/
-
-# Local environment files
 .DS_Store
-Thumbs.db
-*.local
-
-# Node/npm
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-lock.yaml
-
-# Editor and OS files
-.vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
-
-backup_log.txt
-edit.txt
+node_modules
+public
+prof
+tsconfig.tsbuildinfo
+.quartz-cache
+private/
+.replit
+replit.nix
+.quartz/
+quartz/cli/tui/dist/

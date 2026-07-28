@@ -1,9 +1,0 @@
-caption: books
-color: Grey
-created: 20260617020109375
-modified: 20260625213934673
-tags: TableOfContents
-title: book
-type: text/vnd.tiddlywiki
-
-<<list-links "[tag[book]]">>
