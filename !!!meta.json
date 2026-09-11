@@ -85,6 +85,13 @@
 							"value": "yoela:openSesamePlz",
 							"isInheritable": true,
 							"position": 50
+						},
+						{
+							"type": "label",
+							"name": "color",
+							"value": "#4d4de6",
+							"isInheritable": false,
+							"position": 60
 						}
 					],
 					"dataFileName": "Journal.html",
@@ -274,6 +281,13 @@
 							"value": "grid",
 							"isInheritable": false,
 							"position": 60
+						},
+						{
+							"type": "label",
+							"name": "color",
+							"value": "#e64db3",
+							"isInheritable": false,
+							"position": 70
 						}
 					],
 					"dataFileName": "Classes.html",
@@ -2228,6 +2242,13 @@
 							"value": "bx bxs-edit-alt",
 							"isInheritable": false,
 							"position": 60
+						},
+						{
+							"type": "label",
+							"name": "color",
+							"value": "#e5e64d",
+							"isInheritable": false,
+							"position": 70
 						}
 					],
 					"format": "html",
@@ -2293,27 +2314,6 @@
 									"children": [
 										{
 											"isClone": false,
-											"noteId": "gxHbTmj41AUj",
-											"notePath": [
-												"root",
-												"hxFkkaDucOzi",
-												"kVjsUtHVJwJb",
-												"N66c6BKRftIV",
-												"gxHbTmj41AUj"
-											],
-											"title": "Central Themes",
-											"notePosition": 10,
-											"prefix": null,
-											"isExpanded": false,
-											"type": "text",
-											"mime": "text/html",
-											"attributes": [],
-											"format": "html",
-											"dataFileName": "Central Themes.html",
-											"attachments": []
-										},
-										{
-											"isClone": false,
 											"noteId": "WdYtv8ZV6XqC",
 											"notePath": [
 												"root",
@@ -2323,98 +2323,24 @@
 												"WdYtv8ZV6XqC"
 											],
 											"title": "Characters",
-											"notePosition": 20,
+											"notePosition": 10,
 											"prefix": null,
 											"isExpanded": true,
-											"type": "text",
-											"mime": "text/html",
-											"attributes": [],
-											"format": "html",
+											"type": "book",
+											"mime": "",
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "template",
+													"value": "_template_grid_view",
+													"isInheritable": false,
+													"position": 50
+												}
+											],
 											"dataFileName": "Characters.html",
 											"attachments": [],
 											"dirFileName": "Characters",
 											"children": [
-												{
-													"isClone": false,
-													"noteId": "B3pGFGggD5qT",
-													"notePath": [
-														"root",
-														"hxFkkaDucOzi",
-														"kVjsUtHVJwJb",
-														"N66c6BKRftIV",
-														"WdYtv8ZV6XqC",
-														"B3pGFGggD5qT"
-													],
-													"title": "Nixarza",
-													"notePosition": 10,
-													"prefix": null,
-													"isExpanded": false,
-													"type": "text",
-													"mime": "text/html",
-													"attributes": [
-														{
-															"type": "relation",
-															"name": "internalLink",
-															"value": "by4HFkvD3lj2",
-															"isInheritable": false,
-															"position": 10
-														},
-														{
-															"type": "relation",
-															"name": "internalLink",
-															"value": "BY18VG01xH7Y",
-															"isInheritable": false,
-															"position": 20
-														}
-													],
-													"format": "html",
-													"dataFileName": "Nixarza.html",
-													"attachments": []
-												},
-												{
-													"isClone": false,
-													"noteId": "by4HFkvD3lj2",
-													"notePath": [
-														"root",
-														"hxFkkaDucOzi",
-														"kVjsUtHVJwJb",
-														"N66c6BKRftIV",
-														"WdYtv8ZV6XqC",
-														"by4HFkvD3lj2"
-													],
-													"title": "Vulas Farwynn",
-													"notePosition": 20,
-													"prefix": null,
-													"isExpanded": false,
-													"type": "text",
-													"mime": "text/html",
-													"attributes": [],
-													"format": "html",
-													"dataFileName": "Vulas Farwynn.html",
-													"attachments": []
-												},
-												{
-													"isClone": false,
-													"noteId": "BY18VG01xH7Y",
-													"notePath": [
-														"root",
-														"hxFkkaDucOzi",
-														"kVjsUtHVJwJb",
-														"N66c6BKRftIV",
-														"WdYtv8ZV6XqC",
-														"BY18VG01xH7Y"
-													],
-													"title": "Válgr",
-													"notePosition": 30,
-													"prefix": null,
-													"isExpanded": false,
-													"type": "text",
-													"mime": "text/html",
-													"attributes": [],
-													"format": "html",
-													"dataFileName": "Válgr.html",
-													"attachments": []
-												},
 												{
 													"isClone": false,
 													"noteId": "IIqOTnx8I7Oq",
@@ -2427,9 +2353,9 @@
 														"IIqOTnx8I7Oq"
 													],
 													"title": "Relationships & Conflicts",
-													"notePosition": 40,
+													"notePosition": 10,
 													"prefix": null,
-													"isExpanded": true,
+													"isExpanded": false,
 													"type": "text",
 													"mime": "text/html",
 													"attributes": [],
@@ -2470,6 +2396,13 @@
 																	"value": "BY18VG01xH7Y",
 																	"isInheritable": false,
 																	"position": 20
+																},
+																{
+																	"type": "relation",
+																	"name": "internalLink",
+																	"value": "77CG2FXVU7HO",
+																	"isInheritable": false,
+																	"position": 30
 																}
 															],
 															"format": "html",
@@ -2477,8 +2410,207 @@
 															"attachments": []
 														}
 													]
+												},
+												{
+													"isClone": false,
+													"noteId": "B3pGFGggD5qT",
+													"notePath": [
+														"root",
+														"hxFkkaDucOzi",
+														"kVjsUtHVJwJb",
+														"N66c6BKRftIV",
+														"WdYtv8ZV6XqC",
+														"B3pGFGggD5qT"
+													],
+													"title": "Nixarza",
+													"notePosition": 20,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "by4HFkvD3lj2",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "BY18VG01xH7Y",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "9hNI3Vh3Fbfn",
+															"isInheritable": false,
+															"position": 30
+														}
+													],
+													"format": "html",
+													"dataFileName": "Nixarza.html",
+													"attachments": []
+												},
+												{
+													"isClone": false,
+													"noteId": "LHeV3VWIUure",
+													"notePath": [
+														"root",
+														"hxFkkaDucOzi",
+														"kVjsUtHVJwJb",
+														"N66c6BKRftIV",
+														"WdYtv8ZV6XqC",
+														"LHeV3VWIUure"
+													],
+													"title": "Sylren Farwynn",
+													"notePosition": 30,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [],
+													"format": "html",
+													"dataFileName": "Sylren Farwynn.html",
+													"attachments": []
+												},
+												{
+													"isClone": false,
+													"noteId": "by4HFkvD3lj2",
+													"notePath": [
+														"root",
+														"hxFkkaDucOzi",
+														"kVjsUtHVJwJb",
+														"N66c6BKRftIV",
+														"WdYtv8ZV6XqC",
+														"by4HFkvD3lj2"
+													],
+													"title": "Vulas Farwynn",
+													"notePosition": 40,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [],
+													"format": "html",
+													"dataFileName": "Vulas Farwynn.html",
+													"attachments": []
+												},
+												{
+													"isClone": false,
+													"noteId": "BY18VG01xH7Y",
+													"notePath": [
+														"root",
+														"hxFkkaDucOzi",
+														"kVjsUtHVJwJb",
+														"N66c6BKRftIV",
+														"WdYtv8ZV6XqC",
+														"BY18VG01xH7Y"
+													],
+													"title": "Válgr",
+													"notePosition": 50,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [],
+													"format": "html",
+													"dataFileName": "Válgr.html",
+													"attachments": []
 												}
 											]
+										},
+										{
+											"isClone": false,
+											"noteId": "oE30rqxGYanG",
+											"notePath": [
+												"root",
+												"hxFkkaDucOzi",
+												"kVjsUtHVJwJb",
+												"N66c6BKRftIV",
+												"oE30rqxGYanG"
+											],
+											"title": "Special Items",
+											"notePosition": 20,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"attributes": [],
+											"format": "html",
+											"dataFileName": "Special Items.html",
+											"attachments": [],
+											"dirFileName": "Special Items",
+											"children": [
+												{
+													"isClone": false,
+													"noteId": "77CG2FXVU7HO",
+													"notePath": [
+														"root",
+														"hxFkkaDucOzi",
+														"kVjsUtHVJwJb",
+														"N66c6BKRftIV",
+														"oE30rqxGYanG",
+														"77CG2FXVU7HO"
+													],
+													"title": "Silver Ring",
+													"notePosition": 10,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [],
+													"format": "html",
+													"dataFileName": "Silver Ring.html",
+													"attachments": []
+												}
+											]
+										},
+										{
+											"isClone": false,
+											"noteId": "gxHbTmj41AUj",
+											"notePath": [
+												"root",
+												"hxFkkaDucOzi",
+												"kVjsUtHVJwJb",
+												"N66c6BKRftIV",
+												"gxHbTmj41AUj"
+											],
+											"title": "Central Themes",
+											"notePosition": 30,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "B3pGFGggD5qT",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "LHeV3VWIUure",
+													"isInheritable": false,
+													"position": 40
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "by4HFkvD3lj2",
+													"isInheritable": false,
+													"position": 50
+												}
+											],
+											"format": "html",
+											"dataFileName": "Central Themes.html",
+											"attachments": []
 										}
 									]
 								}
@@ -2506,6 +2638,13 @@
 							"value": "bx bx-globe-alt",
 							"isInheritable": false,
 							"position": 10
+						},
+						{
+							"type": "label",
+							"name": "color",
+							"value": "#4de699",
+							"isInheritable": false,
+							"position": 20
 						}
 					],
 					"format": "html",
@@ -2695,13 +2834,86 @@
 				},
 				{
 					"isClone": false,
+					"noteId": "2jIaAY6oz23O",
+					"notePath": [
+						"root",
+						"2jIaAY6oz23O"
+					],
+					"title": "People",
+					"notePosition": 50,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "book",
+					"mime": "",
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "template",
+							"value": "_template_list_view",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "label",
+							"name": "color",
+							"value": "#e6994d",
+							"isInheritable": false,
+							"position": 50
+						}
+					],
+					"dataFileName": "People.html",
+					"attachments": [],
+					"dirFileName": "People",
+					"children": [
+						{
+							"isClone": false,
+							"noteId": "0fvEsxFmqtrn",
+							"notePath": [
+								"root",
+								"2jIaAY6oz23O",
+								"0fvEsxFmqtrn"
+							],
+							"title": "Joshua Alejandro",
+							"notePosition": 10,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "text",
+							"mime": "text/html",
+							"attributes": [],
+							"format": "html",
+							"dataFileName": "Joshua Alejandro.html",
+							"attachments": []
+						},
+						{
+							"isClone": false,
+							"noteId": "u1OhYdEm30lx",
+							"notePath": [
+								"root",
+								"2jIaAY6oz23O",
+								"u1OhYdEm30lx"
+							],
+							"title": "Jordan Alejandro",
+							"notePosition": 20,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "text",
+							"mime": "text/html",
+							"attributes": [],
+							"format": "html",
+							"dataFileName": "Jordan Alejandro.html",
+							"attachments": []
+						}
+					]
+				},
+				{
+					"isClone": false,
 					"noteId": "aKvB6VbseA79",
 					"notePath": [
 						"root",
 						"aKvB6VbseA79"
 					],
 					"title": "Trilium Demo",
-					"notePosition": 50,
+					"notePosition": 60,
 					"prefix": null,
 					"isExpanded": false,
 					"type": "text",
@@ -8812,7 +9024,7 @@
 						"Wjz6UyoYsYyi"
 					],
 					"title": "Unprocessed",
-					"notePosition": 1000000109,
+					"notePosition": 1000000119,
 					"prefix": null,
 					"isExpanded": false,
 					"type": "text",
@@ -8825,15 +9037,29 @@
 					"children": [
 						{
 							"isClone": true,
-							"noteId": "ei45Yip52Vh3",
+							"noteId": "DKdvNvrWLVfS",
 							"notePath": [
 								"root",
 								"Wjz6UyoYsYyi",
-								"ei45Yip52Vh3"
+								"DKdvNvrWLVfS"
 							],
-							"title": "Edouard Manet",
+							"title": "A Sunday on La Grande Jatte",
 							"prefix": null,
-							"dataFileName": "Edouard Manet.clone.html",
+							"dataFileName": "A Sunday on La Grande Jatte.clone.html",
+							"type": "text",
+							"format": "html"
+						},
+						{
+							"isClone": true,
+							"noteId": "QTynd7ftccpt",
+							"notePath": [
+								"root",
+								"Wjz6UyoYsYyi",
+								"QTynd7ftccpt"
+							],
+							"title": "Byzantine",
+							"prefix": null,
+							"dataFileName": "Byzantine.clone.html",
 							"type": "text",
 							"format": "html"
 						},
@@ -8853,57 +9079,15 @@
 						},
 						{
 							"isClone": true,
-							"noteId": "DKdvNvrWLVfS",
+							"noteId": "ei45Yip52Vh3",
 							"notePath": [
 								"root",
 								"Wjz6UyoYsYyi",
-								"DKdvNvrWLVfS"
+								"ei45Yip52Vh3"
 							],
-							"title": "A Sunday on La Grande Jatte",
+							"title": "Edouard Manet",
 							"prefix": null,
-							"dataFileName": "A Sunday on La Grande Jatte.clone.html",
-							"type": "text",
-							"format": "html"
-						},
-						{
-							"isClone": true,
-							"noteId": "8jSa1XCDyjEO",
-							"notePath": [
-								"root",
-								"Wjz6UyoYsYyi",
-								"8jSa1XCDyjEO"
-							],
-							"title": "Tapestry",
-							"prefix": null,
-							"dataFileName": "Tapestry.clone.html",
-							"type": "text",
-							"format": "html"
-						},
-						{
-							"isClone": true,
-							"noteId": "vaWIIZXILIZv",
-							"notePath": [
-								"root",
-								"Wjz6UyoYsYyi",
-								"vaWIIZXILIZv"
-							],
-							"title": "Rose Window",
-							"prefix": null,
-							"dataFileName": "Rose Window.clone.html",
-							"type": "text",
-							"format": "html"
-						},
-						{
-							"isClone": true,
-							"noteId": "WXdUCVOCTZy9",
-							"notePath": [
-								"root",
-								"Wjz6UyoYsYyi",
-								"WXdUCVOCTZy9"
-							],
-							"title": "Ribbed Vault",
-							"prefix": null,
-							"dataFileName": "Ribbed Vault.clone.html",
+							"dataFileName": "Edouard Manet.clone.html",
 							"type": "text",
 							"format": "html"
 						},
@@ -8923,6 +9107,20 @@
 						},
 						{
 							"isClone": true,
+							"noteId": "qGhruUDYF3Yn",
+							"notePath": [
+								"root",
+								"Wjz6UyoYsYyi",
+								"qGhruUDYF3Yn"
+							],
+							"title": "Mosaic",
+							"prefix": null,
+							"dataFileName": "Mosaic.clone.html",
+							"type": "text",
+							"format": "html"
+						},
+						{
+							"isClone": true,
 							"noteId": "MXEDwdCPWudQ",
 							"notePath": [
 								"root",
@@ -8932,6 +9130,48 @@
 							"title": "Nave",
 							"prefix": null,
 							"dataFileName": "Nave.clone.html",
+							"type": "text",
+							"format": "html"
+						},
+						{
+							"isClone": true,
+							"noteId": "WXdUCVOCTZy9",
+							"notePath": [
+								"root",
+								"Wjz6UyoYsYyi",
+								"WXdUCVOCTZy9"
+							],
+							"title": "Ribbed Vault",
+							"prefix": null,
+							"dataFileName": "Ribbed Vault.clone.html",
+							"type": "text",
+							"format": "html"
+						},
+						{
+							"isClone": true,
+							"noteId": "vaWIIZXILIZv",
+							"notePath": [
+								"root",
+								"Wjz6UyoYsYyi",
+								"vaWIIZXILIZv"
+							],
+							"title": "Rose Window",
+							"prefix": null,
+							"dataFileName": "Rose Window.clone.html",
+							"type": "text",
+							"format": "html"
+						},
+						{
+							"isClone": true,
+							"noteId": "8jSa1XCDyjEO",
+							"notePath": [
+								"root",
+								"Wjz6UyoYsYyi",
+								"8jSa1XCDyjEO"
+							],
+							"title": "Tapestry",
+							"prefix": null,
+							"dataFileName": "Tapestry.clone.html",
 							"type": "text",
 							"format": "html"
 						},
@@ -8948,34 +9188,6 @@
 							"dataFileName": "Vault.clone.html",
 							"type": "text",
 							"format": "html"
-						},
-						{
-							"isClone": true,
-							"noteId": "qGhruUDYF3Yn",
-							"notePath": [
-								"root",
-								"Wjz6UyoYsYyi",
-								"qGhruUDYF3Yn"
-							],
-							"title": "Mosaic",
-							"prefix": null,
-							"dataFileName": "Mosaic.clone.html",
-							"type": "text",
-							"format": "html"
-						},
-						{
-							"isClone": true,
-							"noteId": "QTynd7ftccpt",
-							"notePath": [
-								"root",
-								"Wjz6UyoYsYyi",
-								"QTynd7ftccpt"
-							],
-							"title": "Byzantine",
-							"prefix": null,
-							"dataFileName": "Byzantine.clone.html",
-							"type": "text",
-							"format": "html"
 						}
 					]
 				},
@@ -8987,7 +9199,7 @@
 						"SFRzHg7kZqIZ"
 					],
 					"title": "Asia Minor",
-					"notePosition": 1000000119,
+					"notePosition": 1000000129,
 					"prefix": null,
 					"isExpanded": false,
 					"type": "text",
@@ -9027,7 +9239,7 @@
 						"3ATD4drbczgo"
 					],
 					"title": "Bayeux Tapestry",
-					"notePosition": 1000000129,
+					"notePosition": 1000000139,
 					"prefix": null,
 					"isExpanded": false,
 					"type": "text",
@@ -9045,7 +9257,7 @@
 						"uEKSa2R8EjTD"
 					],
 					"title": "Christianity",
-					"notePosition": 1000000139,
+					"notePosition": 1000000149,
 					"prefix": null,
 					"isExpanded": false,
 					"type": "text",
@@ -9063,24 +9275,6 @@
 						"btlYdquCYFFG"
 					],
 					"title": "High Renaissance",
-					"notePosition": 1000000149,
-					"prefix": null,
-					"isExpanded": false,
-					"type": "text",
-					"mime": "text/html",
-					"attributes": [],
-					"format": "html",
-					"dataFileName": "High Renaissance.html",
-					"attachments": []
-				},
-				{
-					"isClone": false,
-					"noteId": "0fvEsxFmqtrn",
-					"notePath": [
-						"root",
-						"0fvEsxFmqtrn"
-					],
-					"title": "Joshua Alejandro",
 					"notePosition": 1000000159,
 					"prefix": null,
 					"isExpanded": false,
@@ -9088,25 +9282,7 @@
 					"mime": "text/html",
 					"attributes": [],
 					"format": "html",
-					"dataFileName": "Joshua Alejandro.html",
-					"attachments": []
-				},
-				{
-					"isClone": false,
-					"noteId": "u1OhYdEm30lx",
-					"notePath": [
-						"root",
-						"u1OhYdEm30lx"
-					],
-					"title": "Jordan Alejandro",
-					"notePosition": 1000000169,
-					"prefix": null,
-					"isExpanded": false,
-					"type": "text",
-					"mime": "text/html",
-					"attributes": [],
-					"format": "html",
-					"dataFileName": "Jordan Alejandro.html",
+					"dataFileName": "High Renaissance.html",
 					"attachments": []
 				}
 			]
