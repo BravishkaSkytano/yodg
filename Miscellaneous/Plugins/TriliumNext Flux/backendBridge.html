@@ -1,0 +1,4553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    
+        <link href="../../../assets/styles.css" rel="stylesheet">
+    
+        <link href="../../../assets/scripts.css" rel="stylesheet">
+    
+    
+        <script type="module" src="../../../assets/scripts.js"></script>
+    
+    
+    
+    
+    <title>backendBridge - yodg</title>
+    <script>
+        // Load dark/light theme as soon as possible to avoid color flashes.
+        let theme = localStorage.getItem("theme");
+        if (!theme) {
+            theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light";
+        }
+        document.documentElement.classList.add(`theme-${theme}`);
+
+        window.glob = {
+            isStatic: true,
+            theme
+        };
+
+        (function() {
+            const leftCollapsed = localStorage.getItem("left-pane-collapsed") === "true";
+            const tocCollapsed = localStorage.getItem("toc-pane-collapsed") === "true";
+            if (leftCollapsed) document.documentElement.classList.add("left-pane-collapsed");
+            if (tocCollapsed) document.documentElement.classList.add("toc-pane-collapsed");
+        })();
+    </script>
+    <!-- HTML Meta Tags -->
+    <meta name="description" content="">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="backendBridge - yodg">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="">
+    <meta property="twitter:url" content="">
+    <meta name="twitter:title" content="backendBridge - yodg">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <!-- Meta Tags Generated via https://opengraph.dev -->
+    <meta name="theme-color" content="">
+    <style id="trilium-icon-packs">
+                  @font-face {
+                font-family: 'boxicons';
+                font-weight: normal;
+                font-style: normal;
+                src: url('../../../assets/icon-pack-bx.woff2') format('woff2');
+            }
+
+            .bx {
+                font-family: 'boxicons' !important;
+                font-weight: normal;
+                font-style: normal;
+                font-variant: normal;
+                line-height: 1;
+                text-rendering: auto;
+                display: inline-block;
+                text-transform: none;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            .bx.bx-child::before { content: ""; }
+.bx.bxs-balloon::before { content: ""; }
+.bx.bxs-coffee-bean::before { content: ""; }
+.bx.bxs-pear::before { content: ""; }
+.bx.bxs-sushi::before { content: ""; }
+.bx.bx-sushi::before { content: ""; }
+.bx.bxs-shower::before { content: ""; }
+.bx.bx-shower::before { content: ""; }
+.bx.bxl-typescript::before { content: ""; }
+.bx.bxl-graphql::before { content: ""; }
+.bx.bx-rfid::before { content: ""; }
+.bx.bxs-universal-access::before { content: ""; }
+.bx.bx-universal-access::before { content: ""; }
+.bx.bxs-castle::before { content: ""; }
+.bx.bxs-shield-minus::before { content: ""; }
+.bx.bx-shield-minus::before { content: ""; }
+.bx.bxs-shield-plus::before { content: ""; }
+.bx.bx-shield-plus::before { content: ""; }
+.bx.bx-vertical-bottom::before { content: ""; }
+.bx.bx-vertical-top::before { content: ""; }
+.bx.bx-horizontal-right::before { content: ""; }
+.bx.bx-horizontal-left::before { content: ""; }
+.bx.bxs-objects-vertical-bottom::before { content: ""; }
+.bx.bx-objects-vertical-bottom::before { content: ""; }
+.bx.bxs-objects-vertical-center::before { content: ""; }
+.bx.bx-objects-vertical-center::before { content: ""; }
+.bx.bxs-objects-vertical-top::before { content: ""; }
+.bx.bx-objects-vertical-top::before { content: ""; }
+.bx.bxs-objects-horizontal-right::before { content: ""; }
+.bx.bx-objects-horizontal-right::before { content: ""; }
+.bx.bxs-objects-horizontal-center::before { content: ""; }
+.bx.bx-objects-horizontal-center::before { content: ""; }
+.bx.bxs-objects-horizontal-left::before { content: ""; }
+.bx.bx-objects-horizontal-left::before { content: ""; }
+.bx.bxs-color::before { content: ""; }
+.bx.bx-color::before { content: ""; }
+.bx.bx-reflect-horizontal::before { content: ""; }
+.bx.bx-reflect-vertical::before { content: ""; }
+.bx.bxl-postgresql::before { content: ""; }
+.bx.bxl-mongodb::before { content: ""; }
+.bx.bxl-deezer::before { content: ""; }
+.bx.bxl-xing::before { content: ""; }
+.bx.bx-cart-add::before { content: ""; }
+.bx.bx-cart-download::before { content: ""; }
+.bx.bx-no-signal::before { content: ""; }
+.bx.bx-signal-5::before { content: ""; }
+.bx.bx-signal-4::before { content: ""; }
+.bx.bx-signal-3::before { content: ""; }
+.bx.bx-signal-2::before { content: ""; }
+.bx.bx-signal-1::before { content: ""; }
+.bx.bxs-cheese::before { content: ""; }
+.bx.bx-cheese::before { content: ""; }
+.bx.bxs-hard-hat::before { content: ""; }
+.bx.bx-hard-hat::before { content: ""; }
+.bx.bxs-home-alt-2::before { content: ""; }
+.bx.bx-home-alt-2::before { content: ""; }
+.bx.bxl-meta::before { content: ""; }
+.bx.bxs-lemon::before { content: ""; }
+.bx.bx-lemon::before { content: ""; }
+.bx.bxs-cable-car::before { content: ""; }
+.bx.bx-cable-car::before { content: ""; }
+.bx.bxs-cricket-ball::before { content: ""; }
+.bx.bx-cricket-ball::before { content: ""; }
+.bx.bxs-tree-alt::before { content: ""; }
+.bx.bx-male-female::before { content: ""; }
+.bx.bxs-invader::before { content: ""; }
+.bx.bxs-baguette::before { content: ""; }
+.bx.bx-baguette::before { content: ""; }
+.bx.bx-fork::before { content: ""; }
+.bx.bx-knife::before { content: ""; }
+.bx.bxs-circle-half::before { content: ""; }
+.bx.bx-circle-half::before { content: ""; }
+.bx.bxs-circle-three-quarter::before { content: ""; }
+.bx.bx-circle-three-quarter::before { content: ""; }
+.bx.bxs-circle-quarter::before { content: ""; }
+.bx.bx-circle-quarter::before { content: ""; }
+.bx.bxs-bowl-rice::before { content: ""; }
+.bx.bx-bowl-rice::before { content: ""; }
+.bx.bxs-bowl-hot::before { content: ""; }
+.bx.bx-bowl-hot::before { content: ""; }
+.bx.bxs-popsicle::before { content: ""; }
+.bx.bx-popsicle::before { content: ""; }
+.bx.bx-cross::before { content: ""; }
+.bx.bx-scatter-chart::before { content: ""; }
+.bx.bx-money-withdraw::before { content: ""; }
+.bx.bx-candles::before { content: ""; }
+.bx.bx-math::before { content: ""; }
+.bx.bx-party::before { content: ""; }
+.bx.bx-leaf::before { content: ""; }
+.bx.bx-injection::before { content: ""; }
+.bx.bx-expand-vertical::before { content: ""; }
+.bx.bx-expand-horizontal::before { content: ""; }
+.bx.bx-collapse-vertical::before { content: ""; }
+.bx.bx-collapse-horizontal::before { content: ""; }
+.bx.bx-collapse-alt::before { content: ""; }
+.bx.bxs-party::before { content: ""; }
+.bx.bxs-leaf::before { content: ""; }
+.bx.bxs-injection::before { content: ""; }
+.bx.bxs-dog::before { content: ""; }
+.bx.bxs-cat::before { content: ""; }
+.bx.bxl-upwork::before { content: ""; }
+.bx.bxl-netlify::before { content: ""; }
+.bx.bxl-java::before { content: ""; }
+.bx.bxl-heroku::before { content: ""; }
+.bx.bxl-go-lang::before { content: ""; }
+.bx.bxl-gmail::before { content: ""; }
+.bx.bxl-flask::before { content: ""; }
+.bx.bxl-99designs::before { content: ""; }
+.bx.bxl-venmo::before { content: ""; }
+.bx.bx-qr::before { content: ""; }
+.bx.bx-qr-scan::before { content: ""; }
+.bx.bxl-docker::before { content: ""; }
+.bx.bxl-aws::before { content: ""; }
+.bx.bxs-hand::before { content: ""; }
+.bx.bx-podcast::before { content: ""; }
+.bx.bxs-checkbox-minus::before { content: ""; }
+.bx.bx-checkbox-minus::before { content: ""; }
+.bx.bxs-speaker::before { content: ""; }
+.bx.bx-speaker::before { content: ""; }
+.bx.bxs-registered::before { content: ""; }
+.bx.bx-registered::before { content: ""; }
+.bx.bxs-phone-off::before { content: ""; }
+.bx.bx-phone-off::before { content: ""; }
+.bx.bxl-tiktok::before { content: ""; }
+.bx.bxl-sketch::before { content: ""; }
+.bx.bxl-steam::before { content: ""; }
+.bx.bxl-trip-advisor::before { content: ""; }
+.bx.bxl-visual-studio::before { content: ""; }
+.bx.bxl-unity::before { content: ""; }
+.bx.bxl-php::before { content: ""; }
+.bx.bxl-discord-alt::before { content: ""; }
+.bx.bxl-flutter::before { content: ""; }
+.bx.bxl-mastodon::before { content: ""; }
+.bx.bxl-tailwind-css::before { content: ""; }
+.bx.bx-buildings::before { content: ""; }
+.bx.bxs-buildings::before { content: ""; }
+.bx.bx-store-alt::before { content: ""; }
+.bx.bxs-store-alt::before { content: ""; }
+.bx.bx-bar-chart-alt-2::before { content: ""; }
+.bx.bxs-bar-chart-alt-2::before { content: ""; }
+.bx.bx-message-dots::before { content: ""; }
+.bx.bxs-message-dots::before { content: ""; }
+.bx.bx-message-rounded-dots::before { content: ""; }
+.bx.bxs-message-rounded-dots::before { content: ""; }
+.bx.bxs-devices::before { content: ""; }
+.bx.bx-memory-card::before { content: ""; }
+.bx.bxs-memory-card::before { content: ""; }
+.bx.bx-wallet-alt::before { content: ""; }
+.bx.bxs-wallet-alt::before { content: ""; }
+.bx.bxs-bank::before { content: ""; }
+.bx.bx-slideshow::before { content: ""; }
+.bx.bxs-slideshow::before { content: ""; }
+.bx.bx-message-square::before { content: ""; }
+.bx.bx-message-square-dots::before { content: ""; }
+.bx.bxs-message-square::before { content: ""; }
+.bx.bxs-message-square-dots::before { content: ""; }
+.bx.bx-book-content::before { content: ""; }
+.bx.bxs-book-content::before { content: ""; }
+.bx.bx-chat::before { content: ""; }
+.bx.bxs-chat::before { content: ""; }
+.bx.bx-edit-alt::before { content: ""; }
+.bx.bxs-edit-alt::before { content: ""; }
+.bx.bx-mouse-alt::before { content: ""; }
+.bx.bxs-mouse-alt::before { content: ""; }
+.bx.bx-bug-alt::before { content: ""; }
+.bx.bxs-bug-alt::before { content: ""; }
+.bx.bx-notepad::before { content: ""; }
+.bx.bxs-notepad::before { content: ""; }
+.bx.bx-video-recording::before { content: ""; }
+.bx.bxs-video-recording::before { content: ""; }
+.bx.bx-shape-square::before { content: ""; }
+.bx.bx-shape-triangle::before { content: ""; }
+.bx.bxs-direction-left::before { content: ""; }
+.bx.bx-ghost::before { content: ""; }
+.bx.bxs-ghost::before { content: ""; }
+.bx.bx-mail-send::before { content: ""; }
+.bx.bx-code-alt::before { content: ""; }
+.bx.bx-grid::before { content: ""; }
+.bx.bxs-quote-single-left::before { content: ""; }
+.bx.bxs-quote-single-right::before { content: ""; }
+.bx.bx-user-pin::before { content: ""; }
+.bx.bxs-user-pin::before { content: ""; }
+.bx.bx-run::before { content: ""; }
+.bx.bx-copy-alt::before { content: ""; }
+.bx.bxs-copy-alt::before { content: ""; }
+.bx.bx-transfer-alt::before { content: ""; }
+.bx.bxs-file-doc::before { content: ""; }
+.bx.bxs-file-html::before { content: ""; }
+.bx.bxs-comment-detail::before { content: ""; }
+.bx.bxs-comment-add::before { content: ""; }
+.bx.bxs-file-css::before { content: ""; }
+.bx.bxs-file-js::before { content: ""; }
+.bx.bxs-file-json::before { content: ""; }
+.bx.bxs-file-md::before { content: ""; }
+.bx.bxs-file-txt::before { content: ""; }
+.bx.bxs-file-png::before { content: ""; }
+.bx.bxs-file-jpg::before { content: ""; }
+.bx.bxs-file-gif::before { content: ""; }
+.bx.bxs-analyse::before { content: ""; }
+.bx.bx-book-open::before { content: ""; }
+.bx.bxs-plane-take-off::before { content: ""; }
+.bx.bxs-plane-land::before { content: ""; }
+.bx.bxs-parking::before { content: ""; }
+.bx.bxs-id-card::before { content: ""; }
+.bx.bxs-adjust-alt::before { content: ""; }
+.bx.bx-landscape::before { content: ""; }
+.bx.bxs-landscape::before { content: ""; }
+.bx.bxs-traffic::before { content: ""; }
+.bx.bx-comment::before { content: ""; }
+.bx.bxs-comment::before { content: ""; }
+.bx.bx-comment-dots::before { content: ""; }
+.bx.bxs-comment-dots::before { content: ""; }
+.bx.bxs-wine::before { content: ""; }
+.bx.bx-pyramid::before { content: ""; }
+.bx.bxs-pyramid::before { content: ""; }
+.bx.bx-cylinder::before { content: ""; }
+.bx.bxs-cylinder::before { content: ""; }
+.bx.bxs-graduation::before { content: ""; }
+.bx.bx-lock-alt::before { content: ""; }
+.bx.bxs-lock-alt::before { content: ""; }
+.bx.bx-lock-open-alt::before { content: ""; }
+.bx.bxs-lock-open-alt::before { content: ""; }
+.bx.bxs-hourglass-top::before { content: ""; }
+.bx.bxs-hourglass-bottom::before { content: ""; }
+.bx.bx-left-arrow-alt::before { content: ""; }
+.bx.bx-right-arrow-alt::before { content: ""; }
+.bx.bx-up-arrow-alt::before { content: ""; }
+.bx.bx-down-arrow-alt::before { content: ""; }
+.bx.bx-shape-circle::before { content: ""; }
+.bx.bx-cycling::before { content: ""; }
+.bx.bx-dna::before { content: ""; }
+.bx.bx-bowling-ball::before { content: ""; }
+.bx.bxs-bowling-ball::before { content: ""; }
+.bx.bx-search-alt-2::before { content: ""; }
+.bx.bxs-search-alt-2::before { content: ""; }
+.bx.bx-plus-medical::before { content: ""; }
+.bx.bx-street-view::before { content: ""; }
+.bx.bx-droplet::before { content: ""; }
+.bx.bxs-droplet-half::before { content: ""; }
+.bx.bx-paint-roll::before { content: ""; }
+.bx.bxs-paint-roll::before { content: ""; }
+.bx.bx-shield-alt-2::before { content: ""; }
+.bx.bxs-shield-alt-2::before { content: ""; }
+.bx.bx-error-alt::before { content: ""; }
+.bx.bxs-error-alt::before { content: ""; }
+.bx.bx-square::before { content: ""; }
+.bx.bxs-square::before { content: ""; }
+.bx.bx-square-rounded::before { content: ""; }
+.bx.bxs-square-rounded::before { content: ""; }
+.bx.bx-polygon::before { content: ""; }
+.bx.bxs-polygon::before { content: ""; }
+.bx.bx-cube-alt::before { content: ""; }
+.bx.bxs-cube-alt::before { content: ""; }
+.bx.bx-cuboid::before { content: ""; }
+.bx.bxs-cuboid::before { content: ""; }
+.bx.bx-user-voice::before { content: ""; }
+.bx.bxs-user-voice::before { content: ""; }
+.bx.bx-accessibility::before { content: ""; }
+.bx.bx-building-house::before { content: ""; }
+.bx.bxs-building-house::before { content: ""; }
+.bx.bx-doughnut-chart::before { content: ""; }
+.bx.bxs-doughnut-chart::before { content: ""; }
+.bx.bxs-circle::before { content: ""; }
+.bx.bx-log-in-circle::before { content: ""; }
+.bx.bxs-log-in-circle::before { content: ""; }
+.bx.bx-log-out-circle::before { content: ""; }
+.bx.bxs-log-out-circle::before { content: ""; }
+.bx.bxs-log-in::before { content: ""; }
+.bx.bxs-log-out::before { content: ""; }
+.bx.bxs-notification::before { content: ""; }
+.bx.bxs-notification-off::before { content: ""; }
+.bx.bx-check-square::before { content: ""; }
+.bx.bxs-check-square::before { content: ""; }
+.bx.bx-message-alt::before { content: ""; }
+.bx.bxs-message-alt::before { content: ""; }
+.bx.bx-message-alt-dots::before { content: ""; }
+.bx.bxs-message-alt-dots::before { content: ""; }
+.bx.bx-no-entry::before { content: ""; }
+.bx.bxs-no-entry::before { content: ""; }
+.bx.bxs-traffic-barrier::before { content: ""; }
+.bx.bxs-component::before { content: ""; }
+.bx.bxs-plane-alt::before { content: ""; }
+.bx.bx-palette::before { content: ""; }
+.bx.bxs-palette::before { content: ""; }
+.bx.bx-basket::before { content: ""; }
+.bx.bxs-basket::before { content: ""; }
+.bx.bx-purchase-tag-alt::before { content: ""; }
+.bx.bxs-purchase-tag-alt::before { content: ""; }
+.bx.bx-receipt::before { content: ""; }
+.bx.bxs-receipt::before { content: ""; }
+.bx.bx-line-chart::before { content: ""; }
+.bx.bx-map-pin::before { content: ""; }
+.bx.bxs-map-pin::before { content: ""; }
+.bx.bx-hive::before { content: ""; }
+.bx.bx-band-aid::before { content: ""; }
+.bx.bxs-band-aid::before { content: ""; }
+.bx.bx-credit-card-alt::before { content: ""; }
+.bx.bxs-credit-card-alt::before { content: ""; }
+.bx.bxs-credit-card::before { content: ""; }
+.bx.bx-wifi-off::before { content: ""; }
+.bx.bxs-paint::before { content: ""; }
+.bx.bx-brightness-half::before { content: ""; }
+.bx.bxs-brightness-half::before { content: ""; }
+.bx.bx-brightness::before { content: ""; }
+.bx.bxs-brightness::before { content: ""; }
+.bx.bx-filter-alt::before { content: ""; }
+.bx.bx-dialpad-alt::before { content: ""; }
+.bx.bx-border-right::before { content: ""; }
+.bx.bx-border-left::before { content: ""; }
+.bx.bx-border-top::before { content: ""; }
+.bx.bx-border-bottom::before { content: ""; }
+.bx.bx-border-all::before { content: ""; }
+.bx.bx-mobile-landscape::before { content: ""; }
+.bx.bx-mobile-vibration::before { content: ""; }
+.bx.bxs-rectangle::before { content: ""; }
+.bx.bxs-right-arrow::before { content: ""; }
+.bx.bxs-left-arrow::before { content: ""; }
+.bx.bxs-up-arrow::before { content: ""; }
+.bx.bxs-down-arrow::before { content: ""; }
+.bx.bxs-right-top-arrow-circle::before { content: ""; }
+.bx.bxs-right-down-arrow-circle::before { content: ""; }
+.bx.bxs-left-top-arrow-circle::before { content: ""; }
+.bx.bxs-left-down-arrow-circle::before { content: ""; }
+.bx.bxs-institution::before { content: ""; }
+.bx.bxs-school::before { content: ""; }
+.bx.bxs-chalkboard::before { content: ""; }
+.bx.bxs-skip-previous-circle::before { content: ""; }
+.bx.bxs-skip-next-circle::before { content: ""; }
+.bx.bxs-data::before { content: ""; }
+.bx.bxs-mobile::before { content: ""; }
+.bx.bxs-folder-minus::before { content: ""; }
+.bx.bxs-bell-plus::before { content: ""; }
+.bx.bxs-bell-minus::before { content: ""; }
+.bx.bxs-search::before { content: ""; }
+.bx.bxs-zoom-in::before { content: ""; }
+.bx.bxs-zoom-out::before { content: ""; }
+.bx.bxs-grid::before { content: ""; }
+.bx.bxs-user-x::before { content: ""; }
+.bx.bxs-user-check::before { content: ""; }
+.bx.bxs-compass::before { content: ""; }
+.bx.bx-gas-pump::before { content: ""; }
+.bx.bxs-stopwatch::before { content: ""; }
+.bx.bxs-timer::before { content: ""; }
+.bx.bxs-time::before { content: ""; }
+.bx.bx-pie-chart-alt-2::before { content: ""; }
+.bx.bxs-pie-chart-alt-2::before { content: ""; }
+.bx.bx-time-five::before { content: ""; }
+.bx.bxs-time-five::before { content: ""; }
+.bx.bxl-instagram-alt::before { content: ""; }
+.bx.bxs-bookmarks::before { content: ""; }
+.bx.bxs-bookmark-minus::before { content: ""; }
+.bx.bx-briefcase-alt-2::before { content: ""; }
+.bx.bxs-briefcase-alt-2::before { content: ""; }
+.bx.bx-brush-alt::before { content: ""; }
+.bx.bxs-calendar::before { content: ""; }
+.bx.bxs-calendar-alt::before { content: ""; }
+.bx.bxs-calendar-plus::before { content: ""; }
+.bx.bxs-calendar-minus::before { content: ""; }
+.bx.bxs-calendar-x::before { content: ""; }
+.bx.bxs-calendar-check::before { content: ""; }
+.bx.bxs-calendar-event::before { content: ""; }
+.bx.bx-customize::before { content: ""; }
+.bx.bxs-customize::before { content: ""; }
+.bx.bxs-carousel::before { content: ""; }
+.bx.bxs-rewind-circle::before { content: ""; }
+.bx.bxs-fast-forward-circle::before { content: ""; }
+.bx.bxs-mobile-vibration::before { content: ""; }
+.bx.bxs-quote-alt-left::before { content: ""; }
+.bx.bxs-quote-alt-right::before { content: ""; }
+.bx.bxs-layout::before { content: ""; }
+.bx.bx-radio::before { content: ""; }
+.bx.bx-printer::before { content: ""; }
+.bx.bx-sort-a-z::before { content: ""; }
+.bx.bx-sort-z-a::before { content: ""; }
+.bx.bx-conversation::before { content: ""; }
+.bx.bxs-brush-alt::before { content: ""; }
+.bx.bx-exit::before { content: ""; }
+.bx.bxs-exit::before { content: ""; }
+.bx.bx-extension::before { content: ""; }
+.bx.bxs-extension::before { content: ""; }
+.bx.bxs-file-find::before { content: ""; }
+.bx.bx-face::before { content: ""; }
+.bx.bxs-face::before { content: ""; }
+.bx.bx-file-find::before { content: ""; }
+.bx.bx-label::before { content: ""; }
+.bx.bxs-label::before { content: ""; }
+.bx.bx-check-shield::before { content: ""; }
+.bx.bxs-check-shield::before { content: ""; }
+.bx.bx-border-radius::before { content: ""; }
+.bx.bx-add-to-queue::before { content: ""; }
+.bx.bxs-add-to-queue::before { content: ""; }
+.bx.bx-archive-in::before { content: ""; }
+.bx.bxs-archive-in::before { content: ""; }
+.bx.bx-archive-out::before { content: ""; }
+.bx.bxs-archive-out::before { content: ""; }
+.bx.bx-alarm-add::before { content: ""; }
+.bx.bxs-alarm-add::before { content: ""; }
+.bx.bx-space-bar::before { content: ""; }
+.bx.bx-image-alt::before { content: ""; }
+.bx.bx-image-add::before { content: ""; }
+.bx.bxs-image-add::before { content: ""; }
+.bx.bx-fridge::before { content: ""; }
+.bx.bxs-fridge::before { content: ""; }
+.bx.bx-dish::before { content: ""; }
+.bx.bxs-dish::before { content: ""; }
+.bx.bx-spa::before { content: ""; }
+.bx.bxs-spa::before { content: ""; }
+.bx.bx-cake::before { content: ""; }
+.bx.bxs-cake::before { content: ""; }
+.bx.bxs-city::before { content: ""; }
+.bx.bx-bolt-circle::before { content: ""; }
+.bx.bxs-bolt-circle::before { content: ""; }
+.bx.bx-tone::before { content: ""; }
+.bx.bx-bitcoin::before { content: ""; }
+.bx.bx-lira::before { content: ""; }
+.bx.bx-ruble::before { content: ""; }
+.bx.bxs-caret-up-circle::before { content: ""; }
+.bx.bxs-caret-down-circle::before { content: ""; }
+.bx.bxs-caret-left-circle::before { content: ""; }
+.bx.bxs-caret-right-circle::before { content: ""; }
+.bx.bx-rupee::before { content: ""; }
+.bx.bx-euro::before { content: ""; }
+.bx.bx-pound::before { content: ""; }
+.bx.bx-won::before { content: ""; }
+.bx.bx-yen::before { content: ""; }
+.bx.bx-shekel::before { content: ""; }
+.bx.bxl-facebook-circle::before { content: ""; }
+.bx.bxl-jquery::before { content: ""; }
+.bx.bxl-imdb::before { content: ""; }
+.bx.bxl-pinterest-alt::before { content: ""; }
+.bx.bxs-tone::before { content: ""; }
+.bx.bx-health::before { content: ""; }
+.bx.bxs-baby-carriage::before { content: ""; }
+.bx.bx-clinic::before { content: ""; }
+.bx.bxs-hand-up::before { content: ""; }
+.bx.bxs-hand-right::before { content: ""; }
+.bx.bxs-hand-down::before { content: ""; }
+.bx.bxs-hand-left::before { content: ""; }
+.bx.bx-male::before { content: ""; }
+.bx.bx-female::before { content: ""; }
+.bx.bx-male-sign::before { content: ""; }
+.bx.bx-female-sign::before { content: ""; }
+.bx.bxs-clinic::before { content: ""; }
+.bx.bxs-offer::before { content: ""; }
+.bx.bx-food-tag::before { content: ""; }
+.bx.bx-food-menu::before { content: ""; }
+.bx.bxs-food-menu::before { content: ""; }
+.bx.bxs-camera-plus::before { content: ""; }
+.bx.bxs-business::before { content: ""; }
+.bx.bx-meh-alt::before { content: ""; }
+.bx.bx-wink-tongue::before { content: ""; }
+.bx.bx-happy-alt::before { content: ""; }
+.bx.bx-cool::before { content: ""; }
+.bx.bx-tired::before { content: ""; }
+.bx.bx-smile::before { content: ""; }
+.bx.bx-angry::before { content: ""; }
+.bx.bx-happy-heart-eyes::before { content: ""; }
+.bx.bx-dizzy::before { content: ""; }
+.bx.bx-wink-smile::before { content: ""; }
+.bx.bx-confused::before { content: ""; }
+.bx.bx-sleepy::before { content: ""; }
+.bx.bx-shocked::before { content: ""; }
+.bx.bx-happy-beaming::before { content: ""; }
+.bx.bx-meh-blank::before { content: ""; }
+.bx.bx-laugh::before { content: ""; }
+.bx.bx-upside-down::before { content: ""; }
+.bx.bxs-angry::before { content: ""; }
+.bx.bxs-happy-heart-eyes::before { content: ""; }
+.bx.bxs-dizzy::before { content: ""; }
+.bx.bxs-wink-smile::before { content: ""; }
+.bx.bxs-smile::before { content: ""; }
+.bx.bxs-meh::before { content: ""; }
+.bx.bxs-meh-alt::before { content: ""; }
+.bx.bxs-confused::before { content: ""; }
+.bx.bxs-sleepy::before { content: ""; }
+.bx.bxs-sad::before { content: ""; }
+.bx.bxs-happy::before { content: ""; }
+.bx.bxs-shocked::before { content: ""; }
+.bx.bxs-happy-beaming::before { content: ""; }
+.bx.bxs-tired::before { content: ""; }
+.bx.bxs-cool::before { content: ""; }
+.bx.bxs-meh-blank::before { content: ""; }
+.bx.bxs-laugh::before { content: ""; }
+.bx.bxs-happy-alt::before { content: ""; }
+.bx.bxs-upside-down::before { content: ""; }
+.bx.bxs-wink-tongue::before { content: ""; }
+.bx.bxl-adobe::before { content: ""; }
+.bx.bxl-algolia::before { content: ""; }
+.bx.bxl-audible::before { content: ""; }
+.bx.bxl-figma::before { content: ""; }
+.bx.bxl-etsy::before { content: ""; }
+.bx.bxl-gitlab::before { content: ""; }
+.bx.bxl-patreon::before { content: ""; }
+.bx.bxl-redbubble::before { content: ""; }
+.bx.bx-diamond::before { content: ""; }
+.bx.bxs-comment-error::before { content: ""; }
+.bx.bxs-vial::before { content: ""; }
+.bx.bx-align-left::before { content: ""; }
+.bx.bx-align-middle::before { content: ""; }
+.bx.bx-align-right::before { content: ""; }
+.bx.bx-arrow-back::before { content: ""; }
+.bx.bx-bell-minus::before { content: ""; }
+.bx.bx-bell-off::before { content: ""; }
+.bx.bx-bell-plus::before { content: ""; }
+.bx.bx-bell::before { content: ""; }
+.bx.bx-bookmark::before { content: ""; }
+.bx.bx-bookmarks::before { content: ""; }
+.bx.bx-bullseye::before { content: ""; }
+.bx.bx-camera-off::before { content: ""; }
+.bx.bx-camera::before { content: ""; }
+.bx.bx-captions::before { content: ""; }
+.bx.bx-checkbox-checked::before { content: ""; }
+.bx.bx-checkbox::before { content: ""; }
+.bx.bx-checkbox-square::before { content: ""; }
+.bx.bx-chevron-down::before { content: ""; }
+.bx.bx-chevron-up::before { content: ""; }
+.bx.bx-chevron-left::before { content: ""; }
+.bx.bx-chevron-right::before { content: ""; }
+.bx.bx-chevrons-down::before { content: ""; }
+.bx.bx-chevrons-up::before { content: ""; }
+.bx.bx-chevrons-right::before { content: ""; }
+.bx.bx-chevrons-left::before { content: ""; }
+.bx.bx-clipboard::before { content: ""; }
+.bx.bx-code-curly::before { content: ""; }
+.bx.bx-code::before { content: ""; }
+.bx.bx-coffee::before { content: ""; }
+.bx.bx-copy::before { content: ""; }
+.bx.bx-copyright::before { content: ""; }
+.bx.bx-down-arrow-circle::before { content: ""; }
+.bx.bx-error-circle::before { content: ""; }
+.bx.bx-error::before { content: ""; }
+.bx.bx-exit-fullscreen::before { content: ""; }
+.bx.bx-fast-forward-circle::before { content: ""; }
+.bx.bx-fast-forward::before { content: ""; }
+.bx.bx-first-page::before { content: ""; }
+.bx.bx-folder-minus::before { content: ""; }
+.bx.bx-folder-plus::before { content: ""; }
+.bx.bx-folder::before { content: ""; }
+.bx.bx-fullscreen::before { content: ""; }
+.bx.bx-hide::before { content: ""; }
+.bx.bx-image::before { content: ""; }
+.bx.bx-info-circle::before { content: ""; }
+.bx.bx-align-justify::before { content: ""; }
+.bx.bx-key::before { content: ""; }
+.bx.bx-last-page::before { content: ""; }
+.bx.bx-left-arrow-circle::before { content: ""; }
+.bx.bx-left-down-arrow-circle::before { content: ""; }
+.bx.bx-left-indent::before { content: ""; }
+.bx.bx-left-top-arrow-circle::before { content: ""; }
+.bx.bx-menu::before { content: ""; }
+.bx.bx-microphone::before { content: ""; }
+.bx.bx-minus-circle::before { content: ""; }
+.bx.bx-moon::before { content: ""; }
+.bx.bx-pause-circle::before { content: ""; }
+.bx.bx-pause::before { content: ""; }
+.bx.bx-play-circle::before { content: ""; }
+.bx.bx-play::before { content: ""; }
+.bx.bx-plus-circle::before { content: ""; }
+.bx.bx-question-mark::before { content: ""; }
+.bx.bx-radio-circle-marked::before { content: ""; }
+.bx.bx-radio-circle::before { content: ""; }
+.bx.bx-rectangle::before { content: ""; }
+.bx.bx-rewind::before { content: ""; }
+.bx.bx-reset::before { content: ""; }
+.bx.bx-right-arrow-circle::before { content: ""; }
+.bx.bx-right-down-arrow-circle::before { content: ""; }
+.bx.bx-right-indent::before { content: ""; }
+.bx.bx-right-top-arrow-circle::before { content: ""; }
+.bx.bx-rss::before { content: ""; }
+.bx.bx-search::before { content: ""; }
+.bx.bx-show::before { content: ""; }
+.bx.bx-skip-next::before { content: ""; }
+.bx.bx-skip-previous::before { content: ""; }
+.bx.bx-stop-circle::before { content: ""; }
+.bx.bx-stop::before { content: ""; }
+.bx.bx-stopwatch::before { content: ""; }
+.bx.bx-sync::before { content: ""; }
+.bx.bx-time::before { content: ""; }
+.bx.bx-toggle-left::before { content: ""; }
+.bx.bx-toggle-right::before { content: ""; }
+.bx.bx-trending-down::before { content: ""; }
+.bx.bx-trending-up::before { content: ""; }
+.bx.bx-up-arrow-circle::before { content: ""; }
+.bx.bx-vertical-center::before { content: ""; }
+.bx.bx-video::before { content: ""; }
+.bx.bx-volume-full::before { content: ""; }
+.bx.bx-volume-low::before { content: ""; }
+.bx.bx-volume-mute::before { content: ""; }
+.bx.bx-volume::before { content: ""; }
+.bx.bx-x-circle::before { content: ""; }
+.bx.bx-zoom-in::before { content: ""; }
+.bx.bx-zoom-out::before { content: ""; }
+.bx.bx-archive::before { content: ""; }
+.bx.bx-at::before { content: ""; }
+.bx.bx-bar-chart-alt::before { content: ""; }
+.bx.bx-bar-chart-square::before { content: ""; }
+.bx.bx-bar-chart::before { content: ""; }
+.bx.bx-basketball::before { content: ""; }
+.bx.bx-block::before { content: ""; }
+.bx.bx-book-bookmark::before { content: ""; }
+.bx.bx-book::before { content: ""; }
+.bx.bx-bookmark-minus::before { content: ""; }
+.bx.bx-bookmark-plus::before { content: ""; }
+.bx.bx-briefcase::before { content: ""; }
+.bx.bx-broadcast::before { content: ""; }
+.bx.bx-building::before { content: ""; }
+.bx.bx-bug::before { content: ""; }
+.bx.bx-bluetooth::before { content: ""; }
+.bx.bx-bulb::before { content: ""; }
+.bx.bx-buoy::before { content: ""; }
+.bx.bx-calendar-plus::before { content: ""; }
+.bx.bx-calendar-check::before { content: ""; }
+.bx.bx-calendar-minus::before { content: ""; }
+.bx.bx-calendar-x::before { content: ""; }
+.bx.bx-calendar::before { content: ""; }
+.bx.bx-chart::before { content: ""; }
+.bx.bx-cloud-download::before { content: ""; }
+.bx.bx-cloud-upload::before { content: ""; }
+.bx.bx-cloud::before { content: ""; }
+.bx.bx-terminal::before { content: ""; }
+.bx.bx-crosshair::before { content: ""; }
+.bx.bx-compass::before { content: ""; }
+.bx.bx-data::before { content: ""; }
+.bx.bx-desktop::before { content: ""; }
+.bx.bx-directions::before { content: ""; }
+.bx.bx-dollar::before { content: ""; }
+.bx.bx-dots-horizontal-rounded::before { content: ""; }
+.bx.bx-dots-horizontal::before { content: ""; }
+.bx.bx-dots-vertical-rounded::before { content: ""; }
+.bx.bx-dots-vertical::before { content: ""; }
+.bx.bx-download::before { content: ""; }
+.bx.bx-envelope::before { content: ""; }
+.bx.bx-gift::before { content: ""; }
+.bx.bx-globe::before { content: ""; }
+.bx.bx-devices::before { content: ""; }
+.bx.bx-headphone::before { content: ""; }
+.bx.bx-heart::before { content: ""; }
+.bx.bx-home::before { content: ""; }
+.bx.bx-laptop::before { content: ""; }
+.bx.bx-layer::before { content: ""; }
+.bx.bx-link-alt::before { content: ""; }
+.bx.bx-link::before { content: ""; }
+.bx.bx-list-plus::before { content: ""; }
+.bx.bx-list-ul::before { content: ""; }
+.bx.bx-list-minus::before { content: ""; }
+.bx.bx-lock-open::before { content: ""; }
+.bx.bx-lock::before { content: ""; }
+.bx.bx-map-alt::before { content: ""; }
+.bx.bx-map::before { content: ""; }
+.bx.bx-message-rounded::before { content: ""; }
+.bx.bx-message::before { content: ""; }
+.bx.bx-mobile-alt::before { content: ""; }
+.bx.bx-mobile::before { content: ""; }
+.bx.bx-navigation::before { content: ""; }
+.bx.bx-phone::before { content: ""; }
+.bx.bx-pie-chart::before { content: ""; }
+.bx.bx-send::before { content: ""; }
+.bx.bx-sidebar::before { content: ""; }
+.bx.bx-sitemap::before { content: ""; }
+.bx.bx-spreadsheet::before { content: ""; }
+.bx.bx-tab::before { content: ""; }
+.bx.bx-tag::before { content: ""; }
+.bx.bx-target-lock::before { content: ""; }
+.bx.bx-tennis-ball::before { content: ""; }
+.bx.bx-alarm::before { content: ""; }
+.bx.bx-upload::before { content: ""; }
+.bx.bx-usb::before { content: ""; }
+.bx.bx-video-off::before { content: ""; }
+.bx.bx-voicemail::before { content: ""; }
+.bx.bx-wifi::before { content: ""; }
+.bx.bx-window-open::before { content: ""; }
+.bx.bx-window::before { content: ""; }
+.bx.bx-windows::before { content: ""; }
+.bx.bx-duplicate::before { content: ""; }
+.bx.bx-table::before { content: ""; }
+.bx.bx-x::before { content: ""; }
+.bx.bx-adjust::before { content: ""; }
+.bx.bx-album::before { content: ""; }
+.bx.bx-anchor::before { content: ""; }
+.bx.bx-award::before { content: ""; }
+.bx.bx-bold::before { content: ""; }
+.bx.bx-calculator::before { content: ""; }
+.bx.bx-cart::before { content: ""; }
+.bx.bx-check::before { content: ""; }
+.bx.bx-cloud-drizzle::before { content: ""; }
+.bx.bx-cloud-light-rain::before { content: ""; }
+.bx.bx-cloud-lightning::before { content: ""; }
+.bx.bx-cloud-rain::before { content: ""; }
+.bx.bx-cloud-snow::before { content: ""; }
+.bx.bx-cog::before { content: ""; }
+.bx.bx-columns::before { content: ""; }
+.bx.bx-credit-card::before { content: ""; }
+.bx.bx-crop::before { content: ""; }
+.bx.bx-cube::before { content: ""; }
+.bx.bx-cut::before { content: ""; }
+.bx.bx-detail::before { content: ""; }
+.bx.bx-shield-quarter::before { content: ""; }
+.bx.bx-edit::before { content: ""; }
+.bx.bx-file::before { content: ""; }
+.bx.bx-filter::before { content: ""; }
+.bx.bx-font::before { content: ""; }
+.bx.bx-git-branch::before { content: ""; }
+.bx.bx-git-commit::before { content: ""; }
+.bx.bx-git-compare::before { content: ""; }
+.bx.bx-git-merge::before { content: ""; }
+.bx.bx-git-pull-request::before { content: ""; }
+.bx.bx-git-repo-forked::before { content: ""; }
+.bx.bx-group::before { content: ""; }
+.bx.bx-hash::before { content: ""; }
+.bx.bx-heading::before { content: ""; }
+.bx.bx-home-alt::before { content: ""; }
+.bx.bx-italic::before { content: ""; }
+.bx.bx-joystick::before { content: ""; }
+.bx.bx-link-external::before { content: ""; }
+.bx.bx-log-in::before { content: ""; }
+.bx.bx-log-out::before { content: ""; }
+.bx.bx-microphone-off::before { content: ""; }
+.bx.bx-minus::before { content: ""; }
+.bx.bx-mouse::before { content: ""; }
+.bx.bx-move::before { content: ""; }
+.bx.bx-music::before { content: ""; }
+.bx.bx-notification::before { content: ""; }
+.bx.bx-package::before { content: ""; }
+.bx.bx-paragraph::before { content: ""; }
+.bx.bx-paste::before { content: ""; }
+.bx.bx-pencil::before { content: ""; }
+.bx.bx-pin::before { content: ""; }
+.bx.bx-plus::before { content: ""; }
+.bx.bx-power-off::before { content: ""; }
+.bx.bx-pulse::before { content: ""; }
+.bx.bx-save::before { content: ""; }
+.bx.bx-screenshot::before { content: ""; }
+.bx.bx-select-multiple::before { content: ""; }
+.bx.bx-share-alt::before { content: ""; }
+.bx.bx-share::before { content: ""; }
+.bx.bx-shield-alt::before { content: ""; }
+.bx.bx-shield::before { content: ""; }
+.bx.bx-shopping-bag::before { content: ""; }
+.bx.bx-shuffle::before { content: ""; }
+.bx.bx-sort::before { content: ""; }
+.bx.bx-star::before { content: ""; }
+.bx.bx-sun::before { content: ""; }
+.bx.bx-text::before { content: ""; }
+.bx.bx-trash::before { content: ""; }
+.bx.bx-trophy::before { content: ""; }
+.bx.bx-underline::before { content: ""; }
+.bx.bx-user-check::before { content: ""; }
+.bx.bx-user-circle::before { content: ""; }
+.bx.bx-user-minus::before { content: ""; }
+.bx.bx-user-plus::before { content: ""; }
+.bx.bx-user-x::before { content: ""; }
+.bx.bx-user::before { content: ""; }
+.bx.bx-barcode::before { content: ""; }
+.bx.bx-crown::before { content: ""; }
+.bx.bx-dislike::before { content: ""; }
+.bx.bx-down-arrow::before { content: ""; }
+.bx.bx-export::before { content: ""; }
+.bx.bxl-facebook::before { content: ""; }
+.bx.bx-first-aid::before { content: ""; }
+.bx.bx-flag::before { content: ""; }
+.bx.bxl-github::before { content: ""; }
+.bx.bxl-google::before { content: ""; }
+.bx.bx-history::before { content: ""; }
+.bx.bxl-instagram::before { content: ""; }
+.bx.bx-joystick-alt::before { content: ""; }
+.bx.bx-left-arrow::before { content: ""; }
+.bx.bx-like::before { content: ""; }
+.bx.bx-list-check::before { content: ""; }
+.bx.bx-poll::before { content: ""; }
+.bx.bx-radar::before { content: ""; }
+.bx.bx-redo::before { content: ""; }
+.bx.bx-reply-all::before { content: ""; }
+.bx.bx-reply::before { content: ""; }
+.bx.bx-repost::before { content: ""; }
+.bx.bx-revision::before { content: ""; }
+.bx.bx-right-arrow::before { content: ""; }
+.bx.bx-subdirectory-left::before { content: ""; }
+.bx.bx-subdirectory-right::before { content: ""; }
+.bx.bx-support::before { content: ""; }
+.bx.bx-timer::before { content: ""; }
+.bx.bxl-twitter::before { content: ""; }
+.bx.bx-undo::before { content: ""; }
+.bx.bx-up-arrow::before { content: ""; }
+.bx.bxl-youtube::before { content: ""; }
+.bx.bxl-whatsapp::before { content: ""; }
+.bx.bxl-tumblr::before { content: ""; }
+.bx.bx-phone-call::before { content: ""; }
+.bx.bxl-behance::before { content: ""; }
+.bx.bxl-dribbble::before { content: ""; }
+.bx.bx-aperture::before { content: ""; }
+.bx.bx-film::before { content: ""; }
+.bx.bx-folder-open::before { content: ""; }
+.bx.bx-task::before { content: ""; }
+.bx.bx-server::before { content: ""; }
+.bx.bx-battery::before { content: ""; }
+.bx.bx-calendar-alt::before { content: ""; }
+.bx.bx-import::before { content: ""; }
+.bx.bx-ruler::before { content: ""; }
+.bx.bx-horizontal-center::before { content: ""; }
+.bx.bx-rotate-right::before { content: ""; }
+.bx.bx-rename::before { content: ""; }
+.bx.bx-collapse::before { content: ""; }
+.bx.bx-phone-incoming::before { content: ""; }
+.bx.bx-phone-outgoing::before { content: ""; }
+.bx.bx-body::before { content: ""; }
+.bx.bx-cast::before { content: ""; }
+.bx.bx-chip::before { content: ""; }
+.bx.bx-skip-next-circle::before { content: ""; }
+.bx.bx-skip-previous-circle::before { content: ""; }
+.bx.bx-hdd::before { content: ""; }
+.bx.bx-store::before { content: ""; }
+.bx.bx-globe-alt::before { content: ""; }
+.bx.bxl-vimeo::before { content: ""; }
+.bx.bx-upvote::before { content: ""; }
+.bx.bx-downvote::before { content: ""; }
+.bx.bx-news::before { content: ""; }
+.bx.bx-pie-chart-alt::before { content: ""; }
+.bx.bx-images::before { content: ""; }
+.bx.bx-purchase-tag::before { content: ""; }
+.bx.bx-pen::before { content: ""; }
+.bx.bx-expand::before { content: ""; }
+.bx.bx-paperclip::before { content: ""; }
+.bx.bx-closet::before { content: ""; }
+.bx.bx-tv::before { content: ""; }
+.bx.bx-collection::before { content: ""; }
+.bx.bx-station::before { content: ""; }
+.bx.bx-wallet::before { content: ""; }
+.bx.bx-briefcase-alt::before { content: ""; }
+.bx.bx-hourglass::before { content: ""; }
+.bx.bx-carousel::before { content: ""; }
+.bx.bx-infinite::before { content: ""; }
+.bx.bx-plug::before { content: ""; }
+.bx.bx-notification-off::before { content: ""; }
+.bx.bx-window-close::before { content: ""; }
+.bx.bx-command::before { content: ""; }
+.bx.bx-grid-alt::before { content: ""; }
+.bx.bx-trash-alt::before { content: ""; }
+.bx.bx-chalkboard::before { content: ""; }
+.bx.bx-loader::before { content: ""; }
+.bx.bx-slider::before { content: ""; }
+.bx.bx-paper-plane::before { content: ""; }
+.bx.bx-selection::before { content: ""; }
+.bx.bxl-linkedin::before { content: ""; }
+.bx.bx-world::before { content: ""; }
+.bx.bx-dock-bottom::before { content: ""; }
+.bx.bx-dock-right::before { content: ""; }
+.bx.bx-dock-top::before { content: ""; }
+.bx.bx-dock-left::before { content: ""; }
+.bx.bx-layout::before { content: ""; }
+.bx.bxl-bitcoin::before { content: ""; }
+.bx.bxl-facebook-square::before { content: ""; }
+.bx.bx-alarm-off::before { content: ""; }
+.bx.bx-wrench::before { content: ""; }
+.bx.bx-loader-circle::before { content: ""; }
+.bx.bx-loader-alt::before { content: ""; }
+.bx.bx-car::before { content: ""; }
+.bx.bx-cart-alt::before { content: ""; }
+.bx.bxs-adjust::before { content: ""; }
+.bx.bxs-alarm::before { content: ""; }
+.bx.bxs-alarm-off::before { content: ""; }
+.bx.bxs-album::before { content: ""; }
+.bx.bxs-archive::before { content: ""; }
+.bx.bxs-camera::before { content: ""; }
+.bx.bxs-camera-off::before { content: ""; }
+.bx.bxs-folder::before { content: ""; }
+.bx.bxs-folder-plus::before { content: ""; }
+.bx.bxs-award::before { content: ""; }
+.bx.bxs-bar-chart-square::before { content: ""; }
+.bx.bxs-barcode::before { content: ""; }
+.bx.bxs-battery::before { content: ""; }
+.bx.bxs-battery-charging::before { content: ""; }
+.bx.bxs-battery-full::before { content: ""; }
+.bx.bxs-bell::before { content: ""; }
+.bx.bxs-bell-off::before { content: ""; }
+.bx.bxs-bolt::before { content: ""; }
+.bx.bxs-book::before { content: ""; }
+.bx.bxs-book-bookmark::before { content: ""; }
+.bx.bxs-bookmark::before { content: ""; }
+.bx.bxs-bookmark-plus::before { content: ""; }
+.bx.bxs-book-open::before { content: ""; }
+.bx.bxs-bookmark-star::before { content: ""; }
+.bx.bxs-briefcase::before { content: ""; }
+.bx.bxs-briefcase-alt::before { content: ""; }
+.bx.bxs-bug::before { content: ""; }
+.bx.bxs-building::before { content: ""; }
+.bx.bxs-bulb::before { content: ""; }
+.bx.bxs-buoy::before { content: ""; }
+.bx.bxs-calculator::before { content: ""; }
+.bx.bxs-captions::before { content: ""; }
+.bx.bxs-car::before { content: ""; }
+.bx.bxs-cart-alt::before { content: ""; }
+.bx.bxs-cart::before { content: ""; }
+.bx.bxs-chart::before { content: ""; }
+.bx.bxs-chip::before { content: ""; }
+.bx.bxs-cloud-download::before { content: ""; }
+.bx.bxs-cloud-upload::before { content: ""; }
+.bx.bxs-cloud::before { content: ""; }
+.bx.bxs-coffee::before { content: ""; }
+.bx.bxs-cog::before { content: ""; }
+.bx.bxs-collection::before { content: ""; }
+.bx.bxs-contact::before { content: ""; }
+.bx.bxs-copy::before { content: ""; }
+.bx.bxs-coupon::before { content: ""; }
+.bx.bxs-crown::before { content: ""; }
+.bx.bxs-cube::before { content: ""; }
+.bx.bxs-detail::before { content: ""; }
+.bx.bxs-discount::before { content: ""; }
+.bx.bxs-dislike::before { content: ""; }
+.bx.bxs-dock-bottom::before { content: ""; }
+.bx.bxs-dock-left::before { content: ""; }
+.bx.bxs-dock-right::before { content: ""; }
+.bx.bxs-dock-top::before { content: ""; }
+.bx.bxs-down-arrow-circle::before { content: ""; }
+.bx.bxs-download::before { content: ""; }
+.bx.bxs-downvote::before { content: ""; }
+.bx.bxs-drink::before { content: ""; }
+.bx.bxs-droplet::before { content: ""; }
+.bx.bxs-duplicate::before { content: ""; }
+.bx.bxs-eject::before { content: ""; }
+.bx.bxs-envelope::before { content: ""; }
+.bx.bxs-error-circle::before { content: ""; }
+.bx.bxs-error::before { content: ""; }
+.bx.bxs-file-image::before { content: ""; }
+.bx.bxs-file::before { content: ""; }
+.bx.bxs-filter-alt::before { content: ""; }
+.bx.bxs-first-aid::before { content: ""; }
+.bx.bxs-flag-alt::before { content: ""; }
+.bx.bxs-flag::before { content: ""; }
+.bx.bxs-gift::before { content: ""; }
+.bx.bxs-grid-alt::before { content: ""; }
+.bx.bxs-group::before { content: ""; }
+.bx.bxs-hdd::before { content: ""; }
+.bx.bxs-heart::before { content: ""; }
+.bx.bxs-hide::before { content: ""; }
+.bx.bxs-home::before { content: ""; }
+.bx.bxs-hot::before { content: ""; }
+.bx.bxs-hourglass::before { content: ""; }
+.bx.bxs-image::before { content: ""; }
+.bx.bxs-inbox::before { content: ""; }
+.bx.bxs-info-circle::before { content: ""; }
+.bx.bxs-joystick-alt::before { content: ""; }
+.bx.bxs-joystick::before { content: ""; }
+.bx.bxs-layer::before { content: ""; }
+.bx.bxs-left-arrow-circle::before { content: ""; }
+.bx.bxs-like::before { content: ""; }
+.bx.bxs-lock-open::before { content: ""; }
+.bx.bxs-lock::before { content: ""; }
+.bx.bxs-map-alt::before { content: ""; }
+.bx.bxs-map::before { content: ""; }
+.bx.bxs-message-rounded::before { content: ""; }
+.bx.bxs-message::before { content: ""; }
+.bx.bxs-microphone-off::before { content: ""; }
+.bx.bxs-microphone::before { content: ""; }
+.bx.bxs-minus-circle::before { content: ""; }
+.bx.bxs-moon::before { content: ""; }
+.bx.bxs-mouse::before { content: ""; }
+.bx.bxs-music::before { content: ""; }
+.bx.bxs-navigation::before { content: ""; }
+.bx.bxs-news::before { content: ""; }
+.bx.bxs-package::before { content: ""; }
+.bx.bxs-paper-plane::before { content: ""; }
+.bx.bxs-paste::before { content: ""; }
+.bx.bxs-pen::before { content: ""; }
+.bx.bxs-pencil::before { content: ""; }
+.bx.bxs-phone-call::before { content: ""; }
+.bx.bxs-phone-incoming::before { content: ""; }
+.bx.bxs-phone-outgoing::before { content: ""; }
+.bx.bxs-phone::before { content: ""; }
+.bx.bxs-pie-chart-alt::before { content: ""; }
+.bx.bxs-pie-chart::before { content: ""; }
+.bx.bxs-pin::before { content: ""; }
+.bx.bxs-playlist::before { content: ""; }
+.bx.bxs-plug::before { content: ""; }
+.bx.bxs-plus-circle::before { content: ""; }
+.bx.bxs-printer::before { content: ""; }
+.bx.bxs-purchase-tag::before { content: ""; }
+.bx.bxs-quote-left::before { content: ""; }
+.bx.bxs-quote-right::before { content: ""; }
+.bx.bxs-radio::before { content: ""; }
+.bx.bxs-rename::before { content: ""; }
+.bx.bxs-report::before { content: ""; }
+.bx.bxs-right-arrow-circle::before { content: ""; }
+.bx.bxs-ruler::before { content: ""; }
+.bx.bxs-save::before { content: ""; }
+.bx.bxs-sort-alt::before { content: ""; }
+.bx.bxs-select-multiple::before { content: ""; }
+.bx.bxs-send::before { content: ""; }
+.bx.bxs-server::before { content: ""; }
+.bx.bxs-share-alt::before { content: ""; }
+.bx.bxs-share::before { content: ""; }
+.bx.bxs-shield::before { content: ""; }
+.bx.bxs-shopping-bag-alt::before { content: ""; }
+.bx.bxs-shopping-bag::before { content: ""; }
+.bx.bxs-show::before { content: ""; }
+.bx.bx-happy::before { content: ""; }
+.bx.bx-meh::before { content: ""; }
+.bx.bx-sad::before { content: ""; }
+.bx.bxs-spreadsheet::before { content: ""; }
+.bx.bxs-star::before { content: ""; }
+.bx.bxs-store::before { content: ""; }
+.bx.bxs-sun::before { content: ""; }
+.bx.bxs-t-shirt::before { content: ""; }
+.bx.bxs-tag-x::before { content: ""; }
+.bx.bxs-tag::before { content: ""; }
+.bx.bxs-tennis-ball::before { content: ""; }
+.bx.bxs-terminal::before { content: ""; }
+.bx.bxs-to-top::before { content: ""; }
+.bx.bxs-toggle-left::before { content: ""; }
+.bx.bxs-toggle-right::before { content: ""; }
+.bx.bxs-torch::before { content: ""; }
+.bx.bxs-trash-alt::before { content: ""; }
+.bx.bxs-trash::before { content: ""; }
+.bx.bxs-trophy::before { content: ""; }
+.bx.bxs-truck::before { content: ""; }
+.bx.bxs-up-arrow-circle::before { content: ""; }
+.bx.bxs-upvote::before { content: ""; }
+.bx.bxs-user-circle::before { content: ""; }
+.bx.bxs-user-detail::before { content: ""; }
+.bx.bxs-user-minus::before { content: ""; }
+.bx.bxs-user-plus::before { content: ""; }
+.bx.bxs-user::before { content: ""; }
+.bx.bxs-video-off::before { content: ""; }
+.bx.bxs-video::before { content: ""; }
+.bx.bxs-videos::before { content: ""; }
+.bx.bxs-volume-full::before { content: ""; }
+.bx.bxs-volume-low::before { content: ""; }
+.bx.bxs-volume-mute::before { content: ""; }
+.bx.bxs-volume::before { content: ""; }
+.bx.bxs-wallet::before { content: ""; }
+.bx.bxs-watch-alt::before { content: ""; }
+.bx.bxs-watch::before { content: ""; }
+.bx.bxs-widget::before { content: ""; }
+.bx.bxs-wrench::before { content: ""; }
+.bx.bxs-x-circle::before { content: ""; }
+.bx.bxs-zap::before { content: ""; }
+.bx.bxs-folder-open::before { content: ""; }
+.bx.bxs-battery-low::before { content: ""; }
+.bx.bxs-conversation::before { content: ""; }
+.bx.bxs-dashboard::before { content: ""; }
+.bx.bxs-file-plus::before { content: ""; }
+.bx.bx-slider-alt::before { content: ""; }
+.bx.bxl-google-plus::before { content: ""; }
+.bx.bxl-google-plus-circle::before { content: ""; }
+.bx.bxl-linkedin-square::before { content: ""; }
+.bx.bxl-medium::before { content: ""; }
+.bx.bxl-medium-square::before { content: ""; }
+.bx.bxl-skype::before { content: ""; }
+.bx.bxl-slack-old::before { content: ""; }
+.bx.bxl-slack::before { content: ""; }
+.bx.bxl-twitch::before { content: ""; }
+.bx.bxl-discord::before { content: ""; }
+.bx.bxl-reddit::before { content: ""; }
+.bx.bxl-pinterest::before { content: ""; }
+.bx.bxl-blogger::before { content: ""; }
+.bx.bx-certification::before { content: ""; }
+.bx.bxs-certification::before { content: ""; }
+.bx.bx-rocket::before { content: ""; }
+.bx.bxs-rocket::before { content: ""; }
+.bx.bx-check-circle::before { content: ""; }
+.bx.bxs-check-circle::before { content: ""; }
+.bx.bxs-checkbox::before { content: ""; }
+.bx.bxs-checkbox-checked::before { content: ""; }
+.bx.bxs-star-half::before { content: ""; }
+.bx.bx-bus::before { content: ""; }
+.bx.bxs-bus::before { content: ""; }
+.bx.bx-check-double::before { content: ""; }
+.bx.bx-dumbbell::before { content: ""; }
+.bx.bx-bot::before { content: ""; }
+.bx.bx-area::before { content: ""; }
+.bx.bxs-bot::before { content: ""; }
+.bx.bxs-area::before { content: ""; }
+.bx.bx-bed::before { content: ""; }
+.bx.bxs-bed::before { content: ""; }
+.bx.bx-bath::before { content: ""; }
+.bx.bxs-bath::before { content: ""; }
+.bx.bx-train::before { content: ""; }
+.bx.bxs-train::before { content: ""; }
+.bx.bx-taxi::before { content: ""; }
+.bx.bxs-taxi::before { content: ""; }
+.bx.bx-movie::before { content: ""; }
+.bx.bxs-movie::before { content: ""; }
+.bx.bx-hotel::before { content: ""; }
+.bx.bx-planet::before { content: ""; }
+.bx.bxs-planet::before { content: ""; }
+.bx.bx-list-ol::before { content: ""; }
+.bx.bx-video-plus::before { content: ""; }
+.bx.bxs-video-plus::before { content: ""; }
+.bx.bx-menu-alt-left::before { content: ""; }
+.bx.bx-menu-alt-right::before { content: ""; }
+.bx.bx-box::before { content: ""; }
+.bx.bxs-box::before { content: ""; }
+.bx.bxs-key::before { content: ""; }
+.bx.bx-restaurant::before { content: ""; }
+.bx.bx-swim::before { content: ""; }
+.bx.bx-water::before { content: ""; }
+.bx.bx-wind::before { content: ""; }
+.bx.bx-dialpad::before { content: ""; }
+.bx.bx-handicap::before { content: ""; }
+.bx.bx-font-size::before { content: ""; }
+.bx.bx-code-block::before { content: ""; }
+.bx.bx-photo-album::before { content: ""; }
+.bx.bxs-photo-album::before { content: ""; }
+.bx.bxs-bell-ring::before { content: ""; }
+.bx.bxl-apple::before { content: ""; }
+.bx.bxl-android::before { content: ""; }
+.bx.bxl-play-store::before { content: ""; }
+.bx.bxl-windows::before { content: ""; }
+.bx.bxl-vk::before { content: ""; }
+.bx.bxl-pocket::before { content: ""; }
+.bx.bx-strikethrough::before { content: ""; }
+.bx.bx-file-blank::before { content: ""; }
+.bx.bxs-file-blank::before { content: ""; }
+.bx.bx-highlight::before { content: ""; }
+.bx.bx-font-color::before { content: ""; }
+.bx.bx-fingerprint::before { content: ""; }
+.bx.bx-transfer::before { content: ""; }
+.bx.bx-circle::before { content: ""; }
+.bx.bxs-edit::before { content: ""; }
+.bx.bx-ball::before { content: ""; }
+.bx.bxs-ball::before { content: ""; }
+.bx.bx-football::before { content: ""; }
+.bx.bxs-film::before { content: ""; }
+.bx.bx-dollar-circle::before { content: ""; }
+.bx.bxs-dollar-circle::before { content: ""; }
+.bx.bxs-skull::before { content: ""; }
+.bx.bxl-messenger::before { content: ""; }
+.bx.bx-search-alt::before { content: ""; }
+.bx.bxs-image-alt::before { content: ""; }
+.bx.bxs-microphone-alt::before { content: ""; }
+.bx.bx-analyse::before { content: ""; }
+.bx.bxs-x-square::before { content: ""; }
+.bx.bxs-plus-square::before { content: ""; }
+.bx.bxs-minus-square::before { content: ""; }
+.bx.bx-disc::before { content: ""; }
+.bx.bxs-disc::before { content: ""; }
+.bx.bx-equalizer::before { content: ""; }
+.bx.bx-stats::before { content: ""; }
+.bx.bx-move-horizontal::before { content: ""; }
+.bx.bx-move-vertical::before { content: ""; }
+.bx.bxs-flame::before { content: ""; }
+.bx.bx-grid-horizontal::before { content: ""; }
+.bx.bx-grid-vertical::before { content: ""; }
+.bx.bx-grid-small::before { content: ""; }
+.bx.bx-badge::before { content: ""; }
+.bx.bxs-badge::before { content: ""; }
+.bx.bx-id-card::before { content: ""; }
+.bx.bx-sort-up::before { content: ""; }
+.bx.bx-sort-down::before { content: ""; }
+.bx.bx-note::before { content: ""; }
+.bx.bxs-note::before { content: ""; }
+.bx.bx-test-tube::before { content: ""; }
+.bx.bx-help-circle::before { content: ""; }
+.bx.bxs-help-circle::before { content: ""; }
+.bx.bx-card::before { content: ""; }
+.bx.bxs-card::before { content: ""; }
+.bx.bx-rewind-circle::before { content: ""; }
+.bx.bx-magnet::before { content: ""; }
+.bx.bxs-magnet::before { content: ""; }
+.bx.bxl-500px::before { content: ""; }
+.bx.bxl-angular::before { content: ""; }
+.bx.bxl-codepen::before { content: ""; }
+.bx.bxl-creative-commons::before { content: ""; }
+.bx.bxl-digitalocean::before { content: ""; }
+.bx.bxl-deviantart::before { content: ""; }
+.bx.bxl-discourse::before { content: ""; }
+.bx.bxl-dropbox::before { content: ""; }
+.bx.bxl-drupal::before { content: ""; }
+.bx.bxl-ebay::before { content: ""; }
+.bx.bxl-amazon::before { content: ""; }
+.bx.bxl-digg::before { content: ""; }
+.bx.bxl-unsplash::before { content: ""; }
+.bx.bxl-wikipedia::before { content: ""; }
+.bx.bxl-sass::before { content: ""; }
+.bx.bxl-foursquare::before { content: ""; }
+.bx.bxl-invision::before { content: ""; }
+.bx.bxl-opera::before { content: ""; }
+.bx.bxl-airbnb::before { content: ""; }
+.bx.bxl-yelp::before { content: ""; }
+.bx.bxl-quora::before { content: ""; }
+.bx.bxl-git::before { content: ""; }
+.bx.bxl-html5::before { content: ""; }
+.bx.bxl-product-hunt::before { content: ""; }
+.bx.bxl-magento::before { content: ""; }
+.bx.bxl-stack-overflow::before { content: ""; }
+.bx.bxl-firefox::before { content: ""; }
+.bx.bxl-javascript::before { content: ""; }
+.bx.bxl-nodejs::before { content: ""; }
+.bx.bxl-kickstarter::before { content: ""; }
+.bx.bxl-vuejs::before { content: ""; }
+.bx.bxl-bing::before { content: ""; }
+.bx.bxl-react::before { content: ""; }
+.bx.bxl-periscope::before { content: ""; }
+.bx.bxl-wordpress::before { content: ""; }
+.bx.bxl-telegram::before { content: ""; }
+.bx.bxl-stripe::before { content: ""; }
+.bx.bxl-edge::before { content: ""; }
+.bx.bxl-paypal::before { content: ""; }
+.bx.bxl-internet-explorer::before { content: ""; }
+.bx.bxl-joomla::before { content: ""; }
+.bx.bxl-dailymotion::before { content: ""; }
+.bx.bxl-chrome::before { content: ""; }
+.bx.bxl-baidu::before { content: ""; }
+.bx.bxl-visa::before { content: ""; }
+.bx.bxl-mastercard::before { content: ""; }
+.bx.bxl-redux::before { content: ""; }
+.bx.bxl-bootstrap::before { content: ""; }
+.bx.bxl-yahoo::before { content: ""; }
+.bx.bxl-microsoft::before { content: ""; }
+.bx.bxl-css3::before { content: ""; }
+.bx.bxl-jsfiddle::before { content: ""; }
+.bx.bxl-shopify::before { content: ""; }
+.bx.bxl-flickr::before { content: ""; }
+.bx.bxl-less::before { content: ""; }
+.bx.bxl-snapchat::before { content: ""; }
+.bx.bxl-soundcloud::before { content: ""; }
+.bx.bxl-spotify::before { content: ""; }
+.bx.bxl-trello::before { content: ""; }
+.bx.bxl-wix::before { content: ""; }
+.bx.bxl-mailchimp::before { content: ""; }
+.bx.bxl-medium-old::before { content: ""; }
+.bx.bxl-squarespace::before { content: ""; }
+.bx.bxl-whatsapp-square::before { content: ""; }
+.bx.bxl-flickr-square::before { content: ""; }
+.bx.bxs-ambulance::before { content: ""; }
+.bx.bxs-left-arrow-square::before { content: ""; }
+.bx.bxs-up-arrow-square::before { content: ""; }
+.bx.bxs-down-arrow-square::before { content: ""; }
+.bx.bxs-right-arrow-square::before { content: ""; }
+.bx.bxs-user-badge::before { content: ""; }
+.bx.bx-calendar-event::before { content: ""; }
+.bx.bx-caret-left::before { content: ""; }
+.bx.bx-caret-up::before { content: ""; }
+.bx.bx-caret-right::before { content: ""; }
+.bx.bx-caret-down::before { content: ""; }
+.bx.bxs-gas-pump::before { content: ""; }
+.bx.bxs-landmark::before { content: ""; }
+.bx.bx-show-alt::before { content: ""; }
+.bx.bx-badge-check::before { content: ""; }
+.bx.bxs-badge-check::before { content: ""; }
+.bx.bx-rotate-left::before { content: ""; }
+.bx.bxs-coffee-alt::before { content: ""; }
+.bx.bx-brush::before { content: ""; }
+.bx.bxs-brush::before { content: ""; }
+.bx.bxs-keyboard::before { content: ""; }
+.bx.bxs-megaphone::before { content: ""; }
+.bx.bxs-directions::before { content: ""; }
+.bx.bxs-direction-right::before { content: ""; }
+.bx.bx-unlink::before { content: ""; }
+.bx.bx-paint::before { content: ""; }
+.bx.bx-joystick-button::before { content: ""; }
+.bx.bxs-joystick-button::before { content: ""; }
+.bx.bx-font-family::before { content: ""; }
+.bx.bxs-flask::before { content: ""; }
+.bx.bxs-capsule::before { content: ""; }
+.bx.bxs-color-fill::before { content: ""; }
+.bx.bxs-hotel::before { content: ""; }
+.bx.bxs-magic-wand::before { content: ""; }
+.bx.bx-repeat::before { content: ""; }
+.bx.bxs-eraser::before { content: ""; }
+.bx.bxs-cloud-rain::before { content: ""; }
+.bx.bxs-cloud-lightning::before { content: ""; }
+.bx.bxs-eyedropper::before { content: ""; }
+.bx.bxs-user-rectangle::before { content: ""; }
+.bx.bxs-plane::before { content: ""; }
+.bx.bxs-tree::before { content: ""; }
+.bx.bxs-factory::before { content: ""; }
+.bx.bxs-ship::before { content: ""; }
+.bx.bx-walk::before { content: ""; }
+.bx.bxs-yin-yang::before { content: ""; }
+.bx.bxs-file-pdf::before { content: ""; }
+.bx.bx-money::before { content: ""; }
+.bx.bx-home-circle::before { content: ""; }
+.bx.bxs-home-circle::before { content: ""; }
+.bx.bx-location-plus::before { content: ""; }
+.bx.bxs-location-plus::before { content: ""; }
+.bx.bx-arch::before { content: ""; }
+.bx.bxs-arch::before { content: ""; }
+.bx.bx-atom::before { content: ""; }
+.bx.bxs-badge-dollar::before { content: ""; }
+.bx.bx-baseball::before { content: ""; }
+.bx.bx-beer::before { content: ""; }
+.bx.bxs-beer::before { content: ""; }
+.bx.bx-bible::before { content: ""; }
+.bx.bxs-bible::before { content: ""; }
+.bx.bx-bomb::before { content: ""; }
+.bx.bxs-bomb::before { content: ""; }
+.bx.bx-bus-school::before { content: ""; }
+.bx.bxs-bus-school::before { content: ""; }
+.bx.bx-cabinet::before { content: ""; }
+.bx.bxs-cabinet::before { content: ""; }
+.bx.bx-calendar-edit::before { content: ""; }
+.bx.bxs-calendar-edit::before { content: ""; }
+.bx.bxs-car-wash::before { content: ""; }
+.bx.bxs-car-garage::before { content: ""; }
+.bx.bxs-car-mechanic::before { content: ""; }
+.bx.bxs-car-crash::before { content: ""; }
+.bx.bx-coffee-togo::before { content: ""; }
+.bx.bxs-coffee-togo::before { content: ""; }
+.bx.bxs-chess::before { content: ""; }
+.bx.bxs-dryer::before { content: ""; }
+.bx.bxs-washer::before { content: ""; }
+.bx.bx-pointer::before { content: ""; }
+.bx.bxs-pointer::before { content: ""; }
+.bx.bx-microchip::before { content: ""; }
+.bx.bxs-microchip::before { content: ""; }
+.bx.bxs-piano::before { content: ""; }
+.bx.bxs-file-export::before { content: ""; }
+.bx.bxs-file-import::before { content: ""; }
+.bx.bxs-flag-checkered::before { content: ""; }
+.bx.bx-heart-circle::before { content: ""; }
+.bx.bxs-heart-circle::before { content: ""; }
+.bx.bx-heart-square::before { content: ""; }
+.bx.bxs-heart-square::before { content: ""; }
+.bx.bx-home-heart::before { content: ""; }
+.bx.bxs-home-heart::before { content: ""; }
+.bx.bx-info-square::before { content: ""; }
+.bx.bxs-info-square::before { content: ""; }
+.bx.bx-layer-plus::before { content: ""; }
+.bx.bxs-layer-plus::before { content: ""; }
+.bx.bx-layer-minus::before { content: ""; }
+.bx.bxs-layer-minus::before { content: ""; }
+.bx.bx-recycle::before { content: ""; }
+.bx.bx-traffic-cone::before { content: ""; }
+.bx.bxs-traffic-cone::before { content: ""; }
+.bx.bx-wifi-2::before { content: ""; }
+.bx.bx-wifi-1::before { content: ""; }
+.bx.bx-wifi-0::before { content: ""; }
+.bx.bx-mask::before { content: ""; }
+.bx.bxs-mask::before { content: ""; }
+.bx.bx-low-vision::before { content: ""; }
+.bx.bxs-low-vision::before { content: ""; }
+.bx.bxs-radiation::before { content: ""; }
+.bx.bx-been-here::before { content: ""; }
+.bx.bxs-been-here::before { content: ""; }
+.bx.bx-current-location::before { content: ""; }
+.bx.bx-arrow-from-top::before { content: ""; }
+.bx.bxs-arrow-from-top::before { content: ""; }
+.bx.bx-arrow-from-bottom::before { content: ""; }
+.bx.bxs-arrow-from-bottom::before { content: ""; }
+.bx.bx-arrow-from-left::before { content: ""; }
+.bx.bxs-arrow-from-left::before { content: ""; }
+.bx.bx-arrow-from-right::before { content: ""; }
+.bx.bxs-arrow-from-right::before { content: ""; }
+.bx.bx-arrow-to-right::before { content: ""; }
+.bx.bxs-arrow-to-right::before { content: ""; }
+.bx.bx-arrow-to-left::before { content: ""; }
+.bx.bxs-arrow-to-left::before { content: ""; }
+.bx.bx-arrow-to-top::before { content: ""; }
+.bx.bxs-arrow-to-top::before { content: ""; }
+.bx.bx-arrow-to-bottom::before { content: ""; }
+.bx.bxs-arrow-to-bottom::before { content: ""; }
+.bx.bx-book-reader::before { content: ""; }
+.bx.bxs-book-reader::before { content: ""; }
+.bx.bxs-edit-location::before { content: ""; }
+.bx.bxs-ev-station::before { content: ""; }
+.bx.bxs-shapes::before { content: ""; }
+.bx.bxs-florist::before { content: ""; }
+.bx.bxs-pizza::before { content: ""; }
+.bx.bx-scan::before { content: ""; }
+.bx.bx-calendar-week::before { content: ""; }
+.bx.bxs-calendar-week::before { content: ""; }
+.bx.bx-glasses::before { content: ""; }
+.bx.bx-glasses-alt::before { content: ""; }
+.bx.bx-border-none::before { content: ""; }
+.bx.bx-border-inner::before { content: ""; }
+.bx.bx-dice-1::before { content: ""; }
+.bx.bxs-dice-1::before { content: ""; }
+.bx.bx-dice-2::before { content: ""; }
+.bx.bxs-dice-2::before { content: ""; }
+.bx.bx-dice-3::before { content: ""; }
+.bx.bxs-dice-3::before { content: ""; }
+.bx.bx-dice-4::before { content: ""; }
+.bx.bxs-dice-4::before { content: ""; }
+.bx.bx-dice-5::before { content: ""; }
+.bx.bxs-dice-5::before { content: ""; }
+.bx.bx-dice-6::before { content: ""; }
+.bx.bxs-dice-6::before { content: ""; }
+.bx.bx-webcam::before { content: ""; }
+.bx.bxs-webcam::before { content: ""; }
+.bx.bx-spray-can::before { content: ""; }
+.bx.bxs-spray-can::before { content: ""; }
+.bx.bxs-file-archive::before { content: ""; }
+.bx.bx-sticker::before { content: ""; }
+.bx.bxs-sticker::before { content: ""; }
+.bx.bx-tachometer::before { content: ""; }
+.bx.bxs-tachometer::before { content: ""; }
+.bx.bxs-thermometer::before { content: ""; }
+.bx.bx-game::before { content: ""; }
+.bx.bxs-game::before { content: ""; }
+.bx.bx-abacus::before { content: ""; }
+.bx.bx-alarm-snooze::before { content: ""; }
+.bx.bxs-alarm-snooze::before { content: ""; }
+.bx.bx-alarm-exclamation::before { content: ""; }
+.bx.bxs-alarm-exclamation::before { content: ""; }
+.bx.bxs-chevrons-left::before { content: ""; }
+.bx.bxs-chevrons-right::before { content: ""; }
+.bx.bxs-chevrons-up::before { content: ""; }
+.bx.bxs-chevrons-down::before { content: ""; }
+.bx.bxs-chevron-down::before { content: ""; }
+.bx.bxs-chevron-up::before { content: ""; }
+.bx.bxs-chevron-right::before { content: ""; }
+.bx.bxs-chevron-left::before { content: ""; }
+.bx.bxs-guitar-amp::before { content: ""; }
+.bx.bxs-up-arrow-alt::before { content: ""; }
+.bx.bxs-down-arrow-alt::before { content: ""; }
+.bx.bxs-left-arrow-alt::before { content: ""; }
+.bx.bxs-right-arrow-alt::before { content: ""; }
+.bx.bx-medal::before { content: ""; }
+.bx.bxs-medal::before { content: ""; }
+.bx.bxs-shopping-bags::before { content: ""; }
+.bx.bxs-baseball::before { content: ""; }
+.bx.bx-task-x::before { content: ""; }
+.bx.bxs-basketball::before { content: ""; }
+.bx.bx-barcode-reader::before { content: ""; }
+.bx.bx-blanket::before { content: ""; }
+.bx.bxs-blanket::before { content: ""; }
+.bx.bxs-binoculars::before { content: ""; }
+.bx.bx-bone::before { content: ""; }
+.bx.bxs-bone::before { content: ""; }
+.bx.bx-bong::before { content: ""; }
+.bx.bxs-bong::before { content: ""; }
+.bx.bx-book-alt::before { content: ""; }
+.bx.bxs-book-alt::before { content: ""; }
+.bx.bx-book-heart::before { content: ""; }
+.bx.bxs-book-heart::before { content: ""; }
+.bx.bx-book-add::before { content: ""; }
+.bx.bxs-book-add::before { content: ""; }
+.bx.bx-bracket::before { content: ""; }
+.bx.bx-brain::before { content: ""; }
+.bx.bxs-brain::before { content: ""; }
+.bx.bx-border-outer::before { content: ""; }
+.bx.bx-braille::before { content: ""; }
+.bx.bx-window-alt::before { content: ""; }
+.bx.bxs-window-alt::before { content: ""; }
+.bx.bx-calendar-heart::before { content: ""; }
+.bx.bxs-calendar-heart::before { content: ""; }
+.bx.bx-wine::before { content: ""; }
+.bx.bx-vial::before { content: ""; }
+.bx.bx-color-fill::before { content: ""; }
+.bx.bx-capsule::before { content: ""; }
+.bx.bx-eraser::before { content: ""; }
+.bx.bx-drink::before { content: ""; }
+.bx.bx-cctv::before { content: ""; }
+.bx.bxs-cctv::before { content: ""; }
+.bx.bx-chair::before { content: ""; }
+.bx.bx-network-chart::before { content: ""; }
+.bx.bxs-network-chart::before { content: ""; }
+.bx.bx-vector::before { content: ""; }
+.bx.bxs-vector::before { content: ""; }
+.bx.bx-calendar-exclamation::before { content: ""; }
+.bx.bxs-calendar-exclamation::before { content: ""; }
+.bx.bx-calendar-star::before { content: ""; }
+.bx.bxs-calendar-star::before { content: ""; }
+.bx.bx-camera-home::before { content: ""; }
+.bx.bxs-camera-home::before { content: ""; }
+.bx.bx-camera-movie::before { content: ""; }
+.bx.bxs-camera-movie::before { content: ""; }
+.bx.bxs-backpack::before { content: ""; }
+.bx.bxs-cart-download::before { content: ""; }
+.bx.bxs-cart-add::before { content: ""; }
+.bx.bxs-car-battery::before { content: ""; }
+.bx.bx-caret-right-circle::before { content: ""; }
+.bx.bx-caret-left-circle::before { content: ""; }
+.bx.bx-caret-up-circle::before { content: ""; }
+.bx.bx-caret-down-circle::before { content: ""; }
+.bx.bx-caret-right-square::before { content: ""; }
+.bx.bxs-caret-right-square::before { content: ""; }
+.bx.bx-caret-up-square::before { content: ""; }
+.bx.bxs-caret-up-square::before { content: ""; }
+.bx.bx-caret-left-square::before { content: ""; }
+.bx.bxs-caret-left-square::before { content: ""; }
+.bx.bx-caret-down-square::before { content: ""; }
+.bx.bxs-caret-down-square::before { content: ""; }
+.bx.bx-shield-x::before { content: ""; }
+.bx.bxs-shield-x::before { content: ""; }
+.bx.bx-line-chart-down::before { content: ""; }
+.bx.bx-chevron-down-circle::before { content: ""; }
+.bx.bxs-chevron-down-circle::before { content: ""; }
+.bx.bx-chevron-up-circle::before { content: ""; }
+.bx.bxs-chevron-up-circle::before { content: ""; }
+.bx.bx-chevron-left-circle::before { content: ""; }
+.bx.bxs-chevron-left-circle::before { content: ""; }
+.bx.bx-chevron-right-circle::before { content: ""; }
+.bx.bxs-chevron-right-circle::before { content: ""; }
+.bx.bx-chevron-down-square::before { content: ""; }
+.bx.bxs-chevron-down-square::before { content: ""; }
+.bx.bx-chevron-up-square::before { content: ""; }
+.bx.bxs-chevron-up-square::before { content: ""; }
+.bx.bx-chevron-left-square::before { content: ""; }
+.bx.bxs-chevron-left-square::before { content: ""; }
+.bx.bx-chevron-right-square::before { content: ""; }
+.bx.bxs-chevron-right-square::before { content: ""; }
+.bx.bx-church::before { content: ""; }
+.bx.bxs-church::before { content: ""; }
+.bx.bx-coin::before { content: ""; }
+.bx.bxs-coin::before { content: ""; }
+.bx.bx-coin-stack::before { content: ""; }
+.bx.bxs-coin-stack::before { content: ""; }
+.bx.bx-unite::before { content: ""; }
+.bx.bx-minus-front::before { content: ""; }
+.bx.bx-intersect::before { content: ""; }
+.bx.bx-exclude::before { content: ""; }
+.bx.bx-minus-back::before { content: ""; }
+.bx.bx-merge::before { content: ""; }
+.bx.bx-trim::before { content: ""; }
+.bx.bx-outline::before { content: ""; }
+.bx.bxs-bullseye::before { content: ""; }
+.bx.bx-meteor::before { content: ""; }
+.bx.bxs-meteor::before { content: ""; }
+.bx.bx-refresh::before { content: ""; }
+.bx.bx-home-smile::before { content: ""; }
+.bx.bxs-home-smile::before { content: ""; }
+.bx.bx-envelope-open::before { content: ""; }
+.bx.bxs-envelope-open::before { content: ""; }
+.bx.bxl-dev-to::before { content: ""; }
+.bx.bx-message-alt-add::before { content: ""; }
+.bx.bxs-message-alt-add::before { content: ""; }
+.bx.bx-message-alt-check::before { content: ""; }
+.bx.bxs-message-alt-check::before { content: ""; }
+.bx.bx-message-alt-error::before { content: ""; }
+.bx.bxs-message-alt-error::before { content: ""; }
+.bx.bx-message-alt-x::before { content: ""; }
+.bx.bxs-message-alt-x::before { content: ""; }
+.bx.bx-message-alt-minus::before { content: ""; }
+.bx.bxs-message-alt-minus::before { content: ""; }
+.bx.bx-message-alt-edit::before { content: ""; }
+.bx.bxs-message-alt-edit::before { content: ""; }
+.bx.bx-message-alt-detail::before { content: ""; }
+.bx.bxs-message-alt-detail::before { content: ""; }
+.bx.bx-message-rounded-check::before { content: ""; }
+.bx.bxs-message-rounded-check::before { content: ""; }
+.bx.bx-message-rounded-error::before { content: ""; }
+.bx.bxs-message-rounded-error::before { content: ""; }
+.bx.bx-message-rounded-x::before { content: ""; }
+.bx.bxs-message-rounded-x::before { content: ""; }
+.bx.bx-message-rounded-minus::before { content: ""; }
+.bx.bxs-message-rounded-minus::before { content: ""; }
+.bx.bx-message-rounded-edit::before { content: ""; }
+.bx.bxs-message-rounded-edit::before { content: ""; }
+.bx.bx-message-rounded-add::before { content: ""; }
+.bx.bxs-message-rounded-add::before { content: ""; }
+.bx.bx-message-rounded-detail::before { content: ""; }
+.bx.bxs-message-rounded-detail::before { content: ""; }
+.bx.bx-message-check::before { content: ""; }
+.bx.bxs-message-check::before { content: ""; }
+.bx.bx-message-error::before { content: ""; }
+.bx.bxs-message-error::before { content: ""; }
+.bx.bx-message-x::before { content: ""; }
+.bx.bxs-message-x::before { content: ""; }
+.bx.bx-message-minus::before { content: ""; }
+.bx.bxs-message-minus::before { content: ""; }
+.bx.bx-message-edit::before { content: ""; }
+.bx.bxs-message-edit::before { content: ""; }
+.bx.bx-message-add::before { content: ""; }
+.bx.bxs-message-add::before { content: ""; }
+.bx.bx-message-detail::before { content: ""; }
+.bx.bxs-message-detail::before { content: ""; }
+.bx.bx-message-square-check::before { content: ""; }
+.bx.bxs-message-square-check::before { content: ""; }
+.bx.bx-message-square-error::before { content: ""; }
+.bx.bxs-message-square-error::before { content: ""; }
+.bx.bx-message-square-x::before { content: ""; }
+.bx.bxs-message-square-x::before { content: ""; }
+.bx.bx-message-square-minus::before { content: ""; }
+.bx.bxs-message-square-minus::before { content: ""; }
+.bx.bx-message-square-edit::before { content: ""; }
+.bx.bxs-message-square-edit::before { content: ""; }
+.bx.bx-message-square-add::before { content: ""; }
+.bx.bxs-message-square-add::before { content: ""; }
+.bx.bx-message-square-detail::before { content: ""; }
+.bx.bxs-message-square-detail::before { content: ""; }
+.bx.bx-comment-check::before { content: ""; }
+.bx.bxs-comment-check::before { content: ""; }
+.bx.bx-comment-error::before { content: ""; }
+.bx.bx-comment-x::before { content: ""; }
+.bx.bxs-comment-x::before { content: ""; }
+.bx.bx-comment-edit::before { content: ""; }
+.bx.bxs-comment-edit::before { content: ""; }
+.bx.bx-comment-minus::before { content: ""; }
+.bx.bxs-comment-minus::before { content: ""; }
+.bx.bx-comment-add::before { content: ""; }
+.bx.bx-comment-detail::before { content: ""; }
+.bx.bx-cookie::before { content: ""; }
+.bx.bxs-cookie::before { content: ""; }
+.bx.bxs-copyright::before { content: ""; }
+.bx.bx-credit-card-front::before { content: ""; }
+.bx.bxs-credit-card-front::before { content: ""; }
+.bx.bxs-crop::before { content: ""; }
+.bx.bxs-diamond::before { content: ""; }
+.bx.bx-door-open::before { content: ""; }
+.bx.bxs-door-open::before { content: ""; }
+.bx.bx-donate-heart::before { content: ""; }
+.bx.bxs-donate-heart::before { content: ""; }
+.bx.bx-donate-blood::before { content: ""; }
+.bx.bxs-donate-blood::before { content: ""; }
+.bx.bx-shape-polygon::before { content: ""; }
+.bx.bxl-zoom::before { content: ""; }
+.bx.bxl-microsoft-teams::before { content: ""; }
+.bx.bxl-blender::before { content: ""; }
+.bx.bxl-kubernetes::before { content: ""; }
+.bx.bxl-google-cloud::before { content: ""; }
+.bx.bxl-django::before { content: ""; }
+.bx.bxl-spring-boot::before { content: ""; }
+.bx.bxl-tux::before { content: ""; }
+.bx.bxl-markdown::before { content: ""; }
+.bx.bxl-python::before { content: ""; }
+.bx.bxl-ok-ru::before { content: ""; }
+.bx.bxl-firebase::before { content: ""; }
+.bx.bxl-c-plus-plus::before { content: ""; }
+.bx.bx-bookmark-heart::before { content: ""; }
+.bx.bxs-bookmark-heart::before { content: ""; }
+.bx.bx-sort-alt-2::before { content: ""; }
+.bx.bx-category::before { content: ""; }
+.bx.bxs-category::before { content: ""; }
+.bx.bx-category-alt::before { content: ""; }
+.bx.bxs-category-alt::before { content: ""; }
+.bx.bx-bookmark-alt::before { content: ""; }
+.bx.bxs-bookmark-alt::before { content: ""; }
+.bx.bx-bookmark-alt-plus::before { content: ""; }
+.bx.bxs-bookmark-alt-plus::before { content: ""; }
+.bx.bx-bookmark-alt-minus::before { content: ""; }
+.bx.bxs-bookmark-alt-minus::before { content: ""; }
+.bx.bxs-face-mask::before { content: ""; }
+.bx.bxs-tv::before { content: ""; }
+.bx.bx-tag-alt::before { content: ""; }
+.bx.bxs-tag-alt::before { content: ""; }
+.bx.bx-movie-play::before { content: ""; }
+.bx.bxs-movie-play::before { content: ""; }
+.bx.bxs-user-account::before { content: ""; }
+.bx.bx-expand-alt::before { content: ""; }
+.bx.bx-library::before { content: ""; }
+.bx.bx-trip::before { content: ""; }
+.bx.bxs-virus::before { content: ""; }
+.bx.bxs-virus-block::before { content: ""; }
+.bx.bx-empty::before { content: ""; }
+        
+
+[data-trilium-task-state="doing"], .tn-task-checkbox[data-trilium-task-state="doing"] {
+            --task-state-glyph: "";
+            --task-state-glyph-font-family: "boxicons";
+            --task-state-color: #e6a23c;
+            --task-state-hue: 36;
+        }
+[data-trilium-task-state="maybe"], .tn-task-checkbox[data-trilium-task-state="maybe"] {
+            --task-state-glyph: "";
+            --task-state-glyph-font-family: "boxicons";
+            --task-state-color: inherit;
+            --task-state-hue: unset;
+        }
+[data-trilium-task-state="cancelled"], .tn-task-checkbox[data-trilium-task-state="cancelled"] {
+            --task-state-glyph: "";
+            --task-state-glyph-font-family: "boxicons";
+            --task-state-color: #e64d4d;
+            --task-state-hue: 0;
+        }
+    </style>
+    
+</head>
+
+<body data-note-id="ULJTrS92BGVE" class="type-code" data-ancestor-note-id="root">
+
+<div id="header">
+    <button aria-label="Toggle Navigation" id="left-pane-toggle-button" class="header-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg></button>
+    <a href="/" id="header-logo">
+            <img src="../../../icon-color.svg" width="32" height="24.150943396226417" alt="Logo" />
+        yodg
+    </a>
+    
+        <div class="header-button-placeholder"></div>
+    
+</div>
+<div id="split-pane">
+    <div id="left-pane">
+        <div id="navigation">
+            <div id="site-header">
+                <div class="theme-selection">
+                    <span id="sitetheme">Site Theme</span>
+                    <label class="switch">
+                      <input type="checkbox" aria-labelledby="sitetheme">
+                      <span class="slider"></span>
+                      <svg class="dark-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.742 13.045a8.088 8.088 0 0 1-2.077.271c-2.135 0-4.14-.83-5.646-2.336a8.025 8.025 0 0 1-2.064-7.723A1 1 0 0 0 9.73 2.034a10.014 10.014 0 0 0-4.489 2.582c-3.898 3.898-3.898 10.243 0 14.143a9.937 9.937 0 0 0 7.072 2.93 9.93 9.93 0 0 0 7.07-2.929 10.007 10.007 0 0 0 2.583-4.491 1.001 1.001 0 0 0-1.224-1.224zm-2.772 4.301a7.947 7.947 0 0 1-5.656 2.343 7.953 7.953 0 0 1-5.658-2.344c-3.118-3.119-3.118-8.195 0-11.314a7.923 7.923 0 0 1 2.06-1.483 10.027 10.027 0 0 0 2.89 7.848 9.972 9.972 0 0 0 7.848 2.891 8.036 8.036 0 0 1-1.484 2.059z"></path></svg>
+                      <svg class="light-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M6.993 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007S14.761 6.993 12 6.993 6.993 9.239 6.993 12zM12 8.993c1.658 0 3.007 1.349 3.007 3.007S13.658 15.007 12 15.007 8.993 13.658 8.993 12 10.342 8.993 12 8.993zM10.998 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2h-3zm17 0h3v2h-3zM4.219 18.363l2.12-2.122 1.415 1.414-2.12 2.122zM16.24 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.342 7.759 4.22 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z"></path></svg>
+                    </label>
+                    <script>
+                        const el = document.querySelector(".theme-selection input");
+                        el.checked = (glob.theme === "dark");
+                    </script>
+                </div>
+                
+                    <div class="search-item">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+                        <input type="text" class="search-input" placeholder="Search...">
+                    </div>
+                
+            </div>
+        
+            <nav id="menu">
+                
+
+    
+
+
+
+<ul>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-book" href="../../../Journal.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-calendar"></i> Journal</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Journal/2026.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-folder"></i> 2026</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Journal/2026/09%20-%20September.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-folder"></i> 09 - September</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Journal/2026/09%20-%20September/06%20-%20Sunday.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 06 - Sunday</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Journal/2026/09%20-%20September/08%20-%20Tuesday.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 08 - Tuesday</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-book" href="../../../Classes.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bxs-graduation"></i> Classes</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-folder"></i> ART101 Visual and Performing Arts</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-book" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%201%20-%20Introduction.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx bxs-grid"></i> Week 1 - Introduction</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%201%20-%20Introduction/Archaic.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Archaic</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%201%20-%20Introduction/Classical.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Classical</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%201%20-%20Introduction/Hellenistic%20Period.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Hellenistic Period</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%201%20-%20Introduction/Doric%20capital.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Doric capital</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%201%20-%20Introduction/Ionic%20capital.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Ionic capital</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%201%20-%20Introduction/Corinthian%20capital.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Corinthian capital</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%201%20-%20Introduction/Frieze.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Frieze</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%201%20-%20Introduction/Roman%20triumphal%20arch.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Roman triumphal arch</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%201%20-%20Introduction/Pediment.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Pediment</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%201%20-%20Introduction/Pyramid.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Pyramid</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%201%20-%20Introduction/Ziggurat.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Ziggurat</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%201%20-%20Introduction/Kouros.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Kouros</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%201%20-%20Introduction/Hieroglyphs.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Hieroglyphs</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%201%20-%20Introduction/Obelisk.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Obelisk</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%201%20-%20Introduction/Phidias.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Phidias</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-book" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx bxs-grid"></i> Week 2 - Ancient, Classical &amp; Medieval Periods</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Apse.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Apse</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Basilica.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Basilica</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Byzantine.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Byzantine</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Catacombs.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Catacombs</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Chartres%20Cathedral.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Chartres Cathedral</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Clerestory.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Clerestory</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Flying%20Buttress.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Flying Buttress</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Fresco.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Fresco</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Gothic.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Gothic</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Martyrium.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Martyrium</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Mosaic.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Mosaic</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Nave.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Nave</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Notre%20Dame.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Notre Dame</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Ribbed%20Vault.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Ribbed Vault</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Romanesque.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Romanesque</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Rose%20Window.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Rose Window</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Tapestry.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Tapestry</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Vault.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Vault</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-book" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%203%20-%20Renaissance%20Period.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx bxs-grid"></i> Week 3 - Renaissance Period</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%203%20-%20Renaissance%20Period/Adoration%20of%20the%20Trinity.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Adoration of the Trinity</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%203%20-%20Renaissance%20Period/Battle%20of%20Alexander%20at%20Issus.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Battle of Alexander at Issus</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%203%20-%20Renaissance%20Period/Cruciform.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Cruciform</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%203%20-%20Renaissance%20Period/David%20(sculpture).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> David (sculpture)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%203%20-%20Renaissance%20Period/Donatello.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Donatello</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%203%20-%20Renaissance%20Period/Etching%20or%20Engraving.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Etching or Engraving</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%203%20-%20Renaissance%20Period/Florence%20Cathedral.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Florence Cathedral</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%203%20-%20Renaissance%20Period/Florence%2C%20Italy.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Florence, Italy</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%203%20-%20Renaissance%20Period/Humanism.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Humanism</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%203%20-%20Renaissance%20Period/Iconoclasm.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Iconoclasm</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%203%20-%20Renaissance%20Period/Oil%20on%20canvas.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Oil on canvas</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%203%20-%20Renaissance%20Period/Renaissance.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Renaissance</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%203%20-%20Renaissance%20Period/The%20Last%20Supper%20(painting).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> The Last Supper (painting)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-book" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%204%20-%20Baroque%20Period.html">
+        
+        <span><i class="tn-icon bx bx bxs-grid"></i> Week 4 - Baroque Period</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-book" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%205%20-%20Enlightenment%20and%20Modern%20Period.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx bxs-grid"></i> Week 5 - Enlightenment and Modern Period</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%205%20-%20Enlightenment%20and%20Modern%20Period/A%20Sunday%20on%20La%20Grande%20Jatte.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> A Sunday on La Grande Jatte</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%205%20-%20Enlightenment%20and%20Modern%20Period/Claude%20Monet.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Claude Monet</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%205%20-%20Enlightenment%20and%20Modern%20Period/Edouard%20Manet.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Edouard Manet</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%205%20-%20Enlightenment%20and%20Modern%20Period/Expressionism.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Expressionism</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%205%20-%20Enlightenment%20and%20Modern%20Period/Fauvism.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Fauvism</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%205%20-%20Enlightenment%20and%20Modern%20Period/Impressionism.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Impressionism</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%205%20-%20Enlightenment%20and%20Modern%20Period/Jacques-Louis%20David.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Jacques-Louis David</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%205%20-%20Enlightenment%20and%20Modern%20Period/Neoclassicism.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Neoclassicism</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%205%20-%20Enlightenment%20and%20Modern%20Period/Oath%20of%20the%20Horatti.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Oath of the Horatti</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%205%20-%20Enlightenment%20and%20Modern%20Period/Pierre-Auguste%20Renoir.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Pierre-Auguste Renoir</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%205%20-%20Enlightenment%20and%20Modern%20Period/Whistler's%20Mother.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Whistler&#39;s Mother</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Manuscripts.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bxs-edit-alt"></i> Manuscripts</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Manuscripts/Court%20of%20Shadows%20and%20Ruin.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-crown"></i> Court of Shadows and Ruin</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-book" href="../../../Manuscripts/Court%20of%20Shadows%20and%20Ruin/Story%20Bible.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx bxs-grid"></i> Story Bible</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Manuscripts/Court%20of%20Shadows%20and%20Ruin/Story%20Bible/Central%20Themes.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Central Themes</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-book" href="../../../Manuscripts/Court%20of%20Shadows%20and%20Ruin/Story%20Bible/Characters.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx bxs-grid"></i> Characters</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Manuscripts/Court%20of%20Shadows%20and%20Ruin/Story%20Bible/Characters/Nixarza.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Nixarza</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Manuscripts/Court%20of%20Shadows%20and%20Ruin/Story%20Bible/Characters/Sylren%20Farwynn.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Sylren Farwynn</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Manuscripts/Court%20of%20Shadows%20and%20Ruin/Story%20Bible/Characters/Vulas%20Farwynn.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Vulas Farwynn</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Manuscripts/Court%20of%20Shadows%20and%20Ruin/Story%20Bible/Characters/V%C3%A1lgr.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Válgr</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-book" href="../../../Manuscripts/Court%20of%20Shadows%20and%20Ruin/Story%20Bible/Relationships%20%26%20Conflicts.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx bx-list-ul"></i> Relationships &amp; Conflicts</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Manuscripts/Court%20of%20Shadows%20and%20Ruin/Story%20Bible/Relationships%20%26%20Conflicts/Nixarza%20and%20V%C3%A1lgr.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Nixarza and Válgr</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Manuscripts/Court%20of%20Shadows%20and%20Ruin/Story%20Bible/Relationships%20%26%20Conflicts/Nixarza%20and%20Sylren.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Nixarza and Sylren</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Manuscripts/Court%20of%20Shadows%20and%20Ruin/Story%20Bible/Relationships%20%26%20Conflicts/Nixarza%20and%20Vulas.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Nixarza and Vulas</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Manuscripts/Court%20of%20Shadows%20and%20Ruin/Story%20Bible/Relationships%20%26%20Conflicts/The%203-Way%20Psychological%20Triangle.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> The 3-Way Psychological Triangle</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Manuscripts/Court%20of%20Shadows%20and%20Ruin/Story%20Bible/Special%20Items.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-folder"></i> Special Items</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Manuscripts/Court%20of%20Shadows%20and%20Ruin/Story%20Bible/Special%20Items/Silver%20Ring.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Silver Ring</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Worlds.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-globe-alt"></i> Worlds</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Worlds/Ilmaria.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-folder"></i> Ilmaria</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Worlds/Ilmaria/Shimmering%20Isles.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Shimmering Isles</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Worlds/Ilmaria/Sunken%20Abyss.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Sunken Abyss</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Worlds/Ilmaria/Ashen%20Wastes.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Ashen Wastes</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Worlds/Ilmaria/Magical%20Systems.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Magical Systems</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Worlds/Ilmaria/Crystalline%20Peaks.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Crystalline Peaks</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Worlds/Ilmaria/Eldoria.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Eldoria</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-book" href="../../../People.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx bx-list-ul"></i> People</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../People/Joshua%20Alejandro.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Joshua Alejandro</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../People/Jordan%20Alejandro.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Jordan Alejandro</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Unprocessed.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-folder"></i> Unprocessed</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%205%20-%20Enlightenment%20and%20Modern%20Period/A%20Sunday%20on%20La%20Grande%20Jatte.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> A Sunday on La Grande Jatte</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Byzantine.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Byzantine</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%205%20-%20Enlightenment%20and%20Modern%20Period/Claude%20Monet.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Claude Monet</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%205%20-%20Enlightenment%20and%20Modern%20Period/Edouard%20Manet.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Edouard Manet</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Flying%20Buttress.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Flying Buttress</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Mosaic.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Mosaic</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Nave.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Nave</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Ribbed%20Vault.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Ribbed Vault</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Rose%20Window.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Rose Window</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Tapestry.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Tapestry</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Classes/ART101%20Visual%20and%20Performing%20Arts/Week%202%20-%20Ancient%2C%20Classical%20%26%20Medieval%20Periods/Vault.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Vault</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Asia%20Minor.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Asia Minor</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Bayeux%20Tapestry.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Bayeux Tapestry</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Christianity.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Christianity</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../High%20Renaissance.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> High Renaissance</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+            </nav>
+           
+        </div>
+    </div>
+    <div id="right-pane">
+        <div id="main">
+            <div id="content" class="type-code">
+                
+                    <h1 id="title">backendBridge</h1>
+                
+                    
+                    <pre><code>// ============================================================
+//  backendBridge — 前后端桥接（唯一允许访问后端 api 的模块）
+//  所有 runOnBackend 函数体必须完全自包含（不能引用模块闭包变量，
+//  数据一律通过参数传入；runOnBackend 会把函数体发送到后端执行）。
+//  注意：findTaskLiRange 在每个使用它的回调体内各有一份副本
+//  （completeTask / stampRepeatDate / toggleDkDay），修改时必须三处同步。
+//  注意：子模块里避免使用 ?? 空值合并（Trilium 编译时不注入
+//        _nullishCoalesce helper，会导致加载失败），用 || 替代。
+//  作为 render bundle 的子模块，入口用标题「backendBridge」引用：
+//      const { loadData, completeTask, toggleDkDay, stampRepeatDate,
+//              saveTxState, loadTxState, loadJsonConfig, saveJsonConfig } = backendBridge;
+// ============================================================
+
+import { runOnBackend } from &quot;trilium:api&quot;;
+
+// ── 配置笔记定位（官方推荐方案：宿主笔记上添加 ~configNote 关系指向配置笔记）──
+// 仅通过 ~configNote 关系定位；没有该关系的宿主使用内置默认配置。
+// 前端 FNote.getOwnedAttributes() 不支持 (type, name) 参数过滤，且前端走内存缓存，
+// 刷新后可能读到旧数据；因此读取也走 runOnBackend：与 saveJsonConfig 共用同一套
+// 后端定位逻辑，直接读数据库，保证保存后 F5 刷新必然读到最新配置。
+
+// 读取配置（后端实现；返回 null 表示没有配置笔记或内容非合法 JSON）
+export async function loadJsonConfig(hostNoteId) {
+    return runOnBackend((hostNoteId) =&gt; {
+        function findConfigNoteBackend(host) {
+            try {
+                const rel = host.getOwnedAttributes(&#39;relation&#39;, &#39;configNote&#39;)[0];
+                if (rel &amp;&amp; rel.value) {
+                    const n = api.getNote(rel.value);
+                    if (n) return n;
+                }
+            } catch (e) { /* ignore */ }
+            return null;
+        }
+        try {
+            const host = api.getNote(hostNoteId);
+            if (!host) return null;
+            const cfgNote = findConfigNoteBackend(host);
+            if (!cfgNote) return null;
+            // 用 getContent + JSON.parse（不依赖后端 getJsonContent 是否可用）
+            try {
+                const raw = cfgNote.getContent() || &#39;&#39;;
+                if (!raw) return null;
+                const parsed = JSON.parse(raw);
+                // txState 是运行时计时数据，不混入配置对象（避免污染设置草稿/被设置保存覆盖）
+                delete parsed.txState;
+                return parsed;
+            } catch (e) {
+                return null; // 内容为空 / 非合法 JSON 视为未配置
+            }
+        } catch (e) {
+            return null;
+        }
+    }, [hostNoteId]);
+}
+
+// 保存配置（合并写入配置笔记内容 + save）
+// 只更新 patch 中出现的字段，保留用户手动添加的其他字段
+export async function saveJsonConfig(hostNoteId, patch) {
+    return runOnBackend((hostNoteId, patch) =&gt; {
+        function findConfigNoteBackend(host) {
+            try {
+                const rel = host.getOwnedAttributes(&#39;relation&#39;, &#39;configNote&#39;)[0];
+                if (rel &amp;&amp; rel.value) {
+                    const n = api.getNote(rel.value);
+                    if (n) return n;
+                }
+            } catch (e) { /* ignore */ }
+            return null;
+        }
+        // 深度合并：遍历新旧 key 的并集——
+        //  旧有、新无 → 保留旧值（用户手动加的字段不丢）
+        //  新有、旧无 → 直接采用新值（新字段必须写入，旧实现只遍历 base 导致空配置永远写不进）
+        //  都有且都是普通对象 → 递归合并；否则新值覆盖
+        function mergeJson(base, extra) {
+            if (!base || typeof base !== &#39;object&#39; || Array.isArray(base)) return extra;
+            if (!extra || typeof extra !== &#39;object&#39; || Array.isArray(extra)) return extra;
+            const out = {};
+            const keys = new Set(Object.keys(base).concat(Object.keys(extra)));
+            for (const k of keys) {
+                const b = base[k], e = extra[k];
+                if (e === undefined) out[k] = b;
+                else if (b &amp;&amp; typeof b === &#39;object&#39; &amp;&amp; !Array.isArray(b) &amp;&amp; e &amp;&amp; typeof e === &#39;object&#39; &amp;&amp; !Array.isArray(e)) {
+                    out[k] = mergeJson(b, e);
+                } else {
+                    out[k] = e;
+                }
+            }
+            return out;
+        }
+        try {
+            const host = api.getNote(hostNoteId);
+            const cfgNote = findConfigNoteBackend(host);
+            if (!cfgNote) return { ok: false, config: null };
+            // 用 getContent + JSON.parse 读取：内容为空 / 非法 JSON 时不抛错，视为空配置
+            let old = {};
+            try {
+                old = JSON.parse(cfgNote.getContent() || &#39;null&#39;) || {};
+            } catch (e) {
+                old = {};
+            }
+            const merged = mergeJson(old, patch);
+            cfgNote.setJsonContent(merged);
+            cfgNote.save();
+            // 返回给前端的 config 不携带 txState（运行时数据，避免写入设置草稿后被旧值覆盖）
+            const out = Object.assign({}, merged);
+            delete out.txState;
+            return { ok: true, config: out, noteType: cfgNote.type };
+        } catch (e) {
+            return { ok: false, config: null, error: String(e &amp;&amp; e.message || e) };
+        }
+    }, [hostNoteId, patch]);
+}
+
+// ── 查询任务数据（text 内容 + 项目），支持配置的数据范围 ──
+// cfg: { inboxTitles: [..], projectRootTitles: [..] }
+// features: 功能开关。关闭的功能在数据层直接跳过，降低 getContent 与解析开销：
+//   - onHold=false：暂停项目内容只用于卡片进度、任务不进全局视图 → 直接跳过（不读内容、不返回）
+//   其余开关对应模块的任务仍参与全局分组，无法跳过内容读取，仅做 UI 裁剪
+// 任务/打卡/提醒：全树所有 text 笔记按标签解析（不限定项目文件夹）
+// 收集箱：标题匹配 inboxTitles 的笔记（任意层级）及其子树（任务单独成组）
+// 项目根：标题匹配 projectRootTitles 的目录（任意层级）；仅约束「项目卡片」（带 state 标签的笔记）的范围，
+//         未配置项目根时全树带 state 的笔记都算项目
+// 返回 { notes, diag }：notes 为任务数据；diag 含匹配诊断（前端据此提示&quot;配置的名称未匹配到任何目录&quot;）
+export async function loadData(cfg, features) {
+    return runOnBackend((cfg, features) =&gt; {
+
+        const root = api.getNote(&#39;root&#39;); // Trilium 根笔记 noteId 固定为 &#39;root&#39;
+        const rootId = root.noteId;
+
+        // 标题正则（大小写不敏感），供收集箱 / 项目根匹配
+        const escRe = s =&gt; String(s).replace(/[.*+?^${}()|[\]\\]/g, &#39;\\$&amp;&#39;);
+        const inTitles = (cfg &amp;&amp; cfg.inboxTitles) || [];
+        const projTitles = (cfg &amp;&amp; cfg.projectRootTitles) || [];
+        const inRe = inTitles.length &gt; 0 ? new RegExp(&#39;^(?:&#39; + inTitles.map(escRe).join(&#39;|&#39;) + &#39;)$&#39;, &#39;i&#39;) : null;
+        const projRe = projTitles.length &gt; 0 ? new RegExp(&#39;^(?:&#39; + projTitles.map(escRe).join(&#39;|&#39;) + &#39;)$&#39;, &#39;i&#39;) : null;
+
+        // 整棵树全部节点（标题匹配用：收集箱 / 项目根可位于任意层级，不限定 root 直接子级）
+        const allNodes = api.sql.getRows(`
+            WITH RECURSIVE tree(noteId) AS (
+                SELECT noteId FROM branches
+                WHERE parentNoteId = ? AND isDeleted = 0
+                UNION
+                SELECT b.noteId FROM branches b JOIN tree t ON b.parentNoteId = t.noteId
+                WHERE b.isDeleted = 0
+            )
+            SELECT DISTINCT t.noteId, n.title, n.type FROM tree t
+            JOIN notes n ON n.noteId = t.noteId
+            WHERE n.isDeleted = 0
+        `, [rootId]);
+
+        // 项目根：整棵树任意深度匹配标题（项目目录可放在任意层级）
+        const projectRootIds = projRe ? allNodes
+            .filter(r =&gt; projRe.test(String(r.title || &#39;&#39;).trim()))
+            .map(r =&gt; r.noteId) : [];
+
+        // 收集箱根：整棵树任意深度匹配标题
+        const inboxRootIds = inRe ? allNodes
+            .filter(r =&gt; inRe.test(String(r.title || &#39;&#39;).trim()))
+            .map(r =&gt; r.noteId) : [];
+
+        // 收集箱子树集合（含收集箱根及其全部后代，后代中的任务也算收集箱任务）
+        const inboxIds = new Set(inboxRootIds);
+        if (inboxRootIds.length &gt; 0) {
+            const iSql = `
+                WITH RECURSIVE i(noteId) AS (
+                    SELECT noteId FROM branches
+                    WHERE parentNoteId IN (${inboxRootIds.map(() =&gt; &#39;?&#39;).join(&#39;,&#39;)}) AND isDeleted = 0
+                    UNION
+                    SELECT b.noteId FROM branches b JOIN i ON b.parentNoteId = i.noteId
+                    WHERE b.isDeleted = 0
+                )
+                SELECT noteId FROM i
+            `;
+            api.sql.getRows(iSql, inboxRootIds).forEach(r =&gt; inboxIds.add(r.noteId));
+        }
+
+        // ── 项目范围：项目文件夹只约束「项目卡片」的获取，不约束任务/打卡/提醒 ──
+        // 任务/打卡/提醒 = 全树所有笔记按标签解析；项目卡片 = 项目根目录（含子树）内有 state 的笔记
+        const projScopeIds = new Set(projectRootIds);
+        if (projectRootIds.length &gt; 0) {
+            const pSql = `
+                WITH RECURSIVE p(noteId) AS (
+                    SELECT noteId FROM branches
+                    WHERE parentNoteId IN (${projectRootIds.map(() =&gt; &#39;?&#39;).join(&#39;,&#39;)}) AND isDeleted = 0
+                    UNION
+                    SELECT b.noteId FROM branches b JOIN p ON b.parentNoteId = p.noteId
+                    WHERE b.isDeleted = 0
+                )
+                SELECT noteId FROM p
+            `;
+            api.sql.getRows(pSql, projectRootIds).forEach(r =&gt; projScopeIds.add(r.noteId));
+        }
+
+        // 数据源 = 全树全部笔记（不限类型；text 提供任务/打卡/提醒，项目提供进度）
+        const rows = allNodes;
+
+        // 一次性查出所有笔记的 state 属性，避免逐条读取
+        const stateMap = {};
+        api.sql.getRows(`
+            SELECT noteId, value FROM attributes
+            WHERE isDeleted = 0 AND type = &#39;label&#39; AND LOWER(name) = &#39;state&#39;
+        `).forEach(r =&gt; { stateMap[r.noteId] = r.value; });
+
+        // 一次性查出所有笔记的 Priority 属性（P1 / P2 / P3 …）
+        const priorityMap = {};
+        api.sql.getRows(`
+            SELECT noteId, value FROM attributes
+            WHERE isDeleted = 0 AND type = &#39;label&#39; AND LOWER(name) = &#39;priority&#39;
+        `).forEach(r =&gt; { priorityMap[r.noteId] = r.value; });
+
+        // 进行中判断（兼容 In-Progress / In‑Progress / In Progress 等写法）
+        const isInProgress = v =&gt; /^inprogress$/i.test(String(v || &#39;&#39;).replace(/[\s\p{Pd}_]+/gu, &#39;&#39;));
+        // 循环阶段项目判断（Cycling-Phase / Cycling‑Phase / Cycling Phase 等写法）
+        const isCyclingPhase = v =&gt; /^cyclingphase$/i.test(String(v || &#39;&#39;).replace(/[\s\p{Pd}_]+/gu, &#39;&#39;));
+        // 暂停/等待响应项目判断（On-Hold / On Hold 等写法）
+        const isOnHold = v =&gt; /^onhold$/i.test(String(v || &#39;&#39;).replace(/[\s\p{Pd}_]+/gu, &#39;&#39;));
+
+        const result = [];
+        for (const row of rows) {
+            const state = stateMap[row.noteId] || &#39;&#39;;
+            const isProj = isInProgress(state) || isCyclingPhase(state) || isOnHold(state);
+            // 项目卡片范围：配置了项目文件夹 → 仅项目文件夹（含子树）内有 state 的笔记算项目；
+            // 未配置 → 全树带 state 的笔记都算项目。任务/打卡/提醒不受此限制。
+            const inProjScope = projScopeIds.size === 0 || projScopeIds.has(row.noteId);
+            const isProject = isProj &amp;&amp; inProjScope;
+            // 功能开关：关闭「暂停」时暂停项目不显示、内部任务不进全局视图 → 直接跳过（省 getContent + 解析）
+            if (isOnHold(state) &amp;&amp; features &amp;&amp; features.onHold === false) continue;
+            let content = &#39;&#39;;
+            // text 笔记 = 任务/打卡/提醒数据源；项目卡片额外读内容用于进度统计
+            if (row.type === &#39;text&#39; || isProject) {
+                const note = api.getNote(row.noteId);
+                content = note ? note.getContent() : &#39;&#39;;
+            }
+            result.push({
+                noteId: row.noteId,
+                title: row.title || &#39;(无标题)&#39;,
+                type: row.type,
+                content,
+                state,
+                priority: priorityMap[row.noteId] || &#39;&#39;,
+                isInbox: inboxIds.has(row.noteId),
+                isProject
+            });
+        }
+
+        // 返回任务数据 + 匹配诊断
+        return {
+            notes: result,
+            diag: {
+                projectRootMatched: projectRootIds.length,
+                projectRootTitles: projTitles,
+                inboxMatched: inboxRootIds.length,
+                inboxTitles: inTitles,
+                scopeFallback: projScopeIds.size === 0 // 未配置项目根 → 项目范围为全树
+            }
+        };
+    }, [cfg, features]);
+}
+
+// ── 勾选完成 ──
+// 普通任务：标记 done；重复任务（#repeat）：推进日期为下一次并写入已完成历史子任务
+export async function completeTask(noteId, cbIndex) {
+    return runOnBackend((noteId, cbIndex) =&gt; {
+
+        const pad = n =&gt; String(n).padStart(2, &#39;0&#39;);
+        const fmt = d =&gt; `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+        const escHtml = s =&gt; String(s).replace(/&amp;/g, &#39;&amp;amp;&#39;).replace(/&lt;/g, &#39;&amp;lt;&#39;).replace(/&gt;/g, &#39;&amp;gt;&#39;);
+
+        // 定位第 cbIndex 个 checkbox 所在的 &lt;li&gt;...&lt;/li&gt; 范围（含嵌套子列表）
+        function findTaskLiRange(html, cbIndex) {
+            let count = 0, cbOffset = -1;
+            html.replace(/&lt;input\s+type=&quot;checkbox&quot;([^&gt;]*?)&gt;/gi, (match, attrs, offset) =&gt; {
+                if (count++ === cbIndex) cbOffset = offset;
+                return match;
+            });
+            if (cbOffset &lt; 0) return null;
+            const liOpen = html.lastIndexOf(&#39;&lt;li&#39;, cbOffset);
+            if (liOpen &lt; 0) return null;
+            let depth = 1;
+            let pos = liOpen + 3;
+            while (depth &gt; 0 &amp;&amp; pos &lt; html.length) {
+                const openIdx = html.indexOf(&#39;&lt;li&#39;, pos);
+                const closeIdx = html.indexOf(&#39;&lt;/li&gt;&#39;, pos);
+                if (closeIdx &lt; 0) return null;
+                if (openIdx &gt;= 0 &amp;&amp; openIdx &lt; closeIdx) {
+                    depth++;
+                    pos = openIdx + 3;
+                } else {
+                    depth--;
+                    pos = closeIdx + &#39;&lt;/li&gt;&#39;.length;
+                }
+            }
+            return { start: liOpen, end: pos };
+        }
+
+        // 解析重复规则：#repeat:Nd/Nw/Nm/Ny，可选后缀 :actual(按实际完成) / :start(每月初) / :end(每月底) / :endwork(每月末工作日)
+        // 注意 endwork 必须排在 end 前面，否则 :endwork 会被误匹配为 :end
+        function parseRepeat(text) {
+            const m = text.match(/#repeat:(\d+)([dwmy])(?::(actual|start|endwork|end))?/i);
+            if (!m) return null;
+            return { interval: parseInt(m[1], 10), unit: m[2].toLowerCase(), pos: m[3] ? m[3].toLowerCase() : &#39;plan&#39; };
+        }
+
+        // ── 日期计算（月末 / 2 月 29 自动钳制）──
+        function addDays(d, n) { const x = new Date(d); x.setDate(x.getDate() + n); return x; }
+        function addMonthsClamped(d, n) {
+            const y = d.getFullYear(), m = d.getMonth() + n;
+            const last = new Date(y, m + 1, 0).getDate();
+            return new Date(y, m, Math.min(d.getDate(), last));
+        }
+        function addYearsClamped(d, n) {
+            const y = d.getFullYear() + n, m = d.getMonth();
+            const last = new Date(y, m + 1, 0).getDate();
+            return new Date(y, m, Math.min(d.getDate(), last));
+        }
+        function lastWorkdayOfMonth(y, m) {
+            const d = new Date(y, m + 1, 0);
+            while (d.getDay() === 0 || d.getDay() === 6) d.setDate(d.getDate() - 1);
+            return d;
+        }
+        // 当前周期位置日（位置型重复的本次计划日期：1号 / 月末 / 月末工作日）
+        function currentPosDate(dateStr, pos) {
+            const d = new Date(dateStr + &#39;T00:00:00&#39;);
+            const y = d.getFullYear(), m = d.getMonth();
+            if (pos === &#39;start&#39;) return new Date(y, m, 1);
+            if (pos === &#39;end&#39;) return new Date(y, m + 1, 0);
+            return lastWorkdayOfMonth(y, m);
+        }
+        // 下一次日期：默认按规划（原定日期+间隔）；:actual 按完成当天+间隔；:start/:end/:endwork 取锚点月后的位置日
+        function calcNextDate(dateStr, rep, doneStr) {
+            const base = rep.pos === &#39;actual&#39;
+                ? new Date(doneStr + &#39;T00:00:00&#39;)
+                : new Date(dateStr + &#39;T00:00:00&#39;);
+            const n = rep.interval;
+            switch (rep.unit) {
+                case &#39;d&#39;: return addDays(base, n);
+                case &#39;w&#39;: return addDays(base, 7 * n);
+                case &#39;m&#39;:
+                    if (rep.pos === &#39;start&#39;) return new Date(base.getFullYear(), base.getMonth() + n, 1);
+                    if (rep.pos === &#39;end&#39;) return new Date(base.getFullYear(), base.getMonth() + n + 1, 0);
+                    if (rep.pos === &#39;endwork&#39;) return lastWorkdayOfMonth(base.getFullYear(), base.getMonth() + n);
+                    return addMonthsClamped(base, n);
+                case &#39;y&#39;: return addYearsClamped(base, n);
+            }
+            return base;
+        }
+
+        const note = api.getNote(noteId);
+        let content = note.getContent();
+
+        const range = findTaskLiRange(content, cbIndex);
+        if (!range) throw new Error(&#39;未找到对应的任务&#39;);
+        const liStart = range.start, liEnd = range.end;
+        const liContent = content.slice(liStart, liEnd);
+        const ulIdx = liContent.toLowerCase().indexOf(&#39;&lt;ul&#39;);
+        const labelPart = ulIdx &gt;= 0
+            ? liContent.slice(0, ulIdx)
+            : liContent.replace(/&lt;\/li&gt;\s*$/i, &#39;&#39;);
+        const taskText = labelPart.replace(/&lt;[^&gt;]+&gt;/g, &#39;&#39;).replace(/\s+/g, &#39; &#39;).trim();
+        const rep = parseRepeat(taskText);
+        const dateM = taskText.match(/#(\d{4}-\d{2}-\d{2})/);
+
+        // 本次执行日期：优先取任务上的 #日期；位置型重复（start/end/endwork）无日期时按完成日所在周期推算
+        let thisDate = dateM ? dateM[1] : null;
+        if (!thisDate &amp;&amp; rep &amp;&amp; [&#39;start&#39;, &#39;end&#39;, &#39;endwork&#39;].includes(rep.pos)) {
+            thisDate = fmt(currentPosDate(fmt(new Date()), rep.pos));
+        }
+
+        // ── 普通任务（无重复规则 / 无锚点日期）：原逻辑标记 done ──
+        if (!rep || !thisDate) {
+            let count = 0;
+            let targetOffset = -1;
+            content = content.replace(
+                /&lt;input\s+type=&quot;checkbox&quot;([^&gt;]*?)&gt;/gi,
+                (match, attrs, offset) =&gt; {
+                    if (count++ === cbIndex) {
+                        targetOffset = offset;
+                        if (/\bdata-trilium-task-state\s*=/i.test(attrs)) {
+                            return match.replace(
+                                /\bdata-trilium-task-state\s*=\s*&quot;[^&quot;]*&quot;/i,
+                                &#39;data-trilium-task-state=&quot;done&quot;&#39;
+                            );
+                        }
+                        if (/\bchecked\b/i.test(attrs)) return match;
+                        return `&lt;input type=&quot;checkbox&quot;${attrs} checked&gt;`;
+                    }
+                    return match;
+                }
+            );
+            if (targetOffset &gt;= 0) {
+                const prefix = content.slice(0, targetOffset);
+                const lastIdx = prefix.lastIndexOf(&#39;data-trilium-task-state&#39;);
+                if (lastIdx &gt;= 0 &amp;&amp; !/&lt;\/li\s*&gt;/i.test(prefix.slice(lastIdx))) {
+                    const before = prefix.slice(0, lastIdx);
+                    const tail = prefix.slice(lastIdx).replace(
+                        /^data-trilium-task-state\s*=\s*&quot;[^&quot;]*&quot;/i,
+                        &#39;data-trilium-task-state=&quot;done&quot;&#39;
+                    );
+                    content = before + tail + content.slice(targetOffset);
+                }
+            }
+            note.setContent(content);
+            return {};
+        }
+
+        // ── 重复任务：推进日期 + 写入历史子任务 ──
+        const doneStr = fmt(new Date());
+        const nextDate = fmt(calcNextDate(thisDate, rep, doneStr));
+
+        // 历史基础文本 = 任务文本去掉重复标签与日期
+        const histTextBase = taskText
+            .replace(/#repeat:\d+[dwmy](?::actual|start|endwork|end)?/gi, &#39;&#39;)
+            .replace(/#\d{4}-\d{2}-\d{2}/g, &#39;&#39;)
+            .replace(/\s+/g, &#39; &#39;).trim() || &#39;任务&#39;;
+
+        // 收集任务 li 内已有历史子任务（checkbox 行）的日期，并读取折叠行的中间计数
+        const histDates = [];
+        let oldMidCount = 0;
+        const ulParts = [];
+        const ulRe = /&lt;ul[^&gt;]*&gt;([\s\S]*?)&lt;\/ul&gt;/gi;
+        let um;
+        while ((um = ulRe.exec(liContent)) !== null) ulParts.push(um[1]);
+        const innerLiRe = /&lt;li[^&gt;]*&gt;((?:(?!&lt;\/?li)[\s\S])*?)&lt;\/li&gt;/g;
+        for (const part of ulParts) {
+            let lm;
+            while ((lm = innerLiRe.exec(part)) !== null) {
+                const inner = lm[1];
+                if (/class\s*=\s*[&quot;&#39;]rp-note[&quot;&#39;]/i.test(lm[0])) {
+                    // 折叠行：累加已折叠的中间次数
+                    const mc = inner.match(/中间已完成\s*(\d+)\s*次/);
+                    if (mc) oldMidCount += parseInt(mc[1], 10);
+                    continue;
+                }
+                if (!/&lt;input[^&gt;]*type=&quot;checkbox&quot;/i.test(inner)) continue; // 普通 li 忽略
+                const dt = inner.match(/#(\d{4}-\d{2}-\d{2})/);
+                if (dt) histDates.push(dt[1]);
+            }
+        }
+
+        // 写入本次完成记录（原计划日期），去重后从旧到新排列
+        if (!histDates.includes(thisDate)) histDates.push(thisDate);
+        histDates.sort();
+
+        const makeHistLi = ds =&gt;
+            `&lt;li&gt;&lt;input type=&quot;checkbox&quot; checked data-trilium-task-state=&quot;done&quot;&gt;&lt;span&gt;${escHtml(histTextBase)} #${ds}&lt;/span&gt;&lt;/li&gt;`;
+        let histItems = histDates.map(makeHistLi);
+        // 保留最早 2 条 + 最新 2 条，中间折叠为计数行（在既有计数基础上累加本次新折叠的条数）
+        if (histDates.length &gt; 4) {
+            const midCount = oldMidCount + (histDates.length - 4);
+            histItems = [
+                ...histItems.slice(0, 2),
+                `&lt;li class=&quot;rp-note&quot;&gt;…中间已完成 ${midCount} 次…&lt;/li&gt;`,
+                ...histItems.slice(-2)
+            ];
+        }
+        const subUl = histItems.length &gt; 0 ? `&lt;ul&gt;\n${histItems.join(&#39;\n&#39;)}\n&lt;/ul&gt;` : &#39;&#39;;
+
+        // 任务行：日期 → 下一次、勾选恢复未完成
+        let newLabel = labelPart
+            .replace(/#\d{4}-\d{2}-\d{2}/, &#39;#&#39; + nextDate)
+            .replace(/data-trilium-task-state\s*=\s*&quot;[^&quot;]*&quot;/i, &#39;data-trilium-task-state=&quot;none&quot;&#39;)
+            .replace(/&lt;input([^&gt;]*?)\s+checked\s*([^&gt;]*?)&gt;/gi, &#39;&lt;input$1$2&gt;&#39;);
+        const newTaskLi = newLabel + (subUl ? &#39;\n&#39; + subUl : &#39;&#39;) + &#39;&lt;/li&gt;&#39;;
+        const finalContent = content.slice(0, liStart) + newTaskLi + content.slice(liEnd);
+
+        note.setContent(finalContent);
+
+        return {
+            repeat: rep,
+            done: doneStr,
+            next: nextDate,
+            history: histDates,
+            debug: {
+                cbIndex, taskText, doneStr, nextDate, histTextBase, histDates,
+                after: finalContent.slice(liStart, liStart + 420)
+            }
+        };
+
+    }, [noteId, cbIndex]);
+}
+
+// ── 位置型重复任务自动补写日期（#repeat:1m:start/end/endwork 可省略 #日期）──
+export async function stampRepeatDate(noteId, cbIndex, dateStr) {
+    return runOnBackend((noteId, cbIndex, dateStr) =&gt; {
+        // 定位第 cbIndex 个 checkbox 所在的 &lt;li&gt;...&lt;/li&gt; 范围（含嵌套子列表）
+        function findTaskLiRange(html, cbIndex) {
+            let count = 0, cbOffset = -1;
+            html.replace(/&lt;input\s+type=&quot;checkbox&quot;([^&gt;]*?)&gt;/gi, (match, attrs, offset) =&gt; {
+                if (count++ === cbIndex) cbOffset = offset;
+                return match;
+            });
+            if (cbOffset &lt; 0) return null;
+            const liOpen = html.lastIndexOf(&#39;&lt;li&#39;, cbOffset);
+            if (liOpen &lt; 0) return null;
+            let depth = 1;
+            let pos = liOpen + 3;
+            while (depth &gt; 0 &amp;&amp; pos &lt; html.length) {
+                const openIdx = html.indexOf(&#39;&lt;li&#39;, pos);
+                const closeIdx = html.indexOf(&#39;&lt;/li&gt;&#39;, pos);
+                if (closeIdx &lt; 0) return null;
+                if (openIdx &gt;= 0 &amp;&amp; openIdx &lt; closeIdx) {
+                    depth++;
+                    pos = openIdx + 3;
+                } else {
+                    depth--;
+                    pos = closeIdx + &#39;&lt;/li&gt;&#39;.length;
+                }
+            }
+            return { start: liOpen, end: pos };
+        }
+
+        const note = api.getNote(noteId);
+        const content = note.getContent();
+        const range = findTaskLiRange(content, cbIndex);
+        if (!range) return {};
+        const liContent = content.slice(range.start, range.end);
+        const ulIdx = liContent.toLowerCase().indexOf(&#39;&lt;ul&#39;);
+        const labelPart = ulIdx &gt;= 0
+            ? liContent.slice(0, ulIdx)
+            : liContent.replace(/&lt;\/li&gt;\s*$/i, &#39;&#39;);
+        // 已有日期则跳过（防重复补写）
+        if (/#\d{4}-\d{2}-\d{2}/.test(labelPart)) return { stamped: false };
+        // 在任务文本末尾追加日期：优先插到最后一个 &lt;/span&gt; 之后，
+        // 否则（无 span 结尾）回退到第一个 &lt;/span&gt;，避免多 span 时插错位置
+        const spanTail = labelPart.match(/^(.*&lt;\/span&gt;)(\s*)$/i);
+        const newLabel = spanTail
+            ? `${spanTail[1]} #${dateStr}${spanTail[2]}`
+            : labelPart.replace(/&lt;\/span&gt;/i, ` #${dateStr}&lt;/span&gt;`);
+        if (newLabel === labelPart) return { stamped: false };
+        note.setContent(content.slice(0, range.start) + newLabel + content.slice(range.end));
+        return { stamped: true, date: dateStr };
+    }, [noteId, cbIndex, dateStr]);
+}
+
+// ── 打卡切换：在任务 li 下方重建本周打卡子记录 ──
+// dkTags: 打卡标签（固定 [&#39;habit&#39;]）
+export async function toggleDkDay(noteId, cbIndex, dateStr, dkTags, lang) {
+    return runOnBackend((noteId, cbIndex, dateStr, dkTags, lang) =&gt; {
+
+        const WEEK_CN = [&#39;周日&#39;, &#39;周一&#39;, &#39;周二&#39;, &#39;周三&#39;, &#39;周四&#39;, &#39;周五&#39;, &#39;周六&#39;];
+        const WEEK_EN = { &#39;周日&#39;: &#39;Sun&#39;, &#39;周一&#39;: &#39;Mon&#39;, &#39;周二&#39;: &#39;Tue&#39;, &#39;周三&#39;: &#39;Wed&#39;, &#39;周四&#39;: &#39;Thu&#39;, &#39;周五&#39;: &#39;Fri&#39;, &#39;周六&#39;: &#39;Sat&#39; };
+        const EN_DK = { &#39;Sun&#39;: &#39;周日&#39;, &#39;Mon&#39;: &#39;周一&#39;, &#39;Tue&#39;: &#39;周二&#39;, &#39;Wed&#39;: &#39;周三&#39;, &#39;Thu&#39;: &#39;周四&#39;, &#39;Fri&#39;: &#39;周五&#39;, &#39;Sat&#39;: &#39;周六&#39; };
+        const pad = n =&gt; String(n).padStart(2, &#39;0&#39;);
+        const fmt = d =&gt; `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+        const comp = s =&gt; String(s).replace(/-/g, &#39;&#39;);
+
+        const d = new Date(dateStr + &#39;T00:00:00&#39;);
+        const dowCN = WEEK_CN[d.getDay()];
+
+        // 该日期所在周的周一 ~ 周日
+        const monday = new Date(d);
+        const wd = d.getDay();
+        monday.setDate(d.getDate() + (wd === 0 ? -6 : 1 - wd));
+        const sunday = new Date(monday);
+        sunday.setDate(monday.getDate() + 6);
+        const weekRange = `${comp(fmt(monday))}~${comp(fmt(sunday))}`;
+
+        const note = api.getNote(noteId);
+        let content = note.getContent();
+
+        // 定位第 cbIndex 个 checkbox 所在的 &lt;li&gt;...&lt;/li&gt; 范围（支持嵌套子列表）
+        function findTaskLiRange(html, cbIndex) {
+            let count = 0, cbOffset = -1;
+            html.replace(/&lt;input\s+type=&quot;checkbox&quot;([^&gt;]*?)&gt;/gi, (match, attrs, offset) =&gt; {
+                if (count++ === cbIndex) cbOffset = offset;
+                return match;
+            });
+            if (cbOffset &lt; 0) return null;
+            const liOpen = html.lastIndexOf(&#39;&lt;li&#39;, cbOffset);
+            if (liOpen &lt; 0) return null;
+            let depth = 1;
+            let pos = liOpen + 3;
+            while (depth &gt; 0 &amp;&amp; pos &lt; html.length) {
+                const openIdx = html.indexOf(&#39;&lt;li&#39;, pos);
+                const closeIdx = html.indexOf(&#39;&lt;/li&gt;&#39;, pos);
+                if (closeIdx &lt; 0) return null;
+                if (openIdx &gt;= 0 &amp;&amp; openIdx &lt; closeIdx) {
+                    depth++;
+                    pos = openIdx + 3;
+                } else {
+                    depth--;
+                    pos = closeIdx + &#39;&lt;/li&gt;&#39;.length;
+                }
+            }
+            return { start: liOpen, end: pos };
+        }
+
+        const range = findTaskLiRange(content, cbIndex);
+        if (!range) throw new Error(&#39;未找到对应的任务&#39;);
+        const liStart = range.start;
+        const liEnd = range.end;
+        const liContent = content.slice(liStart, liEnd);
+
+        // ── 方案 B：整块重建 ──
+        // 存储可能多形态混乱（任务 li 内嵌套 ul / 任务 li 后兄弟 ul / 历史残留并存的多种形态）。
+        // 不做增量修补：把任务 li 到下一个任务之间的区域整体重建，
+        // 区域内所有记录文本（无论藏在哪个 ul）统一收集 → 解析 → 重建为一个干净的任务 li。
+
+        // 1) 任务 li 的 label 部分（第一个 &lt;ul 之前；无 ul 则到 &lt;/li&gt; 前）
+        const ulIdxInTask = liContent.toLowerCase().indexOf(&#39;&lt;ul&#39;);
+        const labelPart = ulIdxInTask &gt;= 0
+            ? liContent.slice(0, ulIdxInTask)
+            : liContent.replace(/&lt;\/li&gt;\s*$/i, &#39;&#39;);
+
+        // 2) 下一个 checkbox 任务 li 起点（本任务记录区域的右边界）
+        const nextCb = content.toLowerCase().indexOf(&#39;&lt;input type=&quot;checkbox&quot;&#39;, liEnd);
+        const nextLiStart = nextCb &gt;= 0 ? content.lastIndexOf(&#39;&lt;li&#39;, nextCb) : content.length;
+
+        // 3) 收集区域内所有记录 li（叶子 li 且含 dkN周），并识别各自 todo 状态
+        const region = content.slice(liStart, nextLiStart);
+        const recRe = /&lt;li[^&gt;]*&gt;((?:(?!&lt;\/?li)[\s\S])*?dk\d+(?:周|w)(?:(?!&lt;\/?li)[\s\S])*?)&lt;\/li&gt;/g;
+        const recItems = []; // { range, weekNum, days, raw, state }
+        let rm;
+        while ((rm = recRe.exec(region)) !== null) {
+            const inner = rm[1];
+            // 状态：新格式 input 带 data-trilium-task-state；旧格式 checked；纯文本视为进行中
+            let state = &#39;doing&#39;;
+            const stM = inner.match(/data-trilium-task-state\s*=\s*&quot;([^&quot;]*)&quot;/i);
+            if (stM) state = stM[1].toLowerCase();
+            if (state === &#39;none&#39;) state = &#39;doing&#39;;
+            if (state !== &#39;done&#39; &amp;&amp; state !== &#39;cancelled&#39; &amp;&amp; /&lt;input[^&gt;]*\s+checked\s*[^&gt;]*&gt;/i.test(inner)) {
+                state = &#39;done&#39;;
+            }
+            const text = inner.replace(/&lt;[^&gt;]+&gt;/g, &#39;&#39;).replace(/\s+/g, &#39; &#39;).trim();
+            const rec = parseRec(text);
+            if (rec) recItems.push({ ...rec, state });
+        }
+
+        // 4) 解析记录：{ range, weekNum, days, raw }
+        //    days: [{ dow, count, target }]（每天打卡次数 + 当天目标）
+        //    兼容旧格式 &quot;周一，周三&quot;（无次数括号 → 按 1 次处理）
+        function parseRec(text) {
+            // 兼容三种记录格式（语言切换/历史遗留并存，内部 dow 统一存中文周名）：
+            //   旧混合: &quot;20260824~20260830 dk1周(Week 1)：周一 Mon(1/2)，周二 Tue(2/2)（周进度4/6 · Weekly 4/6）&quot;
+            //   新中文: &quot;20260824~20260830 dk1周：周一(1/2)，周二(2/2)（周进度4/6）&quot;
+            //   新英文: &quot;20260824~20260830 dk1w(Week 1): Mon(1/2), Tue(2/2) (Weekly 4/6)&quot;
+            // 天列表之后必须跟进度括号（中文 （周进度N/M…） 或英文 (Weekly N/M)），否则视为非法记录
+            // 进度数允许 NaN：兼容旧 bug 写入的 &quot;周进度1/NaN&quot; 脏数据，使记录能被解析保留，
+            // 下次打卡重建时会用正确进度重写（自愈）
+            const m = text.match(/^(\d{8})~(\d{8})\s+dk(\d+)(?:周|w)?(?:\s*\(\s*Week\s*\d+\s*\))?\s*[：:]/);
+            if (!m) return null;
+            let body = text.slice(m[0].length)
+                .replace(/（(?:(?:相当于是|进度|周进度)(?:\d+|NaN)\/(?:\d+|NaN)(?:\s*[·,|/]\s*Weekly\s*(?:\d+|NaN)\/(?:\d+|NaN))?)）\s*$/, &#39;&#39;)
+                .replace(/\(\s*Weekly\s*(?:\d+|NaN)\/(?:\d+|NaN)\s*\)\s*$/, &#39;&#39;)
+                .trim();
+            if (!body) return null;
+            const dayCounts = [];
+            const dayRe = /^(?:周[一二三四五六日])?\s*(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\s*(?:\((\d+)\/(\d+)\))?$/;
+            for (const part of body.split(/[，,]\s*/)) {
+                const dm = part.match(dayRe);
+                if (!dm || !dm[0]) continue;
+                const cn = (part.match(/周[一二三四五六日]/) || [null])[0];
+                const en = (part.match(/\b(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\b/) || [null, null])[1];
+                if (!cn &amp;&amp; !en) continue;
+                dayCounts.push({
+                    dow: cn || EN_DK[en],
+                    count: dm[1] ? parseInt(dm[1], 10) : 1,
+                    target: dm[2] ? parseInt(dm[2], 10) : 1
+                });
+            }
+            if (dayCounts.length === 0) return null;
+            return {
+                range: `${m[1]}~${m[2]}`,
+                weekNum: parseInt(m[3], 10),
+                days: dayCounts,
+                raw: text
+            };
+        }
+
+        // 进行中的记录（已完成 done / 已取消 cancelled 不参与周进度，与任务取消逻辑一致）
+        const recs = recItems.filter(r =&gt; r.state !== &#39;done&#39; &amp;&amp; r.state !== &#39;cancelled&#39;);
+
+        // 5) 目标（从任务文本部分提取 #habit:N 或 #habit:N:M）
+        //    N=每周目标天数, M=每天打卡次数（缺省 1）；周目标总次数 = N × M
+        const escRe = s =&gt; String(s).replace(/[.*+?^${}()|[\]\\]/g, &#39;\\$&amp;&#39;);
+        const dkTagList = (dkTags &amp;&amp; dkTags.length &gt; 0) ? dkTags : [&#39;habit&#39;];
+        // 标签列表必须用非捕获组 (?:...) 整体包裹，否则多标签时正则变成
+        // &quot;#habit|timer:(\d+)&quot;，&#39;timer&#39; 分支会匹配任意 &quot;timer&quot; 文本，
+        // 捕获组为空 → parseInt(undefined) = NaN → 记录里出现 &quot;周进度1/NaN&quot;
+        const dkTagRe = new RegExp(&#39;#(?:&#39; + dkTagList.map(escRe).join(&#39;|&#39;) + &#39;):(\\d+)(?::(\\d+))?&#39;, &#39;i&#39;);
+        function parseTarget(taskLi) {
+            const ui = taskLi.toLowerCase().indexOf(&#39;&lt;ul&#39;);
+            const taskPart = ui &gt;= 0 ? taskLi.slice(0, ui) : taskLi;
+            const text = taskPart.replace(/&lt;[^&gt;]+&gt;/g, &#39;&#39;).replace(/\s+/g, &#39; &#39;).trim();
+            const m = text.match(dkTagRe);
+            if (!m) return { dkDays: 0, dkPerDay: 1 };
+            // 防御：parseInt 结果兜底，避免异常值污染记录文本
+            const dkDays = parseInt(m[1], 10) || 0;
+            const dkPerDay = m[2] ? (parseInt(m[2], 10) || 1) : 1;
+            return { dkDays, dkPerDay };
+        }
+        const { dkDays, dkPerDay } = parseTarget(liContent);
+        const weekTarget = dkDays * dkPerDay;
+
+        // 6) 本周记录 + 当天打卡次数切换
+        //    未满（count &lt; dkPerDay）→ +1；已满 → 清零移除该日（再次点击即取消当天）
+        const weekRec = recs.find(r =&gt; r.range === weekRange) || null;
+        const maxWeek = recs.reduce((m, r) =&gt; Math.max(m, r.weekNum), 0);
+        const dayCounts = weekRec ? weekRec.days.map(x =&gt; Object.assign({}, x)) : [];
+        const daysBefore = JSON.stringify(dayCounts); // 诊断用
+        const dayIdx = dayCounts.findIndex(x =&gt; x.dow === dowCN);
+        if (dayIdx &gt;= 0) {
+            const it = dayCounts[dayIdx];
+            if (it.count &gt;= dkPerDay) dayCounts.splice(dayIdx, 1); // 已满 → 清零
+            else { it.count += 1; it.target = dkPerDay; }
+        } else {
+            dayCounts.push({ dow: dowCN, count: 1, target: dkPerDay });
+        }
+        dayCounts.sort((a, b) =&gt; WEEK_CN.indexOf(a.dow) - WEEK_CN.indexOf(b.dow));
+        const weekTotal = dayCounts.reduce((s, x) =&gt; s + x.count, 0);
+
+        // 本周已有记录（含已完成/已取消）时沿用其周号
+        const weekRecAll = recItems.find(r =&gt; r.range === weekRange) || null;
+        const weekNum = weekRec ? weekRec.weekNum : (weekRecAll ? weekRecAll.weekNum : maxWeek + 1);
+
+        // 7) 重建记录 ul：保留各记录原状态（不冲掉用户标记的完成/取消），
+        //    本周记录若存在则更新为新文本并重新变为进行中；清零则删除该记录
+        //    写入文本按界面语言：中文仅中文周名，英文仅英文周名（不混排）
+        //    中文: &quot;20260817~20260823 dk1周：周一(1/2)，周二(2/2)（周进度2/5）&quot;
+        //    英文: &quot;20260817~20260823 dk1w(Week 1): Mon(1/2), Tue(2/2) (Weekly 2/5)&quot;
+        const isEn = lang === &#39;en&#39;;
+        const dayText = dayCounts.map(x =&gt; isEn
+            ? `${WEEK_EN[x.dow]}(${x.count}/${dkPerDay})`
+            : `${x.dow}(${x.count}/${dkPerDay})`
+        ).join(isEn ? &#39;, &#39; : &#39;，&#39;);
+        // 总进度按天数算：当天次数打满（count &gt;= dkPerDay）才算 1 天
+        const daysDone = dayCounts.filter(x =&gt; x.count &gt;= dkPerDay).length;
+        const weekProgressText = isEn
+            ? ` (Weekly ${daysDone}/${dkDays})`
+            : `（周进度${daysDone}/${dkDays}）`;
+        let weekUpdated = false;
+        const outRecs = recItems.map(r =&gt; {
+            if (r.range !== weekRange) return r;
+            weekUpdated = true;
+            if (dayCounts.length === 0) return null; // 清零 → 删除本周记录
+            const newText = isEn
+                ? `${weekRange} dk${weekNum}w(Week ${weekNum}): ${dayText}${weekProgressText}`
+                : `${weekRange} dk${weekNum}周：${dayText}${weekProgressText}`;
+            return { ...r, days: dayCounts, raw: newText, state: &#39;doing&#39; };
+        }).filter(Boolean);
+        if (!weekUpdated &amp;&amp; dayCounts.length &gt; 0) {
+            const newText = isEn
+                ? `${weekRange} dk${weekNum}w(Week ${weekNum}): ${dayText}${weekProgressText}`
+                : `${weekRange} dk${weekNum}周：${dayText}${weekProgressText}`;
+            outRecs.push({ range: weekRange, weekNum, days: dayCounts, raw: newText, state: &#39;doing&#39; });
+        }
+        outRecs.sort((a, b) =&gt; b.weekNum - a.weekNum);  // 最新周在前
+        const recordLis = outRecs.map(r =&gt; {
+            // 打卡记录写入为普通无序列表项（非 todo checkbox），仅作记录文本
+            return `&lt;li class=&quot;dk-note&quot;&gt;${r.raw}&lt;/li&gt;`;
+        });
+        const newUl = recordLis.length &gt; 0 ? `&lt;ul&gt;\n${recordLis.join(&#39;\n&#39;)}\n&lt;/ul&gt;` : &#39;&#39;;
+
+        // 8) 重建任务 li 并替换整个记录区域
+        //    任务 li 整体替换为重建后的新 li；任务 li 之外的&quot;兄弟区域&quot;（[liEnd, nextLiStart]）
+        //    只移除旧记录 li（记录已并入 newUl），但保留 &lt;/ul&gt;&lt;ul&gt; 等结构边界。
+        //    否则跨 ul 场景（打卡任务与后续任务不在同一个 ul）下边界丢失，
+        //    CKEditor 重组时会清空后续内容（如 dsxx/fsf）。
+        const newTaskLi = `${labelPart}${newUl ? &#39;\n&#39; + newUl : &#39;&#39;}&lt;/li&gt;`;
+        let tail = content.slice(liEnd, nextLiStart);
+        tail = tail.replace(recRe, &#39;&#39;);                       // 移除兄弟区域内的旧记录 li
+        tail = tail.replace(/&lt;ul[^&gt;]*&gt;\s*&lt;\/ul&gt;/gi, &#39;&#39;);      // 清理被掏空的 ul
+        const finalContent = content.slice(0, liStart) + newTaskLi + tail + content.slice(nextLiStart);
+
+        note.setContent(finalContent);
+        // 回显验证：setContent 后立即读回，确认 Trilium 是否保留记录 li 结构
+        const echoed = note.getContent();
+        const echoDkPositions = [...echoed.matchAll(/dk\d+(?:周|w)/g)].map(m =&gt; m.index);
+        const echoIdx = echoDkPositions.length &gt; 0 ? echoDkPositions[0] : -1;
+        return {
+            days: dayCounts,
+            count: daysDone,
+            target: dkDays, weekRange, weekNum,
+            debug: {
+                cbIndex, dateStr, weekRange, weekTarget, dkDays, dkPerDay,
+                labelPart: labelPart.slice(0, 140),               // 任务 label 部分
+                recItems: recItems.map(r =&gt; `${r.range}#w${r.weekNum}:${r.days.map(x =&gt; x.dow + (x.count &gt; 1 ? x.count : &#39;&#39;)).join(&#39;&#39;)}:${r.state}`), // 区域内全部记录及状态
+                recsFound: recs.map(r =&gt; `${r.range}#w${r.weekNum}:${r.days.map(x =&gt; x.dow + (x.count &gt; 1 ? x.count : &#39;&#39;)).join(&#39;&#39;)}`), // 进行中的记录
+                weekRecFound: !!weekRec,                           // 是否找到本周进行中记录
+                daysBefore,                                        // 写入前已有的打卡日
+                nextLiDelta: nextLiStart - liEnd,                  // 区域右边界距任务 li 尾的距离
+                regionTail: region.slice(-180),                    // 记录区域结尾（确认没吃相邻任务）
+                tailSib: tail.slice(0, 200),                       // 兄弟区域清理后保留的结构（ul 边界等）
+                after: finalContent.slice(liStart, liStart + 420), // 重建后的任务区域
+                echoHasRecordLi: /&lt;li[^&gt;]*class=&quot;dk-note&quot;/i.test(echoed), // setContent 后记录 li 是否还在
+                echoDkPositions,                                   // setContent 后 dkN周 的位置
+                echoNear: echoIdx &gt;= 0 ? echoed.slice(Math.max(0, echoIdx - 160), echoIdx + 160) : &#39;(no dk)&#39;
+            }
+        };
+
+    }, [noteId, cbIndex, dateStr, dkTags, lang]);
+}
+
+// ── 间隔计时提醒状态持久化 ──
+// 把「阶段 + 结束时间戳」以 JSON 写入配置笔记的 txState 顶层字段（通过 ~configNote 关系定位），
+// 刷新页面 / 切换到其他笔记后回来时，前端可恢复倒计时。
+// 不写笔记标签：标签属于笔记内容数据，计时状态是运行时数据，统一归入配置。
+// 注意：必须用宿主笔记（hostNoteId）定位配置笔记，不能用 api.startNote——
+// 用户切到其他笔记时 startNote 是当前激活笔记，会定位到错误的配置。
+export async function saveTxState(hostNoteId, states) {
+    return runOnBackend((noteId, json) =&gt; {
+        function findConfigNoteBackend(host) {
+            try {
+                const rel = host.getOwnedAttributes(&#39;relation&#39;, &#39;configNote&#39;)[0];
+                if (rel &amp;&amp; rel.value) {
+                    const n = api.getNote(rel.value);
+                    if (n) return n;
+                }
+            } catch (e) { /* ignore */ }
+            return null;
+        }
+        try {
+            const host = api.getNote(noteId);
+            if (!host) return { ok: false };
+            const cfgNote = findConfigNoteBackend(host);
+            if (!cfgNote) return { ok: false }; // 无配置笔记 → 不持久化（不抛错，计时仍可运行）
+            let old = {};
+            try {
+                old = JSON.parse(cfgNote.getContent() || &#39;null&#39;) || {};
+            } catch (e) {
+                old = {};
+            }
+            // 顶层字段整替换：停止/删除的计时器旧 key 不会残留
+            const merged = Object.assign({}, old, { txState: JSON.parse(json) });
+            cfgNote.setJsonContent(merged);
+            cfgNote.save();
+            return { ok: true };
+        } catch (e) {
+            return { ok: false, error: String(e &amp;&amp; e.message || e) };
+        }
+    }, [hostNoteId, JSON.stringify(states)]);
+}
+
+// 读取之前保存的计时状态（JSON 字符串，空串表示从未保存 / 配置笔记不存在）
+export async function loadTxState(hostNoteId) {
+    return runOnBackend((noteId) =&gt; {
+        function findConfigNoteBackend(host) {
+            try {
+                const rel = host.getOwnedAttributes(&#39;relation&#39;, &#39;configNote&#39;)[0];
+                if (rel &amp;&amp; rel.value) {
+                    const n = api.getNote(rel.value);
+                    if (n) return n;
+                }
+            } catch (e) { /* ignore */ }
+            return null;
+        }
+        try {
+            const host = api.getNote(noteId);
+            if (!host) return &#39;&#39;;
+            const cfgNote = findConfigNoteBackend(host);
+            if (!cfgNote) return &#39;&#39;;
+            const raw = JSON.parse(cfgNote.getContent() || &#39;null&#39;) || {};
+            return raw.txState ? JSON.stringify(raw.txState) : &#39;&#39;;
+        } catch (e) {
+            return &#39;&#39;;
+        }
+    }, [hostNoteId]);
+}
+</code></pre>
+                
+                
+            </div>
+
+            
+
+            <footer id="content-footer">
+                
+
+                
+                    
+
+<div class="navigation">
+    <a class="previous" href="../TriliumNext%20Flux.html">TriliumNext Flux</a>
+    <a class="next" href="dkLogic.html">dkLogic</a>
+</div>
+                
+
+                
+            </footer>
+        </div>
+        
+    </div>
+</div>
+
+</body>
+</html>
