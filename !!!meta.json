@@ -2032,6 +2032,13 @@
 							"value": "bx bx-joystick",
 							"isInheritable": false,
 							"position": 20
+						},
+						{
+							"type": "label",
+							"name": "shareHiddenFromTree",
+							"value": "",
+							"isInheritable": false,
+							"position": 30
 						}
 					],
 					"dataFileName": "Games.html",
@@ -2117,17 +2124,24 @@
 						},
 						{
 							"type": "label",
-							"name": "shareCredentials",
-							"value": "yoela:openSesamePlz",
-							"isInheritable": true,
-							"position": 50
-						},
-						{
-							"type": "label",
 							"name": "color",
 							"value": "#4d4de6",
 							"isInheritable": false,
 							"position": 60
+						},
+						{
+							"type": "label",
+							"name": "shareHiddenFromTree",
+							"value": "",
+							"isInheritable": false,
+							"position": 70
+						},
+						{
+							"type": "label",
+							"name": "shareCredentials",
+							"value": "yoela:openSesamePlz",
+							"isInheritable": true,
+							"position": 50
 						}
 					],
 					"dataFileName": "Journal.html",
@@ -2602,7 +2616,7 @@
 														"WdYtv8ZV6XqC",
 														"BY18VG01xH7Y"
 													],
-													"title": "Válgr",
+													"title": "Valgr",
 													"notePosition": 50,
 													"prefix": null,
 													"isExpanded": false,
@@ -2610,7 +2624,7 @@
 													"mime": "text/html",
 													"attributes": [],
 													"format": "html",
-													"dataFileName": "Válgr.html",
+													"dataFileName": "Valgr.html",
 													"attachments": []
 												}
 											]
@@ -2655,7 +2669,7 @@
 														"IIqOTnx8I7Oq",
 														"9hNI3Vh3Fbfn"
 													],
-													"title": "Nixarza and Válgr",
+													"title": "Nixarza and Valgr",
 													"notePosition": 10,
 													"prefix": null,
 													"isExpanded": false,
@@ -2685,7 +2699,7 @@
 														}
 													],
 													"format": "html",
-													"dataFileName": "Nixarza and Válgr.html",
+													"dataFileName": "Nixarza and Valgr.html",
 													"attachments": []
 												},
 												{
@@ -7562,6 +7576,13 @@
 							"value": "bx bx-movie-play",
 							"isInheritable": false,
 							"position": 20
+						},
+						{
+							"type": "label",
+							"name": "shareHiddenFromTree",
+							"value": "",
+							"isInheritable": false,
+							"position": 30
 						}
 					],
 					"dataFileName": "Movies & TV.html",
@@ -13800,7 +13821,15 @@
 					"isExpanded": false,
 					"type": "text",
 					"mime": "text/html",
-					"attributes": [],
+					"attributes": [
+						{
+							"type": "label",
+							"name": "shareHiddenFromTree",
+							"value": "",
+							"isInheritable": false,
+							"position": 10
+						}
+					],
 					"format": "html",
 					"dataFileName": "Unprocessed.html",
 					"attachments": [],
