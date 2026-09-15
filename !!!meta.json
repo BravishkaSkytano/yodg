@@ -39,223 +39,13 @@
 			"children": [
 				{
 					"isClone": false,
-					"noteId": "Bjlal7i6ZnCW",
-					"notePath": [
-						"root",
-						"Bjlal7i6ZnCW"
-					],
-					"title": "Journal",
-					"notePosition": 10,
-					"prefix": null,
-					"isExpanded": false,
-					"type": "book",
-					"mime": "",
-					"attributes": [
-						{
-							"type": "label",
-							"name": "calendarRoot",
-							"value": "",
-							"isInheritable": false,
-							"position": 10
-						},
-						{
-							"type": "label",
-							"name": "iconClass",
-							"value": "bx bx-calendar",
-							"isInheritable": false,
-							"position": 20
-						},
-						{
-							"type": "label",
-							"name": "viewType",
-							"value": "calendar",
-							"isInheritable": false,
-							"position": 30
-						},
-						{
-							"type": "label",
-							"name": "calendar:view",
-							"value": "dayGridMonth",
-							"isInheritable": false,
-							"position": 40
-						},
-						{
-							"type": "label",
-							"name": "shareCredentials",
-							"value": "yoela:openSesamePlz",
-							"isInheritable": true,
-							"position": 50
-						},
-						{
-							"type": "label",
-							"name": "color",
-							"value": "#4d4de6",
-							"isInheritable": false,
-							"position": 60
-						}
-					],
-					"dataFileName": "Journal.html",
-					"attachments": [],
-					"dirFileName": "Journal",
-					"children": [
-						{
-							"isClone": false,
-							"noteId": "ZPtBJr2uEN5L",
-							"notePath": [
-								"root",
-								"Bjlal7i6ZnCW",
-								"ZPtBJr2uEN5L"
-							],
-							"title": "2026",
-							"notePosition": 10,
-							"prefix": null,
-							"isExpanded": false,
-							"type": "text",
-							"mime": "text/html",
-							"attributes": [
-								{
-									"type": "label",
-									"name": "yearNote",
-									"value": "2026",
-									"isInheritable": false,
-									"position": 10
-								},
-								{
-									"type": "label",
-									"name": "sorted",
-									"value": "",
-									"isInheritable": false,
-									"position": 20
-								}
-							],
-							"format": "html",
-							"dataFileName": "2026.html",
-							"attachments": [],
-							"dirFileName": "2026",
-							"children": [
-								{
-									"isClone": false,
-									"noteId": "3P3oRcpZrlzo",
-									"notePath": [
-										"root",
-										"Bjlal7i6ZnCW",
-										"ZPtBJr2uEN5L",
-										"3P3oRcpZrlzo"
-									],
-									"title": "09 - September",
-									"notePosition": 10,
-									"prefix": null,
-									"isExpanded": false,
-									"type": "text",
-									"mime": "text/html",
-									"attributes": [
-										{
-											"type": "label",
-											"name": "monthNote",
-											"value": "2026-09",
-											"isInheritable": false,
-											"position": 10
-										},
-										{
-											"type": "label",
-											"name": "sorted",
-											"value": "",
-											"isInheritable": false,
-											"position": 20
-										}
-									],
-									"format": "html",
-									"dataFileName": "09 - September.html",
-									"attachments": [],
-									"dirFileName": "09 - September",
-									"children": [
-										{
-											"isClone": false,
-											"noteId": "n5ksLxzEqLuJ",
-											"notePath": [
-												"root",
-												"Bjlal7i6ZnCW",
-												"ZPtBJr2uEN5L",
-												"3P3oRcpZrlzo",
-												"n5ksLxzEqLuJ"
-											],
-											"title": "06 - Sunday",
-											"notePosition": 10,
-											"prefix": null,
-											"isExpanded": false,
-											"type": "text",
-											"mime": "text/html",
-											"attributes": [
-												{
-													"type": "label",
-													"name": "dateNote",
-													"value": "2026-09-06",
-													"isInheritable": false,
-													"position": 10
-												},
-												{
-													"type": "label",
-													"name": "sorted",
-													"value": "",
-													"isInheritable": false,
-													"position": 20
-												}
-											],
-											"format": "html",
-											"dataFileName": "06 - Sunday.html",
-											"attachments": []
-										},
-										{
-											"isClone": false,
-											"noteId": "xWjfq6A3Kk3j",
-											"notePath": [
-												"root",
-												"Bjlal7i6ZnCW",
-												"ZPtBJr2uEN5L",
-												"3P3oRcpZrlzo",
-												"xWjfq6A3Kk3j"
-											],
-											"title": "08 - Tuesday",
-											"notePosition": 20,
-											"prefix": null,
-											"isExpanded": false,
-											"type": "text",
-											"mime": "text/html",
-											"attributes": [
-												{
-													"type": "label",
-													"name": "dateNote",
-													"value": "2026-09-08",
-													"isInheritable": false,
-													"position": 10
-												},
-												{
-													"type": "label",
-													"name": "sorted",
-													"value": "",
-													"isInheritable": false,
-													"position": 20
-												}
-											],
-											"format": "html",
-											"dataFileName": "08 - Tuesday.html",
-											"attachments": []
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"isClone": false,
 					"noteId": "RqPUQP1ppgt9",
 					"notePath": [
 						"root",
 						"RqPUQP1ppgt9"
 					],
 					"title": "Classes",
-					"notePosition": 20,
+					"notePosition": 10,
 					"prefix": null,
 					"isExpanded": false,
 					"type": "book",
@@ -1451,7 +1241,7 @@
 											"title": "Battle of Alexander at Issus",
 											"notePosition": 20,
 											"prefix": null,
-											"isExpanded": true,
+											"isExpanded": false,
 											"type": "text",
 											"mime": "text/html",
 											"attributes": [
@@ -1753,7 +1543,7 @@
 											"title": "Iconoclasm",
 											"notePosition": 100,
 											"prefix": null,
-											"isExpanded": true,
+											"isExpanded": false,
 											"type": "text",
 											"mime": "text/html",
 											"attributes": [],
@@ -1962,7 +1752,7 @@
 											"title": "Edouard Manet",
 											"notePosition": 30,
 											"prefix": null,
-											"isExpanded": true,
+											"isExpanded": false,
 											"type": "text",
 											"mime": "text/html",
 											"attributes": [
@@ -2033,7 +1823,7 @@
 											"title": "Impressionism",
 											"notePosition": 60,
 											"prefix": null,
-											"isExpanded": true,
+											"isExpanded": false,
 											"type": "text",
 											"mime": "text/html",
 											"attributes": [
@@ -2097,7 +1887,7 @@
 											"title": "Neoclassicism",
 											"notePosition": 80,
 											"prefix": null,
-											"isExpanded": true,
+											"isExpanded": false,
 											"type": "text",
 											"mime": "text/html",
 											"attributes": [
@@ -2217,15 +2007,293 @@
 				},
 				{
 					"isClone": false,
+					"noteId": "c1Hvqo8SacqY",
+					"notePath": [
+						"root",
+						"c1Hvqo8SacqY"
+					],
+					"title": "Games",
+					"notePosition": 20,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "render",
+					"mime": "text/html",
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "renderNote",
+							"value": "3VODeUBv8aeG",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "label",
+							"name": "iconClass",
+							"value": "bx bx-joystick",
+							"isInheritable": false,
+							"position": 20
+						}
+					],
+					"dataFileName": "Games.html",
+					"attachments": [],
+					"dirFileName": "Games",
+					"children": [
+						{
+							"isClone": false,
+							"noteId": "hQfmcZRGXE0g",
+							"notePath": [
+								"root",
+								"c1Hvqo8SacqY",
+								"hQfmcZRGXE0g"
+							],
+							"title": "Database",
+							"notePosition": 10,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "code",
+							"mime": "application/json",
+							"attributes": [
+								{
+									"type": "label",
+									"name": "gameTrackerDatabase",
+									"value": "",
+									"isInheritable": false,
+									"position": 10
+								},
+								{
+									"type": "label",
+									"name": "iconClass",
+									"value": "bx bx-data",
+									"isInheritable": false,
+									"position": 20
+								}
+							],
+							"dataFileName": "Database.html",
+							"attachments": []
+						}
+					]
+				},
+				{
+					"isClone": false,
+					"noteId": "Bjlal7i6ZnCW",
+					"notePath": [
+						"root",
+						"Bjlal7i6ZnCW"
+					],
+					"title": "Journal",
+					"notePosition": 1000000009,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "book",
+					"mime": "",
+					"attributes": [
+						{
+							"type": "label",
+							"name": "calendarRoot",
+							"value": "",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "label",
+							"name": "iconClass",
+							"value": "bx bx-calendar",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "label",
+							"name": "viewType",
+							"value": "calendar",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "label",
+							"name": "calendar:view",
+							"value": "dayGridMonth",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "label",
+							"name": "shareCredentials",
+							"value": "yoela:openSesamePlz",
+							"isInheritable": true,
+							"position": 50
+						},
+						{
+							"type": "label",
+							"name": "color",
+							"value": "#4d4de6",
+							"isInheritable": false,
+							"position": 60
+						}
+					],
+					"dataFileName": "Journal.html",
+					"attachments": [],
+					"dirFileName": "Journal",
+					"children": [
+						{
+							"isClone": false,
+							"noteId": "ZPtBJr2uEN5L",
+							"notePath": [
+								"root",
+								"Bjlal7i6ZnCW",
+								"ZPtBJr2uEN5L"
+							],
+							"title": "2026",
+							"notePosition": 10,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "text",
+							"mime": "text/html",
+							"attributes": [
+								{
+									"type": "label",
+									"name": "yearNote",
+									"value": "2026",
+									"isInheritable": false,
+									"position": 10
+								},
+								{
+									"type": "label",
+									"name": "sorted",
+									"value": "",
+									"isInheritable": false,
+									"position": 20
+								}
+							],
+							"format": "html",
+							"dataFileName": "2026.html",
+							"attachments": [],
+							"dirFileName": "2026",
+							"children": [
+								{
+									"isClone": false,
+									"noteId": "3P3oRcpZrlzo",
+									"notePath": [
+										"root",
+										"Bjlal7i6ZnCW",
+										"ZPtBJr2uEN5L",
+										"3P3oRcpZrlzo"
+									],
+									"title": "09 - September",
+									"notePosition": 10,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [
+										{
+											"type": "label",
+											"name": "monthNote",
+											"value": "2026-09",
+											"isInheritable": false,
+											"position": 10
+										},
+										{
+											"type": "label",
+											"name": "sorted",
+											"value": "",
+											"isInheritable": false,
+											"position": 20
+										}
+									],
+									"format": "html",
+									"dataFileName": "09 - September.html",
+									"attachments": [],
+									"dirFileName": "09 - September",
+									"children": [
+										{
+											"isClone": false,
+											"noteId": "n5ksLxzEqLuJ",
+											"notePath": [
+												"root",
+												"Bjlal7i6ZnCW",
+												"ZPtBJr2uEN5L",
+												"3P3oRcpZrlzo",
+												"n5ksLxzEqLuJ"
+											],
+											"title": "06 - Sunday",
+											"notePosition": 10,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "dateNote",
+													"value": "2026-09-06",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "label",
+													"name": "sorted",
+													"value": "",
+													"isInheritable": false,
+													"position": 20
+												}
+											],
+											"format": "html",
+											"dataFileName": "06 - Sunday.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "xWjfq6A3Kk3j",
+											"notePath": [
+												"root",
+												"Bjlal7i6ZnCW",
+												"ZPtBJr2uEN5L",
+												"3P3oRcpZrlzo",
+												"xWjfq6A3Kk3j"
+											],
+											"title": "08 - Tuesday",
+											"notePosition": 20,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "dateNote",
+													"value": "2026-09-08",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "label",
+													"name": "sorted",
+													"value": "",
+													"isInheritable": false,
+													"position": 20
+												}
+											],
+											"format": "html",
+											"dataFileName": "08 - Tuesday.html",
+											"attachments": []
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"isClone": false,
 					"noteId": "hxFkkaDucOzi",
 					"notePath": [
 						"root",
 						"hxFkkaDucOzi"
 					],
 					"title": "Manuscripts",
-					"notePosition": 30,
+					"notePosition": 1000000019,
 					"prefix": null,
-					"isExpanded": true,
+					"isExpanded": false,
 					"type": "text",
 					"mime": "text/html",
 					"attributes": [
@@ -2267,7 +2335,7 @@
 							"title": "Court of Shadows and Ruin",
 							"notePosition": 10,
 							"prefix": null,
-							"isExpanded": true,
+							"isExpanded": false,
 							"type": "text",
 							"mime": "text/html",
 							"attributes": [
@@ -2314,6 +2382,49 @@
 									"children": [
 										{
 											"isClone": false,
+											"noteId": "gxHbTmj41AUj",
+											"notePath": [
+												"root",
+												"hxFkkaDucOzi",
+												"kVjsUtHVJwJb",
+												"N66c6BKRftIV",
+												"gxHbTmj41AUj"
+											],
+											"title": "Central Themes",
+											"notePosition": 10,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "B3pGFGggD5qT",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "LHeV3VWIUure",
+													"isInheritable": false,
+													"position": 40
+												},
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "by4HFkvD3lj2",
+													"isInheritable": false,
+													"position": 50
+												}
+											],
+											"format": "html",
+											"dataFileName": "Central Themes.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
 											"noteId": "WdYtv8ZV6XqC",
 											"notePath": [
 												"root",
@@ -2323,9 +2434,9 @@
 												"WdYtv8ZV6XqC"
 											],
 											"title": "Characters",
-											"notePosition": 10,
+											"notePosition": 20,
 											"prefix": null,
-											"isExpanded": true,
+											"isExpanded": false,
 											"type": "book",
 											"mime": "",
 											"attributes": [
@@ -2343,76 +2454,6 @@
 											"children": [
 												{
 													"isClone": false,
-													"noteId": "IIqOTnx8I7Oq",
-													"notePath": [
-														"root",
-														"hxFkkaDucOzi",
-														"kVjsUtHVJwJb",
-														"N66c6BKRftIV",
-														"WdYtv8ZV6XqC",
-														"IIqOTnx8I7Oq"
-													],
-													"title": "Relationships & Conflicts",
-													"notePosition": 10,
-													"prefix": null,
-													"isExpanded": false,
-													"type": "text",
-													"mime": "text/html",
-													"attributes": [],
-													"format": "html",
-													"dataFileName": "Relationships & Conflicts.html",
-													"attachments": [],
-													"dirFileName": "Relationships & Conflicts",
-													"children": [
-														{
-															"isClone": false,
-															"noteId": "9hNI3Vh3Fbfn",
-															"notePath": [
-																"root",
-																"hxFkkaDucOzi",
-																"kVjsUtHVJwJb",
-																"N66c6BKRftIV",
-																"WdYtv8ZV6XqC",
-																"IIqOTnx8I7Oq",
-																"9hNI3Vh3Fbfn"
-															],
-															"title": "Nixarza and Válgr",
-															"notePosition": 10,
-															"prefix": null,
-															"isExpanded": false,
-															"type": "text",
-															"mime": "text/html",
-															"attributes": [
-																{
-																	"type": "relation",
-																	"name": "internalLink",
-																	"value": "B3pGFGggD5qT",
-																	"isInheritable": false,
-																	"position": 10
-																},
-																{
-																	"type": "relation",
-																	"name": "internalLink",
-																	"value": "BY18VG01xH7Y",
-																	"isInheritable": false,
-																	"position": 20
-																},
-																{
-																	"type": "relation",
-																	"name": "internalLink",
-																	"value": "77CG2FXVU7HO",
-																	"isInheritable": false,
-																	"position": 30
-																}
-															],
-															"format": "html",
-															"dataFileName": "Nixarza and Válgr.html",
-															"attachments": []
-														}
-													]
-												},
-												{
-													"isClone": false,
 													"noteId": "B3pGFGggD5qT",
 													"notePath": [
 														"root",
@@ -2425,7 +2466,7 @@
 													"title": "Nixarza",
 													"notePosition": 20,
 													"prefix": null,
-													"isExpanded": false,
+													"isExpanded": true,
 													"type": "text",
 													"mime": "text/html",
 													"attributes": [
@@ -2449,6 +2490,13 @@
 															"value": "9hNI3Vh3Fbfn",
 															"isInheritable": false,
 															"position": 30
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "MZzqz90os2P8",
+															"isInheritable": false,
+															"position": 40
 														}
 													],
 													"format": "html",
@@ -2472,7 +2520,36 @@
 													"isExpanded": false,
 													"type": "text",
 													"mime": "text/html",
-													"attributes": [],
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "by4HFkvD3lj2",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "B3pGFGggD5qT",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "aZUozDkzp2dY",
+															"isInheritable": false,
+															"position": 30
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "MZzqz90os2P8",
+															"isInheritable": false,
+															"position": 40
+														}
+													],
 													"format": "html",
 													"dataFileName": "Sylren Farwynn.html",
 													"attachments": []
@@ -2494,7 +2571,22 @@
 													"isExpanded": false,
 													"type": "text",
 													"mime": "text/html",
-													"attributes": [],
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "Ayvx1r5aLnNC",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "MZzqz90os2P8",
+															"isInheritable": false,
+															"position": 20
+														}
+													],
 													"format": "html",
 													"dataFileName": "Vulas Farwynn.html",
 													"attachments": []
@@ -2525,6 +2617,169 @@
 										},
 										{
 											"isClone": false,
+											"noteId": "IIqOTnx8I7Oq",
+											"notePath": [
+												"root",
+												"hxFkkaDucOzi",
+												"kVjsUtHVJwJb",
+												"N66c6BKRftIV",
+												"IIqOTnx8I7Oq"
+											],
+											"title": "Relationships & Conflicts",
+											"notePosition": 30,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "book",
+											"mime": "",
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "template",
+													"value": "_template_list_view",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Relationships & Conflicts.html",
+											"attachments": [],
+											"dirFileName": "Relationships & Conflicts",
+											"children": [
+												{
+													"isClone": false,
+													"noteId": "9hNI3Vh3Fbfn",
+													"notePath": [
+														"root",
+														"hxFkkaDucOzi",
+														"kVjsUtHVJwJb",
+														"N66c6BKRftIV",
+														"IIqOTnx8I7Oq",
+														"9hNI3Vh3Fbfn"
+													],
+													"title": "Nixarza and Válgr",
+													"notePosition": 10,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "B3pGFGggD5qT",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "BY18VG01xH7Y",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "77CG2FXVU7HO",
+															"isInheritable": false,
+															"position": 30
+														}
+													],
+													"format": "html",
+													"dataFileName": "Nixarza and Válgr.html",
+													"attachments": []
+												},
+												{
+													"isClone": false,
+													"noteId": "aZUozDkzp2dY",
+													"notePath": [
+														"root",
+														"hxFkkaDucOzi",
+														"kVjsUtHVJwJb",
+														"N66c6BKRftIV",
+														"IIqOTnx8I7Oq",
+														"aZUozDkzp2dY"
+													],
+													"title": "Nixarza and Sylren",
+													"notePosition": 20,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [],
+													"format": "html",
+													"dataFileName": "Nixarza and Sylren.html",
+													"attachments": []
+												},
+												{
+													"isClone": false,
+													"noteId": "Ayvx1r5aLnNC",
+													"notePath": [
+														"root",
+														"hxFkkaDucOzi",
+														"kVjsUtHVJwJb",
+														"N66c6BKRftIV",
+														"IIqOTnx8I7Oq",
+														"Ayvx1r5aLnNC"
+													],
+													"title": "Nixarza and Vulas",
+													"notePosition": 30,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [],
+													"format": "html",
+													"dataFileName": "Nixarza and Vulas.html",
+													"attachments": []
+												},
+												{
+													"isClone": false,
+													"noteId": "MZzqz90os2P8",
+													"notePath": [
+														"root",
+														"hxFkkaDucOzi",
+														"kVjsUtHVJwJb",
+														"N66c6BKRftIV",
+														"IIqOTnx8I7Oq",
+														"MZzqz90os2P8"
+													],
+													"title": "The 3-Way Psychological Triangle",
+													"notePosition": 40,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "B3pGFGggD5qT",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "LHeV3VWIUure",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "relation",
+															"name": "internalLink",
+															"value": "by4HFkvD3lj2",
+															"isInheritable": false,
+															"position": 30
+														}
+													],
+													"format": "html",
+													"dataFileName": "The 3-Way Psychological Triangle.html",
+													"attachments": []
+												}
+											]
+										},
+										{
+											"isClone": false,
 											"noteId": "oE30rqxGYanG",
 											"notePath": [
 												"root",
@@ -2534,9 +2789,9 @@
 												"oE30rqxGYanG"
 											],
 											"title": "Special Items",
-											"notePosition": 20,
+											"notePosition": 40,
 											"prefix": null,
-											"isExpanded": false,
+											"isExpanded": true,
 											"type": "text",
 											"mime": "text/html",
 											"attributes": [],
@@ -2571,178 +2826,217 @@
 										},
 										{
 											"isClone": false,
-											"noteId": "gxHbTmj41AUj",
+											"noteId": "t0LmEXWldVUJ",
 											"notePath": [
 												"root",
 												"hxFkkaDucOzi",
 												"kVjsUtHVJwJb",
 												"N66c6BKRftIV",
-												"gxHbTmj41AUj"
+												"t0LmEXWldVUJ"
 											],
-											"title": "Central Themes",
-											"notePosition": 30,
+											"title": "Plot Direction",
+											"notePosition": 50,
 											"prefix": null,
 											"isExpanded": false,
 											"type": "text",
 											"mime": "text/html",
-											"attributes": [
-												{
-													"type": "relation",
-													"name": "internalLink",
-													"value": "B3pGFGggD5qT",
-													"isInheritable": false,
-													"position": 10
-												},
-												{
-													"type": "relation",
-													"name": "internalLink",
-													"value": "LHeV3VWIUure",
-													"isInheritable": false,
-													"position": 40
-												},
-												{
-													"type": "relation",
-													"name": "internalLink",
-													"value": "by4HFkvD3lj2",
-													"isInheritable": false,
-													"position": 50
-												}
-											],
+											"attributes": [],
 											"format": "html",
-											"dataFileName": "Central Themes.html",
-											"attachments": []
+											"dataFileName": "Plot Direction.html",
+											"attachments": [],
+											"dirFileName": "Plot Direction",
+											"children": [
+												{
+													"isClone": false,
+													"noteId": "WOIEh0tLaWLk",
+													"notePath": [
+														"root",
+														"hxFkkaDucOzi",
+														"kVjsUtHVJwJb",
+														"N66c6BKRftIV",
+														"t0LmEXWldVUJ",
+														"WOIEh0tLaWLk"
+													],
+													"title": "Act I: Survivor",
+													"notePosition": 10,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [],
+													"format": "html",
+													"dataFileName": "Act I Survivor.html",
+													"attachments": []
+												},
+												{
+													"isClone": false,
+													"noteId": "KIKnpBxeDiPa",
+													"notePath": [
+														"root",
+														"hxFkkaDucOzi",
+														"kVjsUtHVJwJb",
+														"N66c6BKRftIV",
+														"t0LmEXWldVUJ",
+														"KIKnpBxeDiPa"
+													],
+													"title": "Act II: The Prince",
+													"notePosition": 20,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [],
+													"format": "html",
+													"dataFileName": "Act II The Prince.html",
+													"attachments": []
+												},
+												{
+													"isClone": false,
+													"noteId": "NzVfUbbrdcTH",
+													"notePath": [
+														"root",
+														"hxFkkaDucOzi",
+														"kVjsUtHVJwJb",
+														"N66c6BKRftIV",
+														"t0LmEXWldVUJ",
+														"NzVfUbbrdcTH"
+													],
+													"title": "Act III: The Truth",
+													"notePosition": 30,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [],
+													"format": "html",
+													"dataFileName": "Act III The Truth.html",
+													"attachments": []
+												},
+												{
+													"isClone": false,
+													"noteId": "5HtKzc2KvlkK",
+													"notePath": [
+														"root",
+														"hxFkkaDucOzi",
+														"kVjsUtHVJwJb",
+														"N66c6BKRftIV",
+														"t0LmEXWldVUJ",
+														"5HtKzc2KvlkK"
+													],
+													"title": "Act IV: Love and Revelation",
+													"notePosition": 40,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [],
+													"format": "html",
+													"dataFileName": "Act IV Love and Revelation.html",
+													"attachments": []
+												},
+												{
+													"isClone": false,
+													"noteId": "L9oz6aF7glWC",
+													"notePath": [
+														"root",
+														"hxFkkaDucOzi",
+														"kVjsUtHVJwJb",
+														"N66c6BKRftIV",
+														"t0LmEXWldVUJ",
+														"L9oz6aF7glWC"
+													],
+													"title": "Act V: Vulas",
+													"notePosition": 50,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [],
+													"format": "html",
+													"dataFileName": "Act V Vulas.html",
+													"attachments": []
+												},
+												{
+													"isClone": false,
+													"noteId": "Eya21WhdANFe",
+													"notePath": [
+														"root",
+														"hxFkkaDucOzi",
+														"kVjsUtHVJwJb",
+														"N66c6BKRftIV",
+														"t0LmEXWldVUJ",
+														"Eya21WhdANFe"
+													],
+													"title": "Possible Climax",
+													"notePosition": 60,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [],
+													"format": "html",
+													"dataFileName": "Possible Climax.html",
+													"attachments": []
+												},
+												{
+													"isClone": false,
+													"noteId": "NqkRIJmvBONv",
+													"notePath": [
+														"root",
+														"hxFkkaDucOzi",
+														"kVjsUtHVJwJb",
+														"N66c6BKRftIV",
+														"t0LmEXWldVUJ",
+														"NqkRIJmvBONv"
+													],
+													"title": "Sylren's Final Choice",
+													"notePosition": 70,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [],
+													"format": "html",
+													"dataFileName": "Sylren's Final Choice.html",
+													"attachments": []
+												},
+												{
+													"isClone": false,
+													"noteId": "HlK6HdasF66i",
+													"notePath": [
+														"root",
+														"hxFkkaDucOzi",
+														"kVjsUtHVJwJb",
+														"N66c6BKRftIV",
+														"t0LmEXWldVUJ",
+														"HlK6HdasF66i"
+													],
+													"title": "Nixarza's Final Emotional Landing",
+													"notePosition": 80,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [],
+													"format": "html",
+													"dataFileName": "Nixarza's Final Emotional Landing.html",
+													"attachments": []
+												}
+											]
 										}
 									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"isClone": false,
-					"noteId": "nzp81GBaeraN",
-					"notePath": [
-						"root",
-						"nzp81GBaeraN"
-					],
-					"title": "Worlds",
-					"notePosition": 40,
-					"prefix": null,
-					"isExpanded": false,
-					"type": "text",
-					"mime": "text/html",
-					"attributes": [
-						{
-							"type": "label",
-							"name": "iconClass",
-							"value": "bx bx-globe-alt",
-							"isInheritable": false,
-							"position": 10
-						},
-						{
-							"type": "label",
-							"name": "color",
-							"value": "#4de699",
-							"isInheritable": false,
-							"position": 20
-						}
-					],
-					"format": "html",
-					"dataFileName": "Worlds.html",
-					"attachments": [],
-					"dirFileName": "Worlds",
-					"children": [
-						{
-							"isClone": false,
-							"noteId": "EcoHgVWA64c3",
-							"notePath": [
-								"root",
-								"nzp81GBaeraN",
-								"EcoHgVWA64c3"
-							],
-							"title": "Ilmaria",
-							"notePosition": 10,
-							"prefix": null,
-							"isExpanded": false,
-							"type": "text",
-							"mime": "text/html",
-							"attributes": [],
-							"format": "html",
-							"dataFileName": "Ilmaria.html",
-							"attachments": [],
-							"dirFileName": "Ilmaria",
-							"children": [
-								{
-									"isClone": false,
-									"noteId": "O2I2bxJkWNaD",
-									"notePath": [
-										"root",
-										"nzp81GBaeraN",
-										"EcoHgVWA64c3",
-										"O2I2bxJkWNaD"
-									],
-									"title": "Shimmering Isles",
-									"notePosition": 10,
-									"prefix": null,
-									"isExpanded": false,
-									"type": "text",
-									"mime": "text/html",
-									"attributes": [],
-									"format": "html",
-									"dataFileName": "Shimmering Isles.html",
-									"attachments": []
 								},
 								{
 									"isClone": false,
-									"noteId": "OzTuiyngQtOK",
+									"noteId": "ZR4k9GGyhuXw",
 									"notePath": [
 										"root",
-										"nzp81GBaeraN",
-										"EcoHgVWA64c3",
-										"OzTuiyngQtOK"
+										"hxFkkaDucOzi",
+										"kVjsUtHVJwJb",
+										"ZR4k9GGyhuXw"
 									],
-									"title": "Sunken Abyss",
+									"title": "Tasks",
 									"notePosition": 20,
-									"prefix": null,
-									"isExpanded": false,
-									"type": "text",
-									"mime": "text/html",
-									"attributes": [],
-									"format": "html",
-									"dataFileName": "Sunken Abyss.html",
-									"attachments": []
-								},
-								{
-									"isClone": false,
-									"noteId": "2E8NnBHIcVgU",
-									"notePath": [
-										"root",
-										"nzp81GBaeraN",
-										"EcoHgVWA64c3",
-										"2E8NnBHIcVgU"
-									],
-									"title": "Ashen Wastes",
-									"notePosition": 30,
-									"prefix": null,
-									"isExpanded": false,
-									"type": "text",
-									"mime": "text/html",
-									"attributes": [],
-									"format": "html",
-									"dataFileName": "Ashen Wastes.html",
-									"attachments": []
-								},
-								{
-									"isClone": false,
-									"noteId": "py1dH32Ur9nc",
-									"notePath": [
-										"root",
-										"nzp81GBaeraN",
-										"EcoHgVWA64c3",
-										"py1dH32Ur9nc"
-									],
-									"title": "Magical Systems",
-									"notePosition": 40,
 									"prefix": null,
 									"isExpanded": false,
 									"type": "text",
@@ -2751,84 +3045,4561 @@
 										{
 											"type": "relation",
 											"name": "internalLink",
-											"value": "nKDg7xcuI8m0",
+											"value": "MZzqz90os2P8",
+											"isInheritable": false,
+											"position": 10
+										}
+									],
+									"format": "html",
+									"dataFileName": "Tasks.html",
+									"attachments": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"isClone": false,
+					"noteId": "rhOxxCXPNhKe",
+					"notePath": [
+						"root",
+						"rhOxxCXPNhKe"
+					],
+					"title": "Miscellaneous",
+					"notePosition": 1000000029,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "book",
+					"mime": "",
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "template",
+							"value": "_template_grid_view",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "label",
+							"name": "shareHiddenFromTree",
+							"value": "",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "label",
+							"name": "iconClass",
+							"value": "bx bx-dots-horizontal-rounded",
+							"isInheritable": false,
+							"position": 30
+						}
+					],
+					"dataFileName": "Miscellaneous.html",
+					"attachments": [],
+					"dirFileName": "Miscellaneous",
+					"children": [
+						{
+							"isClone": false,
+							"noteId": "wwkLqbwpeGRi",
+							"notePath": [
+								"root",
+								"rhOxxCXPNhKe",
+								"wwkLqbwpeGRi"
+							],
+							"title": "Themes",
+							"notePosition": 10,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "text",
+							"mime": "text/html",
+							"attributes": [
+								{
+									"type": "label",
+									"name": "iconClass",
+									"value": "bx bx-palette",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"format": "html",
+							"dataFileName": "Themes.html",
+							"attachments": [],
+							"dirFileName": "Themes",
+							"children": [
+								{
+									"isClone": false,
+									"noteId": "J1Af6qoZ6AsQ",
+									"notePath": [
+										"root",
+										"rhOxxCXPNhKe",
+										"wwkLqbwpeGRi",
+										"J1Af6qoZ6AsQ"
+									],
+									"title": "Stellar Dark",
+									"notePosition": 10,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "code",
+									"mime": "text/css",
+									"attributes": [
+										{
+											"type": "label",
+											"name": "appTheme",
+											"value": "stellar-dark",
+											"isInheritable": false,
+											"position": 10
+										}
+									],
+									"dataFileName": "Stellar Dark.html",
+									"attachments": [],
+									"dirFileName": "Stellar Dark",
+									"children": [
+										{
+											"isClone": false,
+											"noteId": "TWDeZM35Vv3p",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"TWDeZM35Vv3p"
+											],
+											"title": "FiraMono-Bold.ttf",
+											"notePosition": 10,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraMono-Bold.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraMono-Bold.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "0MwK0PmyPXiZ",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"0MwK0PmyPXiZ"
+											],
+											"title": "FiraMono-Medium.ttf",
+											"notePosition": 20,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraMono-Medium.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraMono-Medium.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "Hj18D75uIH0V",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"Hj18D75uIH0V"
+											],
+											"title": "FiraMono-Regular.ttf",
+											"notePosition": 30,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraMono-Regular.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraMono-Regular.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "CjZkhDE4YTXy",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"CjZkhDE4YTXy"
+											],
+											"title": "FiraSans-Black.ttf",
+											"notePosition": 40,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraSans-Black.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraSans-Black.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "q0jkpa3mDXXe",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"q0jkpa3mDXXe"
+											],
+											"title": "FiraSans-BlackItalic.ttf",
+											"notePosition": 50,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraSans-BlackItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraSans-BlackItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "Ve7vvnE7K5AX",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"Ve7vvnE7K5AX"
+											],
+											"title": "FiraSans-Bold.ttf",
+											"notePosition": 60,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraSans-Bold.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraSans-Bold.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "1OlAf1wMfliW",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"1OlAf1wMfliW"
+											],
+											"title": "FiraSans-BoldItalic.ttf",
+											"notePosition": 70,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraSans-BoldItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraSans-BoldItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "hKGA3VOVeien",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"hKGA3VOVeien"
+											],
+											"title": "FiraSans-ExtraBold.ttf",
+											"notePosition": 80,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraSans-ExtraBold.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraSans-ExtraBold.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "Z3apBjbY8gqQ",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"Z3apBjbY8gqQ"
+											],
+											"title": "FiraSans-ExtraBoldItalic.ttf",
+											"notePosition": 90,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraSans-ExtraBoldItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraSans-ExtraBoldItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "jGo4yWbkzsJk",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"jGo4yWbkzsJk"
+											],
+											"title": "FiraSans-ExtraLight.ttf",
+											"notePosition": 100,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraSans-ExtraLight.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraSans-ExtraLight.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "Saus4P9eCLbi",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"Saus4P9eCLbi"
+											],
+											"title": "FiraSans-ExtraLightItalic.ttf",
+											"notePosition": 110,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraSans-ExtraLightItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraSans-ExtraLightItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "FsAUr7mVuXWU",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"FsAUr7mVuXWU"
+											],
+											"title": "FiraSans-Italic.ttf",
+											"notePosition": 120,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraSans-Italic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraSans-Italic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "q49Sq9kAMCcf",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"q49Sq9kAMCcf"
+											],
+											"title": "FiraSans-Light.ttf",
+											"notePosition": 130,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraSans-Light.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraSans-Light.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "DCAWCI4y9nuA",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"DCAWCI4y9nuA"
+											],
+											"title": "FiraSans-LightItalic.ttf",
+											"notePosition": 140,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraSans-LightItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraSans-LightItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "H7T6EAhsvqpj",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"H7T6EAhsvqpj"
+											],
+											"title": "FiraSans-Medium.ttf",
+											"notePosition": 150,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraSans-Medium.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraSans-Medium.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "sAcKWiVUSqdT",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"sAcKWiVUSqdT"
+											],
+											"title": "FiraSans-MediumItalic.ttf",
+											"notePosition": 160,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraSans-MediumItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraSans-MediumItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "tKoMClQytPFx",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"tKoMClQytPFx"
+											],
+											"title": "FiraSans-Regular.ttf",
+											"notePosition": 170,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraSans-Regular.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraSans-Regular.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "mVee706DALc6",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"mVee706DALc6"
+											],
+											"title": "FiraSans-SemiBold.ttf",
+											"notePosition": 180,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraSans-SemiBold.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraSans-SemiBold.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "f43TR9xipExK",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"f43TR9xipExK"
+											],
+											"title": "FiraSans-SemiBoldItalic.ttf",
+											"notePosition": 190,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraSans-SemiBoldItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraSans-SemiBoldItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "FhTkDo0l9Fv1",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"FhTkDo0l9Fv1"
+											],
+											"title": "FiraSans-Thin.ttf",
+											"notePosition": 200,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraSans-Thin.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraSans-Thin.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "9uCe3CJ8vhll",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"J1Af6qoZ6AsQ",
+												"9uCe3CJ8vhll"
+											],
+											"title": "FiraSans-ThinItalic.ttf",
+											"notePosition": 210,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "FiraSans-ThinItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "FiraSans-ThinItalic.ttf.html",
+											"attachments": []
+										}
+									]
+								},
+								{
+									"isClone": false,
+									"noteId": "F2iYJV8yLEqy",
+									"notePath": [
+										"root",
+										"rhOxxCXPNhKe",
+										"wwkLqbwpeGRi",
+										"F2iYJV8yLEqy"
+									],
+									"title": "EverForest Ant Dark",
+									"notePosition": 20,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "code",
+									"mime": "text/css",
+									"attributes": [
+										{
+											"type": "label",
+											"name": "appTheme",
+											"value": "everforest-ant-dark",
+											"isInheritable": false,
+											"position": 10
+										}
+									],
+									"dataFileName": "EverForest Ant Dark.html",
+									"attachments": [],
+									"dirFileName": "EverForest Ant Dark",
+									"children": [
+										{
+											"isClone": false,
+											"noteId": "emB0s6XKjAdt",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"emB0s6XKjAdt"
+											],
+											"title": "Jost-Black.ttf",
+											"notePosition": 30,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "Jost-Black.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Jost-Black.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "JAVuGRjCmZIX",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"JAVuGRjCmZIX"
+											],
+											"title": "Jost-BlackItalic.ttf",
+											"notePosition": 40,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "Jost-BlackItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Jost-BlackItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "732eCMhDw8Uw",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"732eCMhDw8Uw"
+											],
+											"title": "Jost-Bold.ttf",
+											"notePosition": 50,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "Jost-Bold.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Jost-Bold.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "HM9sC9V2UOaO",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"HM9sC9V2UOaO"
+											],
+											"title": "Jost-BoldItalic.ttf",
+											"notePosition": 60,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "Jost-BoldItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Jost-BoldItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "gQwHR9BH72Tw",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"gQwHR9BH72Tw"
+											],
+											"title": "Jost-ExtraBold.ttf",
+											"notePosition": 70,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "Jost-ExtraBold.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Jost-ExtraBold.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "sZ3vrQZMHzs1",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"sZ3vrQZMHzs1"
+											],
+											"title": "Jost-ExtraBoldItalic.ttf",
+											"notePosition": 80,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "Jost-ExtraBoldItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Jost-ExtraBoldItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "GxF8FKoeoiit",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"GxF8FKoeoiit"
+											],
+											"title": "Jost-ExtraLight.ttf",
+											"notePosition": 90,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "Jost-ExtraLight.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Jost-ExtraLight.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "n4FPKwyIlK0U",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"n4FPKwyIlK0U"
+											],
+											"title": "Jost-ExtraLightItalic.ttf",
+											"notePosition": 100,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "Jost-ExtraLightItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Jost-ExtraLightItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "joSg0ssWu3wc",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"joSg0ssWu3wc"
+											],
+											"title": "Jost-Italic.ttf",
+											"notePosition": 110,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "Jost-Italic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Jost-Italic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "jFFat5rw9i4A",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"jFFat5rw9i4A"
+											],
+											"title": "Jost-Light.ttf",
+											"notePosition": 120,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "Jost-Light.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Jost-Light.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "WJ3vnYiO1sFP",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"WJ3vnYiO1sFP"
+											],
+											"title": "Jost-LightItalic.ttf",
+											"notePosition": 130,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "Jost-LightItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Jost-LightItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "IKrTKLVQU048",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"IKrTKLVQU048"
+											],
+											"title": "Jost-Medium.ttf",
+											"notePosition": 140,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "Jost-Medium.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Jost-Medium.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "IYrFoayHie1D",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"IYrFoayHie1D"
+											],
+											"title": "Jost-MediumItalic.ttf",
+											"notePosition": 150,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "Jost-MediumItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Jost-MediumItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "VDrGxgxCJGUz",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"VDrGxgxCJGUz"
+											],
+											"title": "Jost-Regular.ttf",
+											"notePosition": 160,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "Jost-Regular.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Jost-Regular.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "AlAuFy4LueU9",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"AlAuFy4LueU9"
+											],
+											"title": "Jost-SemiBold.ttf",
+											"notePosition": 170,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "Jost-SemiBold.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Jost-SemiBold.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "ajkRwn6fdPkQ",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"ajkRwn6fdPkQ"
+											],
+											"title": "Jost-SemiBoldItalic.ttf",
+											"notePosition": 180,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "Jost-SemiBoldItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Jost-SemiBoldItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "9oz9WFQj8mwV",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"9oz9WFQj8mwV"
+											],
+											"title": "Jost-Thin.ttf",
+											"notePosition": 190,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "Jost-Thin.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Jost-Thin.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "VS1DSDPwoqrG",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"VS1DSDPwoqrG"
+											],
+											"title": "Jost-ThinItalic.ttf",
+											"notePosition": 200,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "Jost-ThinItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Jost-ThinItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "JtEZ1ZoXIVXN",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"JtEZ1ZoXIVXN"
+											],
+											"title": "JetBrainsMono-Bold.ttf",
+											"notePosition": 210,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "JetBrainsMono-Bold.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "JetBrainsMono-Bold.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "jLSta4fWvFNi",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"jLSta4fWvFNi"
+											],
+											"title": "JetBrainsMono-BoldItalic.ttf",
+											"notePosition": 220,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "JetBrainsMono-BoldItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "JetBrainsMono-BoldItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "M5RENKZ20zDG",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"M5RENKZ20zDG"
+											],
+											"title": "JetBrainsMono-ExtraBold.ttf",
+											"notePosition": 230,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "JetBrainsMono-ExtraBold.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "JetBrainsMono-ExtraBold.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "Y46JVjyNAGaG",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"Y46JVjyNAGaG"
+											],
+											"title": "JetBrainsMono-ExtraBoldItalic.ttf",
+											"notePosition": 240,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "JetBrainsMono-ExtraBoldItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "JetBrainsMono-ExtraBoldItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "eiXrqqi2UdSs",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"eiXrqqi2UdSs"
+											],
+											"title": "JetBrainsMono-ExtraLight.ttf",
+											"notePosition": 250,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "JetBrainsMono-ExtraLight.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "JetBrainsMono-ExtraLight.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "8RQeZac7lXue",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"8RQeZac7lXue"
+											],
+											"title": "JetBrainsMono-ExtraLightItalic.ttf",
+											"notePosition": 260,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "JetBrainsMono-ExtraLightItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "JetBrainsMono-ExtraLightItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "fiw5xjz9wHRM",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"fiw5xjz9wHRM"
+											],
+											"title": "JetBrainsMono-Italic.ttf",
+											"notePosition": 270,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "JetBrainsMono-Italic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "JetBrainsMono-Italic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "fDGsyRftcuEL",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"fDGsyRftcuEL"
+											],
+											"title": "JetBrainsMono-Light.ttf",
+											"notePosition": 280,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "JetBrainsMono-Light.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "JetBrainsMono-Light.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "suvNC7XWTD1c",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"suvNC7XWTD1c"
+											],
+											"title": "JetBrainsMono-LightItalic.ttf",
+											"notePosition": 290,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "JetBrainsMono-LightItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "JetBrainsMono-LightItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "o2a1lv4GCcx3",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"o2a1lv4GCcx3"
+											],
+											"title": "JetBrainsMono-Medium.ttf",
+											"notePosition": 300,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "JetBrainsMono-Medium.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "JetBrainsMono-Medium.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "5Rsl3FVI24PH",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"5Rsl3FVI24PH"
+											],
+											"title": "JetBrainsMono-MediumItalic.ttf",
+											"notePosition": 310,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "JetBrainsMono-MediumItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "JetBrainsMono-MediumItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "dx1clp6Hecjs",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"dx1clp6Hecjs"
+											],
+											"title": "JetBrainsMono-Regular.ttf",
+											"notePosition": 320,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "JetBrainsMono-Regular.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "JetBrainsMono-Regular.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "IWIuHDPe6wuj",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"IWIuHDPe6wuj"
+											],
+											"title": "JetBrainsMono-SemiBold.ttf",
+											"notePosition": 330,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "JetBrainsMono-SemiBold.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "JetBrainsMono-SemiBold.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "5Pbzx2MuShb8",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"5Pbzx2MuShb8"
+											],
+											"title": "JetBrainsMono-SemiBoldItalic.ttf",
+											"notePosition": 340,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "JetBrainsMono-SemiBoldItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "JetBrainsMono-SemiBoldItalic.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "iU5MlGQi8JE1",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"iU5MlGQi8JE1"
+											],
+											"title": "JetBrainsMono-Thin.ttf",
+											"notePosition": 350,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "JetBrainsMono-Thin.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "JetBrainsMono-Thin.ttf.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "2Xf4Q9pNB3MV",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"F2iYJV8yLEqy",
+												"2Xf4Q9pNB3MV"
+											],
+											"title": "JetBrainsMono-ThinItalic.ttf",
+											"notePosition": 360,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "file",
+											"mime": "font/ttf",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "originalFileName",
+													"value": "JetBrainsMono-ThinItalic.ttf",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "JetBrainsMono-ThinItalic.ttf.html",
+											"attachments": []
+										}
+									]
+								},
+								{
+									"isClone": false,
+									"noteId": "M97KUoJXOb8Q",
+									"notePath": [
+										"root",
+										"rhOxxCXPNhKe",
+										"wwkLqbwpeGRi",
+										"M97KUoJXOb8Q"
+									],
+									"title": "Blue",
+									"notePosition": 30,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [],
+									"format": "html",
+									"dataFileName": "Blue.html",
+									"attachments": [],
+									"dirFileName": "Blue",
+									"children": [
+										{
+											"isClone": false,
+											"noteId": "pheyPVyh31VT",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"M97KUoJXOb8Q",
+												"pheyPVyh31VT"
+											],
+											"title": "Dark-mode-img-color-conversion.js",
+											"notePosition": 10,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "code",
+											"mime": "text/javascript",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "widget",
+													"value": "",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"dataFileName": "Dark-mode-img-color-conversion.js.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "WnwntxwkoFNh",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"M97KUoJXOb8Q",
+												"WnwntxwkoFNh"
+											],
+											"title": "Blue (Dark)",
+											"notePosition": 20,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "code",
+											"mime": "text/css",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "appTheme",
+													"value": "blue-theme-dark",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "label",
+													"name": "appThemeBase",
+													"value": "next-dark",
+													"isInheritable": false,
+													"position": 20
+												}
+											],
+											"dataFileName": "Blue (Dark).html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "466909slxlAF",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"wwkLqbwpeGRi",
+												"M97KUoJXOb8Q",
+												"466909slxlAF"
+											],
+											"title": "Blue (Light)",
+											"notePosition": 30,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "code",
+											"mime": "text/css",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "appTheme",
+													"value": "blue-theme-light",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "label",
+													"name": "appThemeBase",
+													"value": "next-light",
+													"isInheritable": false,
+													"position": 20
+												}
+											],
+											"dataFileName": "Blue (Light).html",
+											"attachments": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"isClone": false,
+							"noteId": "9FKFGsF80s7Q",
+							"notePath": [
+								"root",
+								"rhOxxCXPNhKe",
+								"9FKFGsF80s7Q"
+							],
+							"title": "Plugins",
+							"notePosition": 30,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "book",
+							"mime": "",
+							"attributes": [
+								{
+									"type": "label",
+									"name": "iconClass",
+									"value": "bx bx-plug",
+									"isInheritable": false,
+									"position": 10
+								},
+								{
+									"type": "relation",
+									"name": "template",
+									"value": "_template_grid_view",
+									"isInheritable": false,
+									"position": 50
+								}
+							],
+							"dataFileName": "Plugins.html",
+							"attachments": [],
+							"dirFileName": "Plugins",
+							"children": [
+								{
+									"isClone": false,
+									"noteId": "rVtk0XheQVY4",
+									"notePath": [
+										"root",
+										"rhOxxCXPNhKe",
+										"9FKFGsF80s7Q",
+										"rVtk0XheQVY4"
+									],
+									"title": "TriliumNext Flux",
+									"notePosition": 10,
+									"prefix": null,
+									"isExpanded": true,
+									"type": "code",
+									"mime": "text/jsx",
+									"attributes": [],
+									"dataFileName": "TriliumNext Flux.html",
+									"attachments": [],
+									"dirFileName": "TriliumNext Flux",
+									"children": [
+										{
+											"isClone": false,
+											"noteId": "ULJTrS92BGVE",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"9FKFGsF80s7Q",
+												"rVtk0XheQVY4",
+												"ULJTrS92BGVE"
+											],
+											"title": "backendBridge",
+											"notePosition": 10,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "code",
+											"mime": "text/jsx",
+											"attributes": [],
+											"dataFileName": "backendBridge.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "UtvObDELRRWR",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"9FKFGsF80s7Q",
+												"rVtk0XheQVY4",
+												"UtvObDELRRWR"
+											],
+											"title": "dkLogic",
+											"notePosition": 20,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "code",
+											"mime": "text/jsx",
+											"attributes": [],
+											"dataFileName": "dkLogic.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "2RxCKrv1BDSh",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"9FKFGsF80s7Q",
+												"rVtk0XheQVY4",
+												"2RxCKrv1BDSh"
+											],
+											"title": "groupLogic",
+											"notePosition": 30,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "code",
+											"mime": "text/jsx",
+											"attributes": [],
+											"dataFileName": "groupLogic.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "YahvSX7N6wf5",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"9FKFGsF80s7Q",
+												"rVtk0XheQVY4",
+												"YahvSX7N6wf5"
+											],
+											"title": "panelView",
+											"notePosition": 40,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "code",
+											"mime": "text/jsx",
+											"attributes": [],
+											"dataFileName": "panelView.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "49OA1P9oPvGV",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"9FKFGsF80s7Q",
+												"rVtk0XheQVY4",
+												"49OA1P9oPvGV"
+											],
+											"title": "styles",
+											"notePosition": 50,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "code",
+											"mime": "text/jsx",
+											"attributes": [],
+											"dataFileName": "styles.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "8c9E1JKhtx1S",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"9FKFGsF80s7Q",
+												"rVtk0XheQVY4",
+												"8c9E1JKhtx1S"
+											],
+											"title": "taskParser",
+											"notePosition": 60,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "code",
+											"mime": "text/jsx",
+											"attributes": [],
+											"dataFileName": "taskParser.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "kXk8Y2nfkPfP",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"9FKFGsF80s7Q",
+												"rVtk0XheQVY4",
+												"kXk8Y2nfkPfP"
+											],
+											"title": "txLogic",
+											"notePosition": 70,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "code",
+											"mime": "text/jsx",
+											"attributes": [],
+											"dataFileName": "txLogic.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "qsKexpj55zsW",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"9FKFGsF80s7Q",
+												"rVtk0XheQVY4",
+												"qsKexpj55zsW"
+											],
+											"title": "i18n",
+											"notePosition": 80,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "code",
+											"mime": "text/jsx",
+											"attributes": [],
+											"dataFileName": "i18n.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "PkqhTu0XyMCz",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"9FKFGsF80s7Q",
+												"rVtk0XheQVY4",
+												"PkqhTu0XyMCz"
+											],
+											"title": "config",
+											"notePosition": 90,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "code",
+											"mime": "application/json",
+											"attributes": [],
+											"dataFileName": "config.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "z1N117xdwtcU",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"9FKFGsF80s7Q",
+												"rVtk0XheQVY4",
+												"z1N117xdwtcU"
+											],
+											"title": "tagQuickInsert",
+											"notePosition": 100,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "code",
+											"mime": "text/jsx",
+											"attributes": [],
+											"dataFileName": "tagQuickInsert.html",
+											"attachments": []
+										}
+									]
+								},
+								{
+									"isClone": false,
+									"noteId": "7fdkVSFLkAe8",
+									"notePath": [
+										"root",
+										"rhOxxCXPNhKe",
+										"9FKFGsF80s7Q",
+										"7fdkVSFLkAe8"
+									],
+									"title": "Outliner",
+									"notePosition": 20,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "code",
+									"mime": "text/javascript",
+									"attributes": [
+										{
+											"type": "label",
+											"name": "disabled:widget",
+											"value": "",
+											"isInheritable": false,
+											"position": 40
+										}
+									],
+									"dataFileName": "Outliner.html",
+									"attachments": []
+								},
+								{
+									"isClone": false,
+									"noteId": "23aKX11VPFaa",
+									"notePath": [
+										"root",
+										"rhOxxCXPNhKe",
+										"9FKFGsF80s7Q",
+										"23aKX11VPFaa"
+									],
+									"title": "trilium-addon-manager@beatlink",
+									"notePosition": 30,
+									"prefix": null,
+									"isExpanded": true,
+									"type": "render",
+									"mime": "",
+									"attributes": [
+										{
+											"type": "label",
+											"name": "TAMFILEID",
+											"value": "trilium-addon-manager@beatlink/root",
 											"isInheritable": false,
 											"position": 10
 										},
 										{
-											"type": "relation",
-											"name": "internalLink",
-											"value": "lcH15voXLENO",
+											"type": "label",
+											"name": "iconClass",
+											"value": "bx bx-customize",
 											"isInheritable": false,
 											"position": 20
 										},
 										{
 											"type": "relation",
-											"name": "internalLink",
-											"value": "O2I2bxJkWNaD",
+											"name": "renderNote",
+											"value": "y7DMiy4dlQ4r",
 											"isInheritable": false,
 											"position": 30
 										},
 										{
-											"type": "relation",
-											"name": "internalLink",
-											"value": "OzTuiyngQtOK",
+											"type": "label",
+											"name": "TAMSOURCEURL",
+											"value": "",
 											"isInheritable": false,
 											"position": 40
-										},
-										{
-											"type": "relation",
-											"name": "internalLink",
-											"value": "2E8NnBHIcVgU",
-											"isInheritable": false,
-											"position": 50
 										}
 									],
-									"format": "html",
-									"dataFileName": "Magical Systems.html",
-									"attachments": []
-								},
-								{
-									"isClone": false,
-									"noteId": "nKDg7xcuI8m0",
-									"notePath": [
-										"root",
-										"nzp81GBaeraN",
-										"EcoHgVWA64c3",
-										"nKDg7xcuI8m0"
-									],
-									"title": "Crystalline Peaks",
-									"notePosition": 50,
-									"prefix": null,
-									"isExpanded": false,
-									"type": "text",
-									"mime": "text/html",
-									"attributes": [],
-									"format": "html",
-									"dataFileName": "Crystalline Peaks.html",
-									"attachments": []
-								},
-								{
-									"isClone": false,
-									"noteId": "lcH15voXLENO",
-									"notePath": [
-										"root",
-										"nzp81GBaeraN",
-										"EcoHgVWA64c3",
-										"lcH15voXLENO"
-									],
-									"title": "Eldoria",
-									"notePosition": 60,
-									"prefix": null,
-									"isExpanded": false,
-									"type": "text",
-									"mime": "text/html",
-									"attributes": [],
-									"format": "html",
-									"dataFileName": "Eldoria.html",
-									"attachments": []
+									"dataFileName": "trilium-addon-manager@beatlink.html",
+									"attachments": [],
+									"dirFileName": "trilium-addon-manager@beatlink",
+									"children": [
+										{
+											"isClone": false,
+											"noteId": "zx7MQlAn3ESz",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"9FKFGsF80s7Q",
+												"23aKX11VPFaa",
+												"zx7MQlAn3ESz"
+											],
+											"title": "Database",
+											"notePosition": 10,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "code",
+											"mime": "application/json",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "TAMFILEID",
+													"value": "trilium-addon-manager@beatlink/database",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "label",
+													"name": "iconClass",
+													"value": "bx bx-customize",
+													"isInheritable": false,
+													"position": 20
+												},
+												{
+													"type": "label",
+													"name": "TAMSOURCEURL",
+													"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/trilium-addon-manager@beatlink/database.json",
+													"isInheritable": false,
+													"position": 30
+												}
+											],
+											"dataFileName": "Database.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "dGTIsYnkiB1F",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"9FKFGsF80s7Q",
+												"23aKX11VPFaa",
+												"dGTIsYnkiB1F"
+											],
+											"title": "Source Code",
+											"notePosition": 20,
+											"prefix": null,
+											"isExpanded": true,
+											"type": "text",
+											"mime": "text/html",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "TAMFILEID",
+													"value": "trilium-addon-manager@beatlink/source-code",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "label",
+													"name": "iconClass",
+													"value": "bx bx-customize",
+													"isInheritable": false,
+													"position": 20
+												},
+												{
+													"type": "label",
+													"name": "TAMSOURCEURL",
+													"value": "",
+													"isInheritable": false,
+													"position": 30
+												}
+											],
+											"format": "html",
+											"dataFileName": "Source Code.html",
+											"attachments": [],
+											"dirFileName": "Source Code",
+											"children": [
+												{
+													"isClone": false,
+													"noteId": "y7DMiy4dlQ4r",
+													"notePath": [
+														"root",
+														"rhOxxCXPNhKe",
+														"9FKFGsF80s7Q",
+														"23aKX11VPFaa",
+														"dGTIsYnkiB1F",
+														"y7DMiy4dlQ4r"
+													],
+													"title": "TAM.jsx",
+													"notePosition": 10,
+													"prefix": null,
+													"isExpanded": true,
+													"type": "code",
+													"mime": "text/jsx",
+													"attributes": [
+														{
+															"type": "label",
+															"name": "TAMFILEID",
+															"value": "trilium-addon-manager@beatlink/tam-jsx",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "label",
+															"name": "iconClass",
+															"value": "bx bx-customize",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "relation",
+															"name": "displayNote",
+															"value": "23aKX11VPFaa",
+															"isInheritable": false,
+															"position": 30
+														},
+														{
+															"type": "label",
+															"name": "TAMSOURCEURL",
+															"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/trilium-addon-manager@beatlink/TAM.jsx",
+															"isInheritable": false,
+															"position": 40
+														}
+													],
+													"dataFileName": "TAM.jsx.html",
+													"attachments": [],
+													"dirFileName": "TAM.jsx",
+													"children": [
+														{
+															"isClone": false,
+															"noteId": "PKWCZ3ficgiA",
+															"notePath": [
+																"root",
+																"rhOxxCXPNhKe",
+																"9FKFGsF80s7Q",
+																"23aKX11VPFaa",
+																"dGTIsYnkiB1F",
+																"y7DMiy4dlQ4r",
+																"PKWCZ3ficgiA"
+															],
+															"title": "lib-tam.js",
+															"notePosition": 10,
+															"prefix": null,
+															"isExpanded": true,
+															"type": "code",
+															"mime": "application/javascript;env=frontend",
+															"attributes": [
+																{
+																	"type": "label",
+																	"name": "TAMFILEID",
+																	"value": "trilium-addon-manager@beatlink/lib-tam",
+																	"isInheritable": false,
+																	"position": 10
+																},
+																{
+																	"type": "label",
+																	"name": "iconClass",
+																	"value": "bx bx-customize",
+																	"isInheritable": false,
+																	"position": 20
+																},
+																{
+																	"type": "relation",
+																	"name": "database",
+																	"value": "zx7MQlAn3ESz",
+																	"isInheritable": false,
+																	"position": 30
+																},
+																{
+																	"type": "relation",
+																	"name": "addonRoot",
+																	"value": "xg15I0EAi27u",
+																	"isInheritable": false,
+																	"position": 40
+																},
+																{
+																	"type": "relation",
+																	"name": "addonPersistence",
+																	"value": "D7GEocw4DwCU",
+																	"isInheritable": false,
+																	"position": 50
+																},
+																{
+																	"type": "label",
+																	"name": "TAMSOURCEURL",
+																	"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/trilium-addon-manager@beatlink/lib-tam.js",
+																	"isInheritable": false,
+																	"position": 60
+																}
+															],
+															"dataFileName": "lib-tam.js",
+															"attachments": [],
+															"dirFileName": "1_lib-tam.js",
+															"children": [
+																{
+																	"isClone": false,
+																	"noteId": "cyiGV15MSavR",
+																	"notePath": [
+																		"root",
+																		"rhOxxCXPNhKe",
+																		"9FKFGsF80s7Q",
+																		"23aKX11VPFaa",
+																		"dGTIsYnkiB1F",
+																		"y7DMiy4dlQ4r",
+																		"PKWCZ3ficgiA",
+																		"cyiGV15MSavR"
+																	],
+																	"title": "marked.min.js",
+																	"notePosition": 10,
+																	"prefix": null,
+																	"isExpanded": false,
+																	"type": "code",
+																	"mime": "application/javascript;env=frontend",
+																	"attributes": [
+																		{
+																			"type": "label",
+																			"name": "TAMFILEID",
+																			"value": "trilium-addon-manager@beatlink/marked",
+																			"isInheritable": false,
+																			"position": 10
+																		},
+																		{
+																			"type": "label",
+																			"name": "iconClass",
+																			"value": "bx bx-customize",
+																			"isInheritable": false,
+																			"position": 20
+																		},
+																		{
+																			"type": "label",
+																			"name": "TAMSOURCEURL",
+																			"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/trilium-addon-manager@beatlink/marked.min.js",
+																			"isInheritable": false,
+																			"position": 30
+																		}
+																	],
+																	"dataFileName": "marked.min.js",
+																	"attachments": []
+																},
+																{
+																	"isClone": false,
+																	"noteId": "lNHBi4xJLcde",
+																	"notePath": [
+																		"root",
+																		"rhOxxCXPNhKe",
+																		"9FKFGsF80s7Q",
+																		"23aKX11VPFaa",
+																		"dGTIsYnkiB1F",
+																		"y7DMiy4dlQ4r",
+																		"PKWCZ3ficgiA",
+																		"lNHBi4xJLcde"
+																	],
+																	"title": "tam-manifest-model.js",
+																	"notePosition": 20,
+																	"prefix": null,
+																	"isExpanded": false,
+																	"type": "code",
+																	"mime": "application/javascript;env=frontend",
+																	"attributes": [
+																		{
+																			"type": "label",
+																			"name": "TAMFILEID",
+																			"value": "trilium-addon-manager@beatlink/tam-manifest-model",
+																			"isInheritable": false,
+																			"position": 10
+																		},
+																		{
+																			"type": "label",
+																			"name": "iconClass",
+																			"value": "bx bx-customize",
+																			"isInheritable": false,
+																			"position": 20
+																		},
+																		{
+																			"type": "label",
+																			"name": "TAMSOURCEURL",
+																			"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/trilium-addon-manager@beatlink/tam-manifest-model.js",
+																			"isInheritable": false,
+																			"position": 30
+																		}
+																	],
+																	"dataFileName": "tam-manifest-model.js",
+																	"attachments": []
+																},
+																{
+																	"isClone": false,
+																	"noteId": "YxaPUE9Q0rK1",
+																	"notePath": [
+																		"root",
+																		"rhOxxCXPNhKe",
+																		"9FKFGsF80s7Q",
+																		"23aKX11VPFaa",
+																		"dGTIsYnkiB1F",
+																		"y7DMiy4dlQ4r",
+																		"PKWCZ3ficgiA",
+																		"YxaPUE9Q0rK1"
+																	],
+																	"title": "libSettingsCore.js",
+																	"notePosition": 30,
+																	"prefix": null,
+																	"isExpanded": false,
+																	"type": "code",
+																	"mime": "application/javascript;env=frontend",
+																	"attributes": [
+																		{
+																			"type": "label",
+																			"name": "TAMFILEID",
+																			"value": "trilium-addon-manager@beatlink/libsettings-core",
+																			"isInheritable": false,
+																			"position": 10
+																		},
+																		{
+																			"type": "label",
+																			"name": "TAMSOURCEURL",
+																			"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/libs/libsettings/libsettings-core.js",
+																			"isInheritable": false,
+																			"position": 20
+																		}
+																	],
+																	"dataFileName": "libSettingsCore.js",
+																	"attachments": []
+																}
+															]
+														}
+													]
+												},
+												{
+													"isClone": false,
+													"noteId": "OIeXBaeuqYpf",
+													"notePath": [
+														"root",
+														"rhOxxCXPNhKe",
+														"9FKFGsF80s7Q",
+														"23aKX11VPFaa",
+														"dGTIsYnkiB1F",
+														"OIeXBaeuqYpf"
+													],
+													"title": "TAM.css",
+													"notePosition": 20,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "code",
+													"mime": "text/css",
+													"attributes": [
+														{
+															"type": "label",
+															"name": "TAMFILEID",
+															"value": "trilium-addon-manager@beatlink/tam-css",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "label",
+															"name": "appCss",
+															"value": "",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "label",
+															"name": "iconClass",
+															"value": "bx bx-customize",
+															"isInheritable": false,
+															"position": 30
+														},
+														{
+															"type": "label",
+															"name": "TAMSOURCEURL",
+															"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/trilium-addon-manager@beatlink/tam.css",
+															"isInheritable": false,
+															"position": 40
+														}
+													],
+													"dataFileName": "TAM.css.html",
+													"attachments": []
+												}
+											]
+										},
+										{
+											"isClone": false,
+											"noteId": "xg15I0EAi27u",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"9FKFGsF80s7Q",
+												"23aKX11VPFaa",
+												"xg15I0EAi27u"
+											],
+											"title": "Addons",
+											"notePosition": 30,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "TAMFILEID",
+													"value": "trilium-addon-manager@beatlink/addons",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "label",
+													"name": "iconClass",
+													"value": "bx bx-customize",
+													"isInheritable": false,
+													"position": 20
+												},
+												{
+													"type": "label",
+													"name": "TAMSOURCEURL",
+													"value": "",
+													"isInheritable": false,
+													"position": 30
+												}
+											],
+											"format": "html",
+											"dataFileName": "Addons.html",
+											"attachments": [],
+											"dirFileName": "Addons",
+											"children": [
+												{
+													"isClone": false,
+													"noteId": "at0DM3cJIWPc",
+													"notePath": [
+														"root",
+														"rhOxxCXPNhKe",
+														"9FKFGsF80s7Q",
+														"23aKX11VPFaa",
+														"xg15I0EAi27u",
+														"at0DM3cJIWPc"
+													],
+													"title": "Game Tracker",
+													"notePosition": 10,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [
+														{
+															"type": "label",
+															"name": "TAMFILEID",
+															"value": "game-tracker@beatlink/__tamAddonRoot__",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "label",
+															"name": "addonId",
+															"value": "game-tracker@beatlink",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "label",
+															"name": "iconClass",
+															"value": "bx bx-customize",
+															"isInheritable": false,
+															"position": 30
+														}
+													],
+													"format": "html",
+													"dataFileName": "Game Tracker.html",
+													"attachments": [],
+													"dirFileName": "Game Tracker",
+													"children": [
+														{
+															"isClone": false,
+															"noteId": "mFv2nz1fydLn",
+															"notePath": [
+																"root",
+																"rhOxxCXPNhKe",
+																"9FKFGsF80s7Q",
+																"23aKX11VPFaa",
+																"xg15I0EAi27u",
+																"at0DM3cJIWPc",
+																"mFv2nz1fydLn"
+															],
+															"title": "game-tracker@beatlink",
+															"notePosition": 10,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "render",
+															"mime": "text/html",
+															"attributes": [
+																{
+																	"type": "label",
+																	"name": "TAMFILEID",
+																	"value": "game-tracker@beatlink/launcher",
+																	"isInheritable": false,
+																	"position": 10
+																},
+																{
+																	"type": "label",
+																	"name": "TAMSOURCEURL",
+																	"value": "",
+																	"isInheritable": false,
+																	"position": 20
+																},
+																{
+																	"type": "label",
+																	"name": "iconClass",
+																	"value": "bx bx-joystick",
+																	"isInheritable": false,
+																	"position": 30
+																},
+																{
+																	"type": "relation",
+																	"name": "renderNote",
+																	"value": "3VODeUBv8aeG",
+																	"isInheritable": false,
+																	"position": 40
+																}
+															],
+															"dataFileName": "game-tracker@beatlink.html",
+															"attachments": [],
+															"dirFileName": "game-tracker@beatlink",
+															"children": [
+																{
+																	"isClone": false,
+																	"noteId": "3VODeUBv8aeG",
+																	"notePath": [
+																		"root",
+																		"rhOxxCXPNhKe",
+																		"9FKFGsF80s7Q",
+																		"23aKX11VPFaa",
+																		"xg15I0EAi27u",
+																		"at0DM3cJIWPc",
+																		"mFv2nz1fydLn",
+																		"3VODeUBv8aeG"
+																	],
+																	"title": "gameTracker.jsx",
+																	"notePosition": 10,
+																	"prefix": null,
+																	"isExpanded": false,
+																	"type": "code",
+																	"mime": "text/jsx",
+																	"attributes": [
+																		{
+																			"type": "label",
+																			"name": "TAMFILEID",
+																			"value": "game-tracker@beatlink/view",
+																			"isInheritable": false,
+																			"position": 10
+																		},
+																		{
+																			"type": "label",
+																			"name": "TAMSOURCEURL",
+																			"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/game-tracker@beatlink/gameTracker.jsx",
+																			"isInheritable": false,
+																			"position": 20
+																		},
+																		{
+																			"type": "label",
+																			"name": "gameTrackerRender",
+																			"value": "",
+																			"isInheritable": false,
+																			"position": 30
+																		},
+																		{
+																			"type": "label",
+																			"name": "iconClass",
+																			"value": "bx bx-joystick",
+																			"isInheritable": false,
+																			"position": 40
+																		},
+																		{
+																			"type": "relation",
+																			"name": "schemaNote",
+																			"value": "3G0TEGvxuECQ",
+																			"isInheritable": false,
+																			"position": 50
+																		},
+																		{
+																			"type": "relation",
+																			"name": "settingsNote",
+																			"value": "DcQXhZXwrb52",
+																			"isInheritable": false,
+																			"position": 60
+																		},
+																		{
+																			"type": "relation",
+																			"name": "settingsPageNote",
+																			"value": "uJrMdiPlLKTT",
+																			"isInheritable": false,
+																			"position": 70
+																		}
+																	],
+																	"dataFileName": "gameTracker.jsx.html",
+																	"attachments": [],
+																	"dirFileName": "gameTracker.jsx",
+																	"children": [
+																		{
+																			"isClone": false,
+																			"noteId": "rmJX65m6tkgg",
+																			"notePath": [
+																				"root",
+																				"rhOxxCXPNhKe",
+																				"9FKFGsF80s7Q",
+																				"23aKX11VPFaa",
+																				"xg15I0EAi27u",
+																				"at0DM3cJIWPc",
+																				"mFv2nz1fydLn",
+																				"3VODeUBv8aeG",
+																				"rmJX65m6tkgg"
+																			],
+																			"title": "gameTracker.css",
+																			"notePosition": 10,
+																			"prefix": null,
+																			"isExpanded": false,
+																			"type": "code",
+																			"mime": "text/css",
+																			"attributes": [
+																				{
+																					"type": "label",
+																					"name": "TAMFILEID",
+																					"value": "game-tracker@beatlink/style",
+																					"isInheritable": false,
+																					"position": 10
+																				},
+																				{
+																					"type": "label",
+																					"name": "TAMSOURCEURL",
+																					"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/game-tracker@beatlink/gameTracker.css",
+																					"isInheritable": false,
+																					"position": 20
+																				},
+																				{
+																					"type": "label",
+																					"name": "appCss",
+																					"value": "",
+																					"isInheritable": false,
+																					"position": 30
+																				}
+																			],
+																			"dataFileName": "gameTracker.css.html",
+																			"attachments": []
+																		},
+																		{
+																			"isClone": false,
+																			"noteId": "DoApeOuKhLg2",
+																			"notePath": [
+																				"root",
+																				"rhOxxCXPNhKe",
+																				"9FKFGsF80s7Q",
+																				"23aKX11VPFaa",
+																				"xg15I0EAi27u",
+																				"at0DM3cJIWPc",
+																				"mFv2nz1fydLn",
+																				"3VODeUBv8aeG",
+																				"DoApeOuKhLg2"
+																			],
+																			"title": "libSettingsUI.jsx",
+																			"notePosition": 20,
+																			"prefix": null,
+																			"isExpanded": false,
+																			"type": "code",
+																			"mime": "text/jsx",
+																			"attributes": [
+																				{
+																					"type": "label",
+																					"name": "TAMFILEID",
+																					"value": "game-tracker@beatlink/libsettings-ui",
+																					"isInheritable": false,
+																					"position": 10
+																				},
+																				{
+																					"type": "label",
+																					"name": "TAMSOURCEURL",
+																					"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/libs/libsettings/libsettings-ui.jsx",
+																					"isInheritable": false,
+																					"position": 20
+																				}
+																			],
+																			"dataFileName": "libSettingsUI.jsx.html",
+																			"attachments": [],
+																			"dirFileName": "libSettingsUI.jsx",
+																			"children": [
+																				{
+																					"isClone": true,
+																					"noteId": "YxaPUE9Q0rK1",
+																					"notePath": [
+																						"root",
+																						"rhOxxCXPNhKe",
+																						"9FKFGsF80s7Q",
+																						"23aKX11VPFaa",
+																						"xg15I0EAi27u",
+																						"at0DM3cJIWPc",
+																						"mFv2nz1fydLn",
+																						"3VODeUBv8aeG",
+																						"DoApeOuKhLg2",
+																						"YxaPUE9Q0rK1"
+																					],
+																					"title": "libSettingsCore.js",
+																					"prefix": null,
+																					"dataFileName": "libSettingsCore.js.clone.html",
+																					"type": "text",
+																					"format": "html"
+																				},
+																				{
+																					"isClone": false,
+																					"noteId": "3koBdEZabupf",
+																					"notePath": [
+																						"root",
+																						"rhOxxCXPNhKe",
+																						"9FKFGsF80s7Q",
+																						"23aKX11VPFaa",
+																						"xg15I0EAi27u",
+																						"at0DM3cJIWPc",
+																						"mFv2nz1fydLn",
+																						"3VODeUBv8aeG",
+																						"DoApeOuKhLg2",
+																						"3koBdEZabupf"
+																					],
+																					"title": "libSettingsUI.css",
+																					"notePosition": 20,
+																					"prefix": null,
+																					"isExpanded": false,
+																					"type": "code",
+																					"mime": "text/css",
+																					"attributes": [
+																						{
+																							"type": "label",
+																							"name": "TAMFILEID",
+																							"value": "game-tracker@beatlink/libsettings-style",
+																							"isInheritable": false,
+																							"position": 10
+																						},
+																						{
+																							"type": "label",
+																							"name": "TAMSOURCEURL",
+																							"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/libs/libsettings/libsettings-ui.css",
+																							"isInheritable": false,
+																							"position": 20
+																						},
+																						{
+																							"type": "label",
+																							"name": "appCss",
+																							"value": "",
+																							"isInheritable": false,
+																							"position": 30
+																						}
+																					],
+																					"dataFileName": "libSettingsUI.css.html",
+																					"attachments": []
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"isClone": false,
+																	"noteId": "uJrMdiPlLKTT",
+																	"notePath": [
+																		"root",
+																		"rhOxxCXPNhKe",
+																		"9FKFGsF80s7Q",
+																		"23aKX11VPFaa",
+																		"xg15I0EAi27u",
+																		"at0DM3cJIWPc",
+																		"mFv2nz1fydLn",
+																		"uJrMdiPlLKTT"
+																	],
+																	"title": "Settings",
+																	"notePosition": 20,
+																	"prefix": null,
+																	"isExpanded": false,
+																	"type": "render",
+																	"mime": "text/html",
+																	"attributes": [
+																		{
+																			"type": "label",
+																			"name": "TAMFILEID",
+																			"value": "game-tracker@beatlink/settings-page",
+																			"isInheritable": false,
+																			"position": 10
+																		},
+																		{
+																			"type": "label",
+																			"name": "TAMSOURCEURL",
+																			"value": "",
+																			"isInheritable": false,
+																			"position": 20
+																		},
+																		{
+																			"type": "label",
+																			"name": "iconClass",
+																			"value": "bx bx-cog",
+																			"isInheritable": false,
+																			"position": 30
+																		},
+																		{
+																			"type": "relation",
+																			"name": "renderNote",
+																			"value": "DcQXhZXwrb52",
+																			"isInheritable": false,
+																			"position": 40
+																		}
+																	],
+																	"dataFileName": "Settings.html",
+																	"attachments": [],
+																	"dirFileName": "Settings",
+																	"children": [
+																		{
+																			"isClone": false,
+																			"noteId": "DcQXhZXwrb52",
+																			"notePath": [
+																				"root",
+																				"rhOxxCXPNhKe",
+																				"9FKFGsF80s7Q",
+																				"23aKX11VPFaa",
+																				"xg15I0EAi27u",
+																				"at0DM3cJIWPc",
+																				"mFv2nz1fydLn",
+																				"uJrMdiPlLKTT",
+																				"DcQXhZXwrb52"
+																			],
+																			"title": "settings.jsx",
+																			"notePosition": 10,
+																			"prefix": null,
+																			"isExpanded": false,
+																			"type": "code",
+																			"mime": "text/jsx",
+																			"attributes": [
+																				{
+																					"type": "label",
+																					"name": "TAMFILEID",
+																					"value": "game-tracker@beatlink/settings",
+																					"isInheritable": false,
+																					"position": 10
+																				},
+																				{
+																					"type": "label",
+																					"name": "TAMSOURCEURL",
+																					"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/game-tracker@beatlink/settings.jsx",
+																					"isInheritable": false,
+																					"position": 20
+																				},
+																				{
+																					"type": "label",
+																					"name": "gameTrackerConfig",
+																					"value": "",
+																					"isInheritable": false,
+																					"position": 30
+																				},
+																				{
+																					"type": "relation",
+																					"name": "configNote",
+																					"value": "em9qvabzWBVd",
+																					"isInheritable": false,
+																					"position": 40
+																				},
+																				{
+																					"type": "relation",
+																					"name": "schemaNote",
+																					"value": "3G0TEGvxuECQ",
+																					"isInheritable": false,
+																					"position": 50
+																				},
+																				{
+																					"type": "relation",
+																					"name": "trackerPageNote",
+																					"value": "mFv2nz1fydLn",
+																					"isInheritable": false,
+																					"position": 60
+																				}
+																			],
+																			"dataFileName": "settings.jsx.html",
+																			"attachments": [],
+																			"dirFileName": "settings.jsx",
+																			"children": [
+																				{
+																					"isClone": true,
+																					"noteId": "DoApeOuKhLg2",
+																					"notePath": [
+																						"root",
+																						"rhOxxCXPNhKe",
+																						"9FKFGsF80s7Q",
+																						"23aKX11VPFaa",
+																						"xg15I0EAi27u",
+																						"at0DM3cJIWPc",
+																						"mFv2nz1fydLn",
+																						"uJrMdiPlLKTT",
+																						"DcQXhZXwrb52",
+																						"DoApeOuKhLg2"
+																					],
+																					"title": "libSettingsUI.jsx",
+																					"prefix": null,
+																					"dataFileName": "libSettingsUI.jsx.clone.html",
+																					"type": "text",
+																					"format": "html"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"isClone": false,
+																	"noteId": "3G0TEGvxuECQ",
+																	"notePath": [
+																		"root",
+																		"rhOxxCXPNhKe",
+																		"9FKFGsF80s7Q",
+																		"23aKX11VPFaa",
+																		"xg15I0EAi27u",
+																		"at0DM3cJIWPc",
+																		"mFv2nz1fydLn",
+																		"3G0TEGvxuECQ"
+																	],
+																	"title": "schema.json",
+																	"notePosition": 30,
+																	"prefix": null,
+																	"isExpanded": false,
+																	"type": "code",
+																	"mime": "application/json",
+																	"attributes": [
+																		{
+																			"type": "label",
+																			"name": "TAMFILEID",
+																			"value": "game-tracker@beatlink/schema",
+																			"isInheritable": false,
+																			"position": 10
+																		},
+																		{
+																			"type": "label",
+																			"name": "TAMSOURCEURL",
+																			"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/game-tracker@beatlink/schema.json",
+																			"isInheritable": false,
+																			"position": 20
+																		},
+																		{
+																			"type": "label",
+																			"name": "iconClass",
+																			"value": "bx bx-joystick",
+																			"isInheritable": false,
+																			"position": 30
+																		}
+																	],
+																	"dataFileName": "schema.json.html",
+																	"attachments": []
+																},
+																{
+																	"isClone": false,
+																	"noteId": "VI92z3p3kBd7",
+																	"notePath": [
+																		"root",
+																		"rhOxxCXPNhKe",
+																		"9FKFGsF80s7Q",
+																		"23aKX11VPFaa",
+																		"xg15I0EAi27u",
+																		"at0DM3cJIWPc",
+																		"mFv2nz1fydLn",
+																		"VI92z3p3kBd7"
+																	],
+																	"title": "defaults.json",
+																	"notePosition": 40,
+																	"prefix": null,
+																	"isExpanded": false,
+																	"type": "code",
+																	"mime": "application/json",
+																	"attributes": [
+																		{
+																			"type": "label",
+																			"name": "TAMFILEID",
+																			"value": "game-tracker@beatlink/defaults",
+																			"isInheritable": false,
+																			"position": 10
+																		},
+																		{
+																			"type": "label",
+																			"name": "TAMSOURCEURL",
+																			"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/game-tracker@beatlink/defaults.json",
+																			"isInheritable": false,
+																			"position": 20
+																		}
+																	],
+																	"dataFileName": "defaults.json.html",
+																	"attachments": []
+																},
+																{
+																	"isClone": false,
+																	"noteId": "absqVIokU74v",
+																	"notePath": [
+																		"root",
+																		"rhOxxCXPNhKe",
+																		"9FKFGsF80s7Q",
+																		"23aKX11VPFaa",
+																		"xg15I0EAi27u",
+																		"at0DM3cJIWPc",
+																		"mFv2nz1fydLn",
+																		"absqVIokU74v"
+																	],
+																	"title": "gameTrackerBackend.js",
+																	"notePosition": 50,
+																	"prefix": null,
+																	"isExpanded": false,
+																	"type": "code",
+																	"mime": "application/javascript;env=backend",
+																	"attributes": [
+																		{
+																			"type": "label",
+																			"name": "TAMFILEID",
+																			"value": "game-tracker@beatlink/backend",
+																			"isInheritable": false,
+																			"position": 10
+																		},
+																		{
+																			"type": "label",
+																			"name": "TAMSOURCEURL",
+																			"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/game-tracker@beatlink/gameTrackerBackend.js",
+																			"isInheritable": false,
+																			"position": 20
+																		},
+																		{
+																			"type": "label",
+																			"name": "iconClass",
+																			"value": "bx bx-joystick",
+																			"isInheritable": false,
+																			"position": 40
+																		},
+																		{
+																			"type": "relation",
+																			"name": "schemaNote",
+																			"value": "3G0TEGvxuECQ",
+																			"isInheritable": false,
+																			"position": 50
+																		},
+																		{
+																			"type": "relation",
+																			"name": "settingsNote",
+																			"value": "DcQXhZXwrb52",
+																			"isInheritable": false,
+																			"position": 60
+																		},
+																		{
+																			"type": "label",
+																			"name": "customRequestHandler",
+																			"value": "gameTracker",
+																			"isInheritable": false,
+																			"position": 30
+																		}
+																	],
+																	"dataFileName": "gameTrackerBackend.js",
+																	"attachments": [],
+																	"dirFileName": "1_gameTrackerBackend.js",
+																	"children": [
+																		{
+																			"isClone": false,
+																			"noteId": "a5WCi7irgeB6",
+																			"notePath": [
+																				"root",
+																				"rhOxxCXPNhKe",
+																				"9FKFGsF80s7Q",
+																				"23aKX11VPFaa",
+																				"xg15I0EAi27u",
+																				"at0DM3cJIWPc",
+																				"mFv2nz1fydLn",
+																				"absqVIokU74v",
+																				"a5WCi7irgeB6"
+																			],
+																			"title": "libGameTracker.js",
+																			"notePosition": 10,
+																			"prefix": null,
+																			"isExpanded": false,
+																			"type": "code",
+																			"mime": "application/javascript;env=backend",
+																			"attributes": [
+																				{
+																					"type": "label",
+																					"name": "TAMFILEID",
+																					"value": "game-tracker@beatlink/lib-tracker",
+																					"isInheritable": false,
+																					"position": 10
+																				},
+																				{
+																					"type": "label",
+																					"name": "TAMSOURCEURL",
+																					"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/game-tracker@beatlink/libGameTracker.js",
+																					"isInheritable": false,
+																					"position": 20
+																				},
+																				{
+																					"type": "label",
+																					"name": "iconClass",
+																					"value": "bx bx-joystick",
+																					"isInheritable": false,
+																					"position": 30
+																				}
+																			],
+																			"dataFileName": "libGameTracker.js",
+																			"attachments": []
+																		},
+																		{
+																			"isClone": false,
+																			"noteId": "fm5TLf3SBOAS",
+																			"notePath": [
+																				"root",
+																				"rhOxxCXPNhKe",
+																				"9FKFGsF80s7Q",
+																				"23aKX11VPFaa",
+																				"xg15I0EAi27u",
+																				"at0DM3cJIWPc",
+																				"mFv2nz1fydLn",
+																				"absqVIokU74v",
+																				"fm5TLf3SBOAS"
+																			],
+																			"title": "libSettings.js",
+																			"notePosition": 20,
+																			"prefix": null,
+																			"isExpanded": false,
+																			"type": "code",
+																			"mime": "application/javascript;env=backend",
+																			"attributes": [
+																				{
+																					"type": "label",
+																					"name": "TAMFILEID",
+																					"value": "game-tracker@beatlink/libsettings-backend",
+																					"isInheritable": false,
+																					"position": 10
+																				},
+																				{
+																					"type": "label",
+																					"name": "TAMSOURCEURL",
+																					"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/libs/libsettings/libsettings-backend.js",
+																					"isInheritable": false,
+																					"position": 20
+																				}
+																			],
+																			"dataFileName": "libSettings.js",
+																			"attachments": []
+																		}
+																	]
+																},
+																{
+																	"isClone": false,
+																	"noteId": "2o7mkNkyEOlA",
+																	"notePath": [
+																		"root",
+																		"rhOxxCXPNhKe",
+																		"9FKFGsF80s7Q",
+																		"23aKX11VPFaa",
+																		"xg15I0EAi27u",
+																		"at0DM3cJIWPc",
+																		"mFv2nz1fydLn",
+																		"2o7mkNkyEOlA"
+																	],
+																	"title": "autoSync.js",
+																	"notePosition": 60,
+																	"prefix": null,
+																	"isExpanded": false,
+																	"type": "code",
+																	"mime": "application/javascript;env=backend",
+																	"attributes": [
+																		{
+																			"type": "label",
+																			"name": "TAMFILEID",
+																			"value": "game-tracker@beatlink/autosync",
+																			"isInheritable": false,
+																			"position": 10
+																		},
+																		{
+																			"type": "label",
+																			"name": "TAMSOURCEURL",
+																			"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/game-tracker@beatlink/autoSync.js",
+																			"isInheritable": false,
+																			"position": 20
+																		},
+																		{
+																			"type": "label",
+																			"name": "iconClass",
+																			"value": "bx bx-sync",
+																			"isInheritable": false,
+																			"position": 40
+																		},
+																		{
+																			"type": "label",
+																			"name": "run",
+																			"value": "hourly",
+																			"isInheritable": false,
+																			"position": 30
+																		}
+																	],
+																	"dataFileName": "autoSync.js",
+																	"attachments": [],
+																	"dirFileName": "1_autoSync.js",
+																	"children": [
+																		{
+																			"isClone": true,
+																			"noteId": "fm5TLf3SBOAS",
+																			"notePath": [
+																				"root",
+																				"rhOxxCXPNhKe",
+																				"9FKFGsF80s7Q",
+																				"23aKX11VPFaa",
+																				"xg15I0EAi27u",
+																				"at0DM3cJIWPc",
+																				"mFv2nz1fydLn",
+																				"2o7mkNkyEOlA",
+																				"fm5TLf3SBOAS"
+																			],
+																			"title": "libSettings.js",
+																			"prefix": null,
+																			"dataFileName": "libSettings.js.clone.html",
+																			"type": "text",
+																			"format": "html"
+																		},
+																		{
+																			"isClone": true,
+																			"noteId": "absqVIokU74v",
+																			"notePath": [
+																				"root",
+																				"rhOxxCXPNhKe",
+																				"9FKFGsF80s7Q",
+																				"23aKX11VPFaa",
+																				"xg15I0EAi27u",
+																				"at0DM3cJIWPc",
+																				"mFv2nz1fydLn",
+																				"2o7mkNkyEOlA",
+																				"absqVIokU74v"
+																			],
+																			"title": "gameTrackerBackend.js",
+																			"prefix": null,
+																			"dataFileName": "gameTrackerBackend.js.clone.html",
+																			"type": "text",
+																			"format": "html"
+																		}
+																	]
+																},
+																{
+																	"isClone": false,
+																	"noteId": "cHGT9SByImj0",
+																	"notePath": [
+																		"root",
+																		"rhOxxCXPNhKe",
+																		"9FKFGsF80s7Q",
+																		"23aKX11VPFaa",
+																		"xg15I0EAi27u",
+																		"at0DM3cJIWPc",
+																		"mFv2nz1fydLn",
+																		"cHGT9SByImj0"
+																	],
+																	"title": "README.md",
+																	"notePosition": 70,
+																	"prefix": null,
+																	"isExpanded": false,
+																	"type": "text",
+																	"mime": "text/html",
+																	"attributes": [
+																		{
+																			"type": "label",
+																			"name": "TAMFILEID",
+																			"value": "game-tracker@beatlink/readme",
+																			"isInheritable": false,
+																			"position": 10
+																		},
+																		{
+																			"type": "label",
+																			"name": "TAMSOURCEURL",
+																			"value": "",
+																			"isInheritable": false,
+																			"position": 20
+																		},
+																		{
+																			"type": "label",
+																			"name": "iconClass",
+																			"value": "bx bx-joystick",
+																			"isInheritable": false,
+																			"position": 30
+																		}
+																	],
+																	"format": "html",
+																	"dataFileName": "README.md.html",
+																	"attachments": []
+																}
+															]
+														}
+													]
+												},
+												{
+													"isClone": false,
+													"noteId": "aUa2I7y7wtkY",
+													"notePath": [
+														"root",
+														"rhOxxCXPNhKe",
+														"9FKFGsF80s7Q",
+														"23aKX11VPFaa",
+														"xg15I0EAi27u",
+														"aUa2I7y7wtkY"
+													],
+													"title": "Media Tracker",
+													"notePosition": 20,
+													"prefix": null,
+													"isExpanded": true,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [
+														{
+															"type": "label",
+															"name": "TAMFILEID",
+															"value": "media-tracker@beatlink/__tamAddonRoot__",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "label",
+															"name": "addonId",
+															"value": "media-tracker@beatlink",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "label",
+															"name": "iconClass",
+															"value": "bx bx-customize",
+															"isInheritable": false,
+															"position": 30
+														}
+													],
+													"format": "html",
+													"dataFileName": "Media Tracker.html",
+													"attachments": [],
+													"dirFileName": "Media Tracker",
+													"children": [
+														{
+															"isClone": false,
+															"noteId": "uVWcG1Q55UE5",
+															"notePath": [
+																"root",
+																"rhOxxCXPNhKe",
+																"9FKFGsF80s7Q",
+																"23aKX11VPFaa",
+																"xg15I0EAi27u",
+																"aUa2I7y7wtkY",
+																"uVWcG1Q55UE5"
+															],
+															"title": "media-tracker@beatlink",
+															"notePosition": 10,
+															"prefix": null,
+															"isExpanded": true,
+															"type": "render",
+															"mime": "text/html",
+															"attributes": [
+																{
+																	"type": "label",
+																	"name": "TAMFILEID",
+																	"value": "media-tracker@beatlink/launcher",
+																	"isInheritable": false,
+																	"position": 10
+																},
+																{
+																	"type": "label",
+																	"name": "TAMSOURCEURL",
+																	"value": "",
+																	"isInheritable": false,
+																	"position": 20
+																},
+																{
+																	"type": "label",
+																	"name": "iconClass",
+																	"value": "bx bx-movie-play",
+																	"isInheritable": false,
+																	"position": 30
+																},
+																{
+																	"type": "relation",
+																	"name": "renderNote",
+																	"value": "Cg7Fd0VjL3aR",
+																	"isInheritable": false,
+																	"position": 40
+																}
+															],
+															"dataFileName": "media-tracker@beatlink.html",
+															"attachments": [],
+															"dirFileName": "media-tracker@beatlink",
+															"children": [
+																{
+																	"isClone": false,
+																	"noteId": "Cg7Fd0VjL3aR",
+																	"notePath": [
+																		"root",
+																		"rhOxxCXPNhKe",
+																		"9FKFGsF80s7Q",
+																		"23aKX11VPFaa",
+																		"xg15I0EAi27u",
+																		"aUa2I7y7wtkY",
+																		"uVWcG1Q55UE5",
+																		"Cg7Fd0VjL3aR"
+																	],
+																	"title": "mediaTracker.jsx",
+																	"notePosition": 10,
+																	"prefix": null,
+																	"isExpanded": false,
+																	"type": "code",
+																	"mime": "text/jsx",
+																	"attributes": [
+																		{
+																			"type": "label",
+																			"name": "TAMFILEID",
+																			"value": "media-tracker@beatlink/view",
+																			"isInheritable": false,
+																			"position": 10
+																		},
+																		{
+																			"type": "label",
+																			"name": "TAMSOURCEURL",
+																			"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/media-tracker@beatlink/mediaTracker.jsx",
+																			"isInheritable": false,
+																			"position": 20
+																		},
+																		{
+																			"type": "label",
+																			"name": "mediaTrackerRender",
+																			"value": "",
+																			"isInheritable": false,
+																			"position": 30
+																		},
+																		{
+																			"type": "label",
+																			"name": "iconClass",
+																			"value": "bx bx-movie-play",
+																			"isInheritable": false,
+																			"position": 40
+																		},
+																		{
+																			"type": "relation",
+																			"name": "schemaNote",
+																			"value": "d25Jgz6j1NtB",
+																			"isInheritable": false,
+																			"position": 50
+																		},
+																		{
+																			"type": "relation",
+																			"name": "settingsNote",
+																			"value": "ALc09fHDVp5F",
+																			"isInheritable": false,
+																			"position": 60
+																		},
+																		{
+																			"type": "relation",
+																			"name": "settingsPageNote",
+																			"value": "4asRcXFISGia",
+																			"isInheritable": false,
+																			"position": 70
+																		}
+																	],
+																	"dataFileName": "mediaTracker.jsx.html",
+																	"attachments": [],
+																	"dirFileName": "mediaTracker.jsx",
+																	"children": [
+																		{
+																			"isClone": false,
+																			"noteId": "RPQhCEGfjfbF",
+																			"notePath": [
+																				"root",
+																				"rhOxxCXPNhKe",
+																				"9FKFGsF80s7Q",
+																				"23aKX11VPFaa",
+																				"xg15I0EAi27u",
+																				"aUa2I7y7wtkY",
+																				"uVWcG1Q55UE5",
+																				"Cg7Fd0VjL3aR",
+																				"RPQhCEGfjfbF"
+																			],
+																			"title": "mediaTracker.css",
+																			"notePosition": 10,
+																			"prefix": null,
+																			"isExpanded": false,
+																			"type": "code",
+																			"mime": "text/css",
+																			"attributes": [
+																				{
+																					"type": "label",
+																					"name": "TAMFILEID",
+																					"value": "media-tracker@beatlink/style",
+																					"isInheritable": false,
+																					"position": 10
+																				},
+																				{
+																					"type": "label",
+																					"name": "TAMSOURCEURL",
+																					"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/media-tracker@beatlink/mediaTracker.css",
+																					"isInheritable": false,
+																					"position": 20
+																				},
+																				{
+																					"type": "label",
+																					"name": "appCss",
+																					"value": "",
+																					"isInheritable": false,
+																					"position": 30
+																				}
+																			],
+																			"dataFileName": "mediaTracker.css.html",
+																			"attachments": []
+																		},
+																		{
+																			"isClone": true,
+																			"noteId": "DoApeOuKhLg2",
+																			"notePath": [
+																				"root",
+																				"rhOxxCXPNhKe",
+																				"9FKFGsF80s7Q",
+																				"23aKX11VPFaa",
+																				"xg15I0EAi27u",
+																				"aUa2I7y7wtkY",
+																				"uVWcG1Q55UE5",
+																				"Cg7Fd0VjL3aR",
+																				"DoApeOuKhLg2"
+																			],
+																			"title": "libSettingsUI.jsx",
+																			"prefix": null,
+																			"dataFileName": "libSettingsUI.jsx.clone.html",
+																			"type": "text",
+																			"format": "html"
+																		}
+																	]
+																},
+																{
+																	"isClone": false,
+																	"noteId": "4asRcXFISGia",
+																	"notePath": [
+																		"root",
+																		"rhOxxCXPNhKe",
+																		"9FKFGsF80s7Q",
+																		"23aKX11VPFaa",
+																		"xg15I0EAi27u",
+																		"aUa2I7y7wtkY",
+																		"uVWcG1Q55UE5",
+																		"4asRcXFISGia"
+																	],
+																	"title": "Settings",
+																	"notePosition": 20,
+																	"prefix": null,
+																	"isExpanded": false,
+																	"type": "render",
+																	"mime": "text/html",
+																	"attributes": [
+																		{
+																			"type": "label",
+																			"name": "TAMFILEID",
+																			"value": "media-tracker@beatlink/settings-page",
+																			"isInheritable": false,
+																			"position": 10
+																		},
+																		{
+																			"type": "label",
+																			"name": "TAMSOURCEURL",
+																			"value": "",
+																			"isInheritable": false,
+																			"position": 20
+																		},
+																		{
+																			"type": "label",
+																			"name": "iconClass",
+																			"value": "bx bx-cog",
+																			"isInheritable": false,
+																			"position": 30
+																		},
+																		{
+																			"type": "relation",
+																			"name": "renderNote",
+																			"value": "ALc09fHDVp5F",
+																			"isInheritable": false,
+																			"position": 40
+																		}
+																	],
+																	"dataFileName": "Settings.html",
+																	"attachments": [],
+																	"dirFileName": "Settings",
+																	"children": [
+																		{
+																			"isClone": false,
+																			"noteId": "ALc09fHDVp5F",
+																			"notePath": [
+																				"root",
+																				"rhOxxCXPNhKe",
+																				"9FKFGsF80s7Q",
+																				"23aKX11VPFaa",
+																				"xg15I0EAi27u",
+																				"aUa2I7y7wtkY",
+																				"uVWcG1Q55UE5",
+																				"4asRcXFISGia",
+																				"ALc09fHDVp5F"
+																			],
+																			"title": "settings.jsx",
+																			"notePosition": 10,
+																			"prefix": null,
+																			"isExpanded": false,
+																			"type": "code",
+																			"mime": "text/jsx",
+																			"attributes": [
+																				{
+																					"type": "label",
+																					"name": "TAMFILEID",
+																					"value": "media-tracker@beatlink/settings",
+																					"isInheritable": false,
+																					"position": 10
+																				},
+																				{
+																					"type": "label",
+																					"name": "TAMSOURCEURL",
+																					"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/media-tracker@beatlink/settings.jsx",
+																					"isInheritable": false,
+																					"position": 20
+																				},
+																				{
+																					"type": "label",
+																					"name": "mediaTrackerConfig",
+																					"value": "",
+																					"isInheritable": false,
+																					"position": 30
+																				},
+																				{
+																					"type": "relation",
+																					"name": "configNote",
+																					"value": "vaZb5Dnhx7Ay",
+																					"isInheritable": false,
+																					"position": 40
+																				},
+																				{
+																					"type": "relation",
+																					"name": "schemaNote",
+																					"value": "d25Jgz6j1NtB",
+																					"isInheritable": false,
+																					"position": 50
+																				},
+																				{
+																					"type": "relation",
+																					"name": "trackerPageNote",
+																					"value": "uVWcG1Q55UE5",
+																					"isInheritable": false,
+																					"position": 60
+																				}
+																			],
+																			"dataFileName": "settings.jsx.html",
+																			"attachments": [],
+																			"dirFileName": "settings.jsx",
+																			"children": [
+																				{
+																					"isClone": true,
+																					"noteId": "DoApeOuKhLg2",
+																					"notePath": [
+																						"root",
+																						"rhOxxCXPNhKe",
+																						"9FKFGsF80s7Q",
+																						"23aKX11VPFaa",
+																						"xg15I0EAi27u",
+																						"aUa2I7y7wtkY",
+																						"uVWcG1Q55UE5",
+																						"4asRcXFISGia",
+																						"ALc09fHDVp5F",
+																						"DoApeOuKhLg2"
+																					],
+																					"title": "libSettingsUI.jsx",
+																					"prefix": null,
+																					"dataFileName": "libSettingsUI.jsx.clone.html",
+																					"type": "text",
+																					"format": "html"
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"isClone": false,
+																	"noteId": "d25Jgz6j1NtB",
+																	"notePath": [
+																		"root",
+																		"rhOxxCXPNhKe",
+																		"9FKFGsF80s7Q",
+																		"23aKX11VPFaa",
+																		"xg15I0EAi27u",
+																		"aUa2I7y7wtkY",
+																		"uVWcG1Q55UE5",
+																		"d25Jgz6j1NtB"
+																	],
+																	"title": "schema.json",
+																	"notePosition": 30,
+																	"prefix": null,
+																	"isExpanded": false,
+																	"type": "code",
+																	"mime": "application/json",
+																	"attributes": [
+																		{
+																			"type": "label",
+																			"name": "TAMFILEID",
+																			"value": "media-tracker@beatlink/schema",
+																			"isInheritable": false,
+																			"position": 10
+																		},
+																		{
+																			"type": "label",
+																			"name": "TAMSOURCEURL",
+																			"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/media-tracker@beatlink/schema.json",
+																			"isInheritable": false,
+																			"position": 20
+																		},
+																		{
+																			"type": "label",
+																			"name": "iconClass",
+																			"value": "bx bx-movie-play",
+																			"isInheritable": false,
+																			"position": 30
+																		}
+																	],
+																	"dataFileName": "schema.json.html",
+																	"attachments": []
+																},
+																{
+																	"isClone": false,
+																	"noteId": "uAAjZqPSsYvd",
+																	"notePath": [
+																		"root",
+																		"rhOxxCXPNhKe",
+																		"9FKFGsF80s7Q",
+																		"23aKX11VPFaa",
+																		"xg15I0EAi27u",
+																		"aUa2I7y7wtkY",
+																		"uVWcG1Q55UE5",
+																		"uAAjZqPSsYvd"
+																	],
+																	"title": "defaults.json",
+																	"notePosition": 40,
+																	"prefix": null,
+																	"isExpanded": false,
+																	"type": "code",
+																	"mime": "application/json",
+																	"attributes": [
+																		{
+																			"type": "label",
+																			"name": "TAMFILEID",
+																			"value": "media-tracker@beatlink/defaults",
+																			"isInheritable": false,
+																			"position": 10
+																		},
+																		{
+																			"type": "label",
+																			"name": "TAMSOURCEURL",
+																			"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/media-tracker@beatlink/defaults.json",
+																			"isInheritable": false,
+																			"position": 20
+																		}
+																	],
+																	"dataFileName": "defaults.json.html",
+																	"attachments": []
+																},
+																{
+																	"isClone": false,
+																	"noteId": "SxUOQMvPb6vm",
+																	"notePath": [
+																		"root",
+																		"rhOxxCXPNhKe",
+																		"9FKFGsF80s7Q",
+																		"23aKX11VPFaa",
+																		"xg15I0EAi27u",
+																		"aUa2I7y7wtkY",
+																		"uVWcG1Q55UE5",
+																		"SxUOQMvPb6vm"
+																	],
+																	"title": "mediaTrackerBackend.js",
+																	"notePosition": 50,
+																	"prefix": null,
+																	"isExpanded": false,
+																	"type": "code",
+																	"mime": "application/javascript;env=backend",
+																	"attributes": [
+																		{
+																			"type": "label",
+																			"name": "TAMFILEID",
+																			"value": "media-tracker@beatlink/backend",
+																			"isInheritable": false,
+																			"position": 10
+																		},
+																		{
+																			"type": "label",
+																			"name": "TAMSOURCEURL",
+																			"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/media-tracker@beatlink/mediaTrackerBackend.js",
+																			"isInheritable": false,
+																			"position": 20
+																		},
+																		{
+																			"type": "label",
+																			"name": "iconClass",
+																			"value": "bx bx-movie-play",
+																			"isInheritable": false,
+																			"position": 40
+																		},
+																		{
+																			"type": "relation",
+																			"name": "schemaNote",
+																			"value": "d25Jgz6j1NtB",
+																			"isInheritable": false,
+																			"position": 50
+																		},
+																		{
+																			"type": "relation",
+																			"name": "settingsNote",
+																			"value": "ALc09fHDVp5F",
+																			"isInheritable": false,
+																			"position": 60
+																		},
+																		{
+																			"type": "label",
+																			"name": "customRequestHandler",
+																			"value": "mediaTracker",
+																			"isInheritable": false,
+																			"position": 30
+																		}
+																	],
+																	"dataFileName": "mediaTrackerBackend.js",
+																	"attachments": [],
+																	"dirFileName": "1_mediaTrackerBackend.js",
+																	"children": [
+																		{
+																			"isClone": false,
+																			"noteId": "mmhi4RbgkqUO",
+																			"notePath": [
+																				"root",
+																				"rhOxxCXPNhKe",
+																				"9FKFGsF80s7Q",
+																				"23aKX11VPFaa",
+																				"xg15I0EAi27u",
+																				"aUa2I7y7wtkY",
+																				"uVWcG1Q55UE5",
+																				"SxUOQMvPb6vm",
+																				"mmhi4RbgkqUO"
+																			],
+																			"title": "libMediaTracker.js",
+																			"notePosition": 10,
+																			"prefix": null,
+																			"isExpanded": false,
+																			"type": "code",
+																			"mime": "application/javascript;env=backend",
+																			"attributes": [
+																				{
+																					"type": "label",
+																					"name": "TAMFILEID",
+																					"value": "media-tracker@beatlink/lib-tracker",
+																					"isInheritable": false,
+																					"position": 10
+																				},
+																				{
+																					"type": "label",
+																					"name": "TAMSOURCEURL",
+																					"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/media-tracker@beatlink/libMediaTracker.js",
+																					"isInheritable": false,
+																					"position": 20
+																				},
+																				{
+																					"type": "label",
+																					"name": "iconClass",
+																					"value": "bx bx-movie-play",
+																					"isInheritable": false,
+																					"position": 30
+																				}
+																			],
+																			"dataFileName": "libMediaTracker.js",
+																			"attachments": []
+																		},
+																		{
+																			"isClone": true,
+																			"noteId": "fm5TLf3SBOAS",
+																			"notePath": [
+																				"root",
+																				"rhOxxCXPNhKe",
+																				"9FKFGsF80s7Q",
+																				"23aKX11VPFaa",
+																				"xg15I0EAi27u",
+																				"aUa2I7y7wtkY",
+																				"uVWcG1Q55UE5",
+																				"SxUOQMvPb6vm",
+																				"fm5TLf3SBOAS"
+																			],
+																			"title": "libSettings.js",
+																			"prefix": null,
+																			"dataFileName": "libSettings.js.clone.html",
+																			"type": "text",
+																			"format": "html"
+																		}
+																	]
+																},
+																{
+																	"isClone": false,
+																	"noteId": "Gd3bsL5fMPDq",
+																	"notePath": [
+																		"root",
+																		"rhOxxCXPNhKe",
+																		"9FKFGsF80s7Q",
+																		"23aKX11VPFaa",
+																		"xg15I0EAi27u",
+																		"aUa2I7y7wtkY",
+																		"uVWcG1Q55UE5",
+																		"Gd3bsL5fMPDq"
+																	],
+																	"title": "autoSync.js",
+																	"notePosition": 60,
+																	"prefix": null,
+																	"isExpanded": false,
+																	"type": "code",
+																	"mime": "application/javascript;env=backend",
+																	"attributes": [
+																		{
+																			"type": "label",
+																			"name": "TAMFILEID",
+																			"value": "media-tracker@beatlink/autosync",
+																			"isInheritable": false,
+																			"position": 10
+																		},
+																		{
+																			"type": "label",
+																			"name": "TAMSOURCEURL",
+																			"value": "https://raw.githubusercontent.com/BeatLink/trilium-scripts/refs/heads/main/addons/media-tracker@beatlink/autoSync.js",
+																			"isInheritable": false,
+																			"position": 20
+																		},
+																		{
+																			"type": "label",
+																			"name": "iconClass",
+																			"value": "bx bx-sync",
+																			"isInheritable": false,
+																			"position": 40
+																		},
+																		{
+																			"type": "label",
+																			"name": "run",
+																			"value": "hourly",
+																			"isInheritable": false,
+																			"position": 30
+																		}
+																	],
+																	"dataFileName": "autoSync.js",
+																	"attachments": [],
+																	"dirFileName": "1_autoSync.js",
+																	"children": [
+																		{
+																			"isClone": true,
+																			"noteId": "fm5TLf3SBOAS",
+																			"notePath": [
+																				"root",
+																				"rhOxxCXPNhKe",
+																				"9FKFGsF80s7Q",
+																				"23aKX11VPFaa",
+																				"xg15I0EAi27u",
+																				"aUa2I7y7wtkY",
+																				"uVWcG1Q55UE5",
+																				"Gd3bsL5fMPDq",
+																				"fm5TLf3SBOAS"
+																			],
+																			"title": "libSettings.js",
+																			"prefix": null,
+																			"dataFileName": "libSettings.js.clone.html",
+																			"type": "text",
+																			"format": "html"
+																		},
+																		{
+																			"isClone": true,
+																			"noteId": "SxUOQMvPb6vm",
+																			"notePath": [
+																				"root",
+																				"rhOxxCXPNhKe",
+																				"9FKFGsF80s7Q",
+																				"23aKX11VPFaa",
+																				"xg15I0EAi27u",
+																				"aUa2I7y7wtkY",
+																				"uVWcG1Q55UE5",
+																				"Gd3bsL5fMPDq",
+																				"SxUOQMvPb6vm"
+																			],
+																			"title": "mediaTrackerBackend.js",
+																			"prefix": null,
+																			"dataFileName": "mediaTrackerBackend.js.clone.html",
+																			"type": "text",
+																			"format": "html"
+																		}
+																	]
+																},
+																{
+																	"isClone": false,
+																	"noteId": "h9ZMBYnP8aFZ",
+																	"notePath": [
+																		"root",
+																		"rhOxxCXPNhKe",
+																		"9FKFGsF80s7Q",
+																		"23aKX11VPFaa",
+																		"xg15I0EAi27u",
+																		"aUa2I7y7wtkY",
+																		"uVWcG1Q55UE5",
+																		"h9ZMBYnP8aFZ"
+																	],
+																	"title": "README.md",
+																	"notePosition": 70,
+																	"prefix": null,
+																	"isExpanded": false,
+																	"type": "text",
+																	"mime": "text/html",
+																	"attributes": [
+																		{
+																			"type": "label",
+																			"name": "TAMFILEID",
+																			"value": "media-tracker@beatlink/readme",
+																			"isInheritable": false,
+																			"position": 10
+																		},
+																		{
+																			"type": "label",
+																			"name": "TAMSOURCEURL",
+																			"value": "",
+																			"isInheritable": false,
+																			"position": 20
+																		},
+																		{
+																			"type": "label",
+																			"name": "iconClass",
+																			"value": "bx bx-movie-play",
+																			"isInheritable": false,
+																			"position": 30
+																		}
+																	],
+																	"format": "html",
+																	"dataFileName": "README.md.html",
+																	"attachments": []
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"isClone": false,
+											"noteId": "D7GEocw4DwCU",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"9FKFGsF80s7Q",
+												"23aKX11VPFaa",
+												"D7GEocw4DwCU"
+											],
+											"title": "Addon Data",
+											"notePosition": 40,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "code",
+											"mime": "application/json",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "TAMFILEID",
+													"value": "trilium-addon-manager@beatlink/addon-data",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "label",
+													"name": "iconClass",
+													"value": "bx bx-customize",
+													"isInheritable": false,
+													"position": 20
+												},
+												{
+													"type": "label",
+													"name": "TAMSOURCEURL",
+													"value": "",
+													"isInheritable": false,
+													"position": 30
+												}
+											],
+											"dataFileName": "Addon Data.html",
+											"attachments": [],
+											"dirFileName": "Addon Data",
+											"children": [
+												{
+													"isClone": false,
+													"noteId": "J7AgQB1GXNuV",
+													"notePath": [
+														"root",
+														"rhOxxCXPNhKe",
+														"9FKFGsF80s7Q",
+														"23aKX11VPFaa",
+														"D7GEocw4DwCU",
+														"J7AgQB1GXNuV"
+													],
+													"title": "Game Tracker",
+													"notePosition": 10,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [
+														{
+															"type": "label",
+															"name": "TAMFILEID",
+															"value": "game-tracker@beatlink/__tamAddonPersistenceRoot__",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "label",
+															"name": "addonId",
+															"value": "game-tracker@beatlink",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "label",
+															"name": "iconClass",
+															"value": "bx bx-customize",
+															"isInheritable": false,
+															"position": 30
+														}
+													],
+													"format": "html",
+													"dataFileName": "Game Tracker.html",
+													"attachments": [],
+													"dirFileName": "Game Tracker",
+													"children": [
+														{
+															"isClone": false,
+															"noteId": "em9qvabzWBVd",
+															"notePath": [
+																"root",
+																"rhOxxCXPNhKe",
+																"9FKFGsF80s7Q",
+																"23aKX11VPFaa",
+																"D7GEocw4DwCU",
+																"J7AgQB1GXNuV",
+																"em9qvabzWBVd"
+															],
+															"title": "config.json",
+															"notePosition": 10,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "code",
+															"mime": "application/json",
+															"attributes": [
+																{
+																	"type": "label",
+																	"name": "TAMFILEID",
+																	"value": "game-tracker@beatlink/config",
+																	"isInheritable": false,
+																	"position": 10
+																},
+																{
+																	"type": "label",
+																	"name": "TAMSOURCEURL",
+																	"value": "",
+																	"isInheritable": false,
+																	"position": 20
+																},
+																{
+																	"type": "label",
+																	"name": "iconClass",
+																	"value": "bx bx-joystick",
+																	"isInheritable": false,
+																	"position": 30
+																},
+																{
+																	"type": "relation",
+																	"name": "sourceConfig",
+																	"value": "VI92z3p3kBd7",
+																	"isInheritable": false,
+																	"position": 40
+																}
+															],
+															"dataFileName": "config.json.html",
+															"attachments": []
+														}
+													]
+												},
+												{
+													"isClone": false,
+													"noteId": "FW9XwDDm8jEi",
+													"notePath": [
+														"root",
+														"rhOxxCXPNhKe",
+														"9FKFGsF80s7Q",
+														"23aKX11VPFaa",
+														"D7GEocw4DwCU",
+														"FW9XwDDm8jEi"
+													],
+													"title": "Media Tracker",
+													"notePosition": 20,
+													"prefix": null,
+													"isExpanded": false,
+													"type": "text",
+													"mime": "text/html",
+													"attributes": [
+														{
+															"type": "label",
+															"name": "TAMFILEID",
+															"value": "media-tracker@beatlink/__tamAddonPersistenceRoot__",
+															"isInheritable": false,
+															"position": 10
+														},
+														{
+															"type": "label",
+															"name": "addonId",
+															"value": "media-tracker@beatlink",
+															"isInheritable": false,
+															"position": 20
+														},
+														{
+															"type": "label",
+															"name": "iconClass",
+															"value": "bx bx-customize",
+															"isInheritable": false,
+															"position": 30
+														}
+													],
+													"format": "html",
+													"dataFileName": "Media Tracker.html",
+													"attachments": [],
+													"dirFileName": "Media Tracker",
+													"children": [
+														{
+															"isClone": false,
+															"noteId": "vaZb5Dnhx7Ay",
+															"notePath": [
+																"root",
+																"rhOxxCXPNhKe",
+																"9FKFGsF80s7Q",
+																"23aKX11VPFaa",
+																"D7GEocw4DwCU",
+																"FW9XwDDm8jEi",
+																"vaZb5Dnhx7Ay"
+															],
+															"title": "config.json",
+															"notePosition": 10,
+															"prefix": null,
+															"isExpanded": false,
+															"type": "code",
+															"mime": "application/json",
+															"attributes": [
+																{
+																	"type": "label",
+																	"name": "TAMFILEID",
+																	"value": "media-tracker@beatlink/config",
+																	"isInheritable": false,
+																	"position": 10
+																},
+																{
+																	"type": "label",
+																	"name": "TAMSOURCEURL",
+																	"value": "",
+																	"isInheritable": false,
+																	"position": 20
+																},
+																{
+																	"type": "label",
+																	"name": "iconClass",
+																	"value": "bx bx-movie-play",
+																	"isInheritable": false,
+																	"position": 30
+																},
+																{
+																	"type": "relation",
+																	"name": "sourceConfig",
+																	"value": "uAAjZqPSsYvd",
+																	"isInheritable": false,
+																	"position": 40
+																}
+															],
+															"dataFileName": "config.json.html",
+															"attachments": []
+														}
+													]
+												}
+											]
+										},
+										{
+											"isClone": false,
+											"noteId": "YM0pe5J02UwM",
+											"notePath": [
+												"root",
+												"rhOxxCXPNhKe",
+												"9FKFGsF80s7Q",
+												"23aKX11VPFaa",
+												"YM0pe5J02UwM"
+											],
+											"title": "README.md",
+											"notePosition": 50,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"attributes": [
+												{
+													"type": "label",
+													"name": "TAMFILEID",
+													"value": "trilium-addon-manager@beatlink/readme",
+													"isInheritable": false,
+													"position": 10
+												},
+												{
+													"type": "label",
+													"name": "TAMSOURCEURL",
+													"value": "",
+													"isInheritable": false,
+													"position": 20
+												}
+											],
+											"format": "html",
+											"dataFileName": "README.md.html",
+											"attachments": []
+										}
+									]
 								}
 							]
+						},
+						{
+							"isClone": false,
+							"noteId": "LDYJBgwPJMSX",
+							"notePath": [
+								"root",
+								"rhOxxCXPNhKe",
+								"LDYJBgwPJMSX"
+							],
+							"title": "CSS Snippets",
+							"notePosition": 40,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "book",
+							"mime": "",
+							"attributes": [
+								{
+									"type": "relation",
+									"name": "template",
+									"value": "_template_grid_view",
+									"isInheritable": false,
+									"position": 10
+								},
+								{
+									"type": "label",
+									"name": "iconClass",
+									"value": "bx bxl-css3",
+									"isInheritable": false,
+									"position": 50
+								}
+							],
+							"dataFileName": "CSS Snippets.html",
+							"attachments": []
+						}
+					]
+				},
+				{
+					"isClone": false,
+					"noteId": "Y484g0fsFNHr",
+					"notePath": [
+						"root",
+						"Y484g0fsFNHr"
+					],
+					"title": "Movies & TV",
+					"notePosition": 1000000039,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "render",
+					"mime": "text/html",
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "renderNote",
+							"value": "Cg7Fd0VjL3aR",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "label",
+							"name": "iconClass",
+							"value": "bx bx-movie-play",
+							"isInheritable": false,
+							"position": 20
+						}
+					],
+					"dataFileName": "Movies & TV.html",
+					"attachments": [],
+					"dirFileName": "Movies & TV",
+					"children": [
+						{
+							"isClone": false,
+							"noteId": "4vfZKTR5zreG",
+							"notePath": [
+								"root",
+								"Y484g0fsFNHr",
+								"4vfZKTR5zreG"
+							],
+							"title": "Database",
+							"notePosition": 10,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "code",
+							"mime": "application/json",
+							"attributes": [
+								{
+									"type": "label",
+									"name": "mediaTrackerDatabase",
+									"value": "",
+									"isInheritable": false,
+									"position": 10
+								},
+								{
+									"type": "label",
+									"name": "iconClass",
+									"value": "bx bx-data",
+									"isInheritable": false,
+									"position": 20
+								}
+							],
+							"dataFileName": "Database.html",
+							"attachments": []
 						}
 					]
 				},
@@ -2840,7 +7611,7 @@
 						"2jIaAY6oz23O"
 					],
 					"title": "People",
-					"notePosition": 50,
+					"notePosition": 1000000049,
 					"prefix": null,
 					"isExpanded": false,
 					"type": "book",
@@ -2913,7 +7684,7 @@
 						"aKvB6VbseA79"
 					],
 					"title": "Trilium Demo",
-					"notePosition": 60,
+					"notePosition": 1000000059,
 					"prefix": null,
 					"isExpanded": false,
 					"type": "text",
@@ -2970,17 +7741,17 @@
 						},
 						{
 							"type": "label",
-							"name": "archived",
-							"value": "true",
+							"name": "shareHiddenFromTree",
+							"value": "",
 							"isInheritable": false,
-							"position": 20
+							"position": 30
 						},
 						{
 							"type": "label",
-							"name": "shareHiddenFromTree",
-							"value": "true",
+							"name": "archived",
+							"value": "",
 							"isInheritable": false,
-							"position": 30
+							"position": 20
 						}
 					],
 					"format": "html",
@@ -9024,7 +13795,7 @@
 						"Wjz6UyoYsYyi"
 					],
 					"title": "Unprocessed",
-					"notePosition": 1000000119,
+					"notePosition": 1000000069,
 					"prefix": null,
 					"isExpanded": false,
 					"type": "text",
@@ -9193,13 +13964,227 @@
 				},
 				{
 					"isClone": false,
+					"noteId": "nzp81GBaeraN",
+					"notePath": [
+						"root",
+						"nzp81GBaeraN"
+					],
+					"title": "Worlds",
+					"notePosition": 1000000079,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"attributes": [
+						{
+							"type": "label",
+							"name": "iconClass",
+							"value": "bx bx-globe-alt",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "label",
+							"name": "color",
+							"value": "#4de699",
+							"isInheritable": false,
+							"position": 20
+						}
+					],
+					"format": "html",
+					"dataFileName": "Worlds.html",
+					"attachments": [],
+					"dirFileName": "Worlds",
+					"children": [
+						{
+							"isClone": false,
+							"noteId": "EcoHgVWA64c3",
+							"notePath": [
+								"root",
+								"nzp81GBaeraN",
+								"EcoHgVWA64c3"
+							],
+							"title": "Ilmaria",
+							"notePosition": 10,
+							"prefix": null,
+							"isExpanded": true,
+							"type": "text",
+							"mime": "text/html",
+							"attributes": [],
+							"format": "html",
+							"dataFileName": "Ilmaria.html",
+							"attachments": [],
+							"dirFileName": "Ilmaria",
+							"children": [
+								{
+									"isClone": false,
+									"noteId": "O2I2bxJkWNaD",
+									"notePath": [
+										"root",
+										"nzp81GBaeraN",
+										"EcoHgVWA64c3",
+										"O2I2bxJkWNaD"
+									],
+									"title": "Shimmering Isles",
+									"notePosition": 10,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [],
+									"format": "html",
+									"dataFileName": "Shimmering Isles.html",
+									"attachments": []
+								},
+								{
+									"isClone": false,
+									"noteId": "OzTuiyngQtOK",
+									"notePath": [
+										"root",
+										"nzp81GBaeraN",
+										"EcoHgVWA64c3",
+										"OzTuiyngQtOK"
+									],
+									"title": "Sunken Abyss",
+									"notePosition": 20,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [],
+									"format": "html",
+									"dataFileName": "Sunken Abyss.html",
+									"attachments": []
+								},
+								{
+									"isClone": false,
+									"noteId": "2E8NnBHIcVgU",
+									"notePath": [
+										"root",
+										"nzp81GBaeraN",
+										"EcoHgVWA64c3",
+										"2E8NnBHIcVgU"
+									],
+									"title": "Ashen Wastes",
+									"notePosition": 30,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [],
+									"format": "html",
+									"dataFileName": "Ashen Wastes.html",
+									"attachments": []
+								},
+								{
+									"isClone": false,
+									"noteId": "py1dH32Ur9nc",
+									"notePath": [
+										"root",
+										"nzp81GBaeraN",
+										"EcoHgVWA64c3",
+										"py1dH32Ur9nc"
+									],
+									"title": "Magical Systems",
+									"notePosition": 40,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "nKDg7xcuI8m0",
+											"isInheritable": false,
+											"position": 10
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "lcH15voXLENO",
+											"isInheritable": false,
+											"position": 20
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "O2I2bxJkWNaD",
+											"isInheritable": false,
+											"position": 30
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "OzTuiyngQtOK",
+											"isInheritable": false,
+											"position": 40
+										},
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "2E8NnBHIcVgU",
+											"isInheritable": false,
+											"position": 50
+										}
+									],
+									"format": "html",
+									"dataFileName": "Magical Systems.html",
+									"attachments": []
+								},
+								{
+									"isClone": false,
+									"noteId": "nKDg7xcuI8m0",
+									"notePath": [
+										"root",
+										"nzp81GBaeraN",
+										"EcoHgVWA64c3",
+										"nKDg7xcuI8m0"
+									],
+									"title": "Crystalline Peaks",
+									"notePosition": 50,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [],
+									"format": "html",
+									"dataFileName": "Crystalline Peaks.html",
+									"attachments": []
+								},
+								{
+									"isClone": false,
+									"noteId": "lcH15voXLENO",
+									"notePath": [
+										"root",
+										"nzp81GBaeraN",
+										"EcoHgVWA64c3",
+										"lcH15voXLENO"
+									],
+									"title": "Eldoria",
+									"notePosition": 60,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [],
+									"format": "html",
+									"dataFileName": "Eldoria.html",
+									"attachments": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"isClone": false,
 					"noteId": "SFRzHg7kZqIZ",
 					"notePath": [
 						"root",
 						"SFRzHg7kZqIZ"
 					],
 					"title": "Asia Minor",
-					"notePosition": 1000000129,
+					"notePosition": 1000000089,
 					"prefix": null,
 					"isExpanded": false,
 					"type": "text",
@@ -9239,7 +14224,7 @@
 						"3ATD4drbczgo"
 					],
 					"title": "Bayeux Tapestry",
-					"notePosition": 1000000139,
+					"notePosition": 1000000099,
 					"prefix": null,
 					"isExpanded": false,
 					"type": "text",
@@ -9257,7 +14242,7 @@
 						"uEKSa2R8EjTD"
 					],
 					"title": "Christianity",
-					"notePosition": 1000000149,
+					"notePosition": 1000000109,
 					"prefix": null,
 					"isExpanded": false,
 					"type": "text",
@@ -9269,13 +14254,39 @@
 				},
 				{
 					"isClone": false,
+					"noteId": "zRrmvsW6nqGG",
+					"notePath": [
+						"root",
+						"zRrmvsW6nqGG"
+					],
+					"title": "Habits",
+					"notePosition": 1000000119,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"attributes": [
+						{
+							"type": "label",
+							"name": "shareHiddenFromTree",
+							"value": "",
+							"isInheritable": false,
+							"position": 10
+						}
+					],
+					"format": "html",
+					"dataFileName": "Habits.html",
+					"attachments": []
+				},
+				{
+					"isClone": false,
 					"noteId": "btlYdquCYFFG",
 					"notePath": [
 						"root",
 						"btlYdquCYFFG"
 					],
 					"title": "High Renaissance",
-					"notePosition": 1000000159,
+					"notePosition": 1000000129,
 					"prefix": null,
 					"isExpanded": false,
 					"type": "text",
@@ -9283,6 +14294,45 @@
 					"attributes": [],
 					"format": "html",
 					"dataFileName": "High Renaissance.html",
+					"attachments": []
+				},
+				{
+					"isClone": false,
+					"noteId": "6VTlwXq7ZNp0",
+					"notePath": [
+						"root",
+						"6VTlwXq7ZNp0"
+					],
+					"title": "Task Manager",
+					"notePosition": 1000000139,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "render",
+					"mime": "",
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "renderNote",
+							"value": "rVtk0XheQVY4",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "label",
+							"name": "configNote",
+							"value": "config",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "label",
+							"name": "shareHiddenFromTree",
+							"value": "",
+							"isInheritable": false,
+							"position": 30
+						}
+					],
+					"dataFileName": "Task Manager.html",
 					"attachments": []
 				}
 			]
